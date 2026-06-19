@@ -8,10 +8,10 @@
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aaronbamblett/tsumiru-website.git"
+    "url": "git+https://github.com/tsumiru-app/tsumiru-app.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/komikku-app/komikku-app.github.io/issues"
+    "url": "https://github.com/tsumiru-app/tsumiru-app.github.io/issues"
   },
   "engines": {
     "node": ">=22",

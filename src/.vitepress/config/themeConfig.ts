@@ -29,7 +29,7 @@ const themeConfig: DefaultTheme.Config = {
   },
 
   editLink: {
-    pattern: 'https://github.com/aaronbamblett/tsumiru-website/edit/main/src/:path',
+    pattern: 'https://github.com/tsumiru-app/tsumiru-app.github.io/edit/main/src/:path',
     text: 'Help us improve this page',
   },
 
