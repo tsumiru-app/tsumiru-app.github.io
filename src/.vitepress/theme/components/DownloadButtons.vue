@@ -12,7 +12,7 @@ const PLATFORMS: Platform[] = [
   { key: 'android', label: 'Android', match: /-android-universal\.apk$/ },
   { key: 'windows', label: 'Windows', match: /-windows-x64\.zip$/ },
   { key: 'macos', label: 'macOS', match: /-macos-x64\.zip$/ },
-  { key: 'linux', label: 'Linux', match: /-linux-x64\.tar\.gz$/ },
+  { key: 'linux', label: 'Linux (AppImage)', match: /-linux-x86_64\.AppImage$/ },
   { key: 'web', label: 'Web', match: /-web\.zip$/ },
 ]
 
