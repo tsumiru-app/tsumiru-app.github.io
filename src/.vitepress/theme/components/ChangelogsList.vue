@@ -8,7 +8,7 @@ const md = new MarkdownIt({ html: true })
 
 function renderMarkdown(string: string | null | undefined) {
   const pre = (string ?? '').replace(
-    'Check out the [past release notes](https://github.com/aaronbamblett/tsumiru/releases) if you’re upgrading from an earlier version. ',
+    'Check out the [past release notes](https://github.com/tsumiru-app/tsumiru/releases) if you’re upgrading from an earlier version. ',
     '',
   ).replace(/^Check out the .*past release notes.* if you're.*$/m, '')
   return formatChangelog(md, pre, { stripChecksums: true })

@@ -77,5 +77,5 @@ The source has temporarily rate-limited the server's IP. Pause downloads on the 
 The Suwayomi server or the upstream source is experiencing an error. Check the server logs for details.
 
 ::: warning
-For unlisted errors or if the steps above don't resolve your issue, refer to [Diagnosis](/docs/guides/troubleshooting/diagnosis) or open an issue at [github.com/aaronbamblett/tsumiru](https://github.com/aaronbamblett/tsumiru).
+For unlisted errors or if the steps above don't resolve your issue, refer to [Diagnosis](/docs/guides/troubleshooting/diagnosis) or open an issue at [github.com/tsumiru-app/tsumiru](https://github.com/tsumiru-app/tsumiru).
 :::

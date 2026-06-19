@@ -18,7 +18,7 @@ const themeConfig: DefaultTheme.Config = {
   socialLinks: [
     {
       icon: 'github',
-      link: 'https://github.com/aaronbamblett/tsumiru',
+      link: 'https://github.com/tsumiru-app/tsumiru',
       ariaLabel: 'Project GitHub',
     },
   ],

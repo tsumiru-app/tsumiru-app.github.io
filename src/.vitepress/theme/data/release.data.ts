@@ -17,7 +17,7 @@ export { data }
 export default defineLoader({
   async load(): Promise<AppRelease> {
     const { data: stable } = await octokit.repos.getLatestRelease({
-      owner: 'aaronbamblett',
+      owner: 'tsumiru-app',
       repo: 'tsumiru',
     })
 

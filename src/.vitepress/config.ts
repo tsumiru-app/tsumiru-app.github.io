@@ -56,7 +56,7 @@ export default defineConfig({
         let publishedAt = releaseDateCache.get(tag)
         if (!publishedAt) {
           try {
-            const { data } = await octokit.repos.getReleaseByTag({ owner: 'aaronbamblett', repo: 'tsumiru', tag })
+            const { data } = await octokit.repos.getReleaseByTag({ owner: 'tsumiru-app', repo: 'tsumiru', tag })
             publishedAt = data.published_at || data.created_at || ''
             if (publishedAt)
               releaseDateCache.set(tag, publishedAt)

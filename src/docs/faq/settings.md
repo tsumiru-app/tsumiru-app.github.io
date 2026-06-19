@@ -42,4 +42,4 @@ Under **Settings → General → Timeout Settings** you can raise the **Server R
 
 ## Is there an app lock / biometric lock?
 
-Not currently. Tsumiru has no app-lock, screenshot-blocking, or incognito feature today. If that's important to you, [open an issue](https://github.com/aaronbamblett/tsumiru/issues).
+Not currently. Tsumiru has no app-lock, screenshot-blocking, or incognito feature today. If that's important to you, [open an issue](https://github.com/tsumiru-app/tsumiru/issues).
