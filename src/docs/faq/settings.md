@@ -32,9 +32,9 @@ Under **Settings → Server → Authentication**, pick an **Authentication Type*
 
 Enter your **Credentials** for the chosen type. Use **Log out** to clear stored credentials. Credentials are kept in your device's secure storage.
 
-## What about proxies or Cloudflare-protected sources?
+## What about proxy or advanced connection settings?
 
-Those are **server-side** concerns, configured under **Settings → Server**: a **SOCKS Proxy** section, and a **Cloudflare Bypass** section for FlareSolverr. Tsumiru just surfaces the server's settings — the server does the work.
+Advanced network options are **server-side**, configured under **Settings → Server**. Tsumiru just surfaces whatever settings your server exposes — the server does the work.
 
 ## Why are some requests timing out?
 
