@@ -38,6 +38,7 @@ provide('toggle-appearance', () => {
 }
 
 /* Dark device bezel — gradient rim + soft shadow, tilted like the mockup */
+
 .ts-frame {
   padding: 7px;
   border-radius: 30px;

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, toRefs } from 'vue'
 
-const props = defineProps<{ body: string, author: string, tag: string }>()
+const props = defineProps<{ body: string | null, author: string, tag: string }>()
 const { body, author, tag } = toRefs(props)
 
 function isHigherThan(tagName: string, reference: string) {
@@ -15,7 +15,7 @@ const notMentioned = computed(() => {
 const nonExistent = ref<string[]>([])
 
 const contributors = computed(() => {
-  const list = [...body.value.matchAll(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g)]
+  const list = [...(body.value?.matchAll(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g) ?? [])]
     .map(match => match[2])
   const uncredited = author.value.includes('[bot]')
     ? notMentioned.value
