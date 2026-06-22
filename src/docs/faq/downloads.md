@@ -20,7 +20,7 @@ This page covers **server** downloads. To keep chapters **on your device** and r
 
 ## Can I download multiple chapters or series at once?
 
-Yes. Tsumiru imposes no artificial per-source download limit. How many downloads run in parallel — and how hard the server hits a source — is governed by your **Suwayomi server**, not the app. Since the "source" you're downloading from is your own server, throttling is something you tune server-side, not something the client restricts.
+Yes. Tsumiru imposes no artificial download limit of its own. How many downloads run in parallel is governed by your **Suwayomi server**, not the app. Since the content you're downloading comes from your own server, throttling is something you tune server-side, not something the client restricts.
 
 ## How do I manage what's downloading?
 

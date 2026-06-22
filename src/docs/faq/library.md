@@ -39,7 +39,7 @@ The **Updates** tab lists newly fetched chapters grouped by date, newest first. 
 
 There's nothing to enable — your library, read progress, bookmarks, categories, and download state all live on the **Suwayomi server**. Any device pointed at the same server sees the same state automatically. Only UI preferences (sort, filter, display) are stored per-device.
 
-## How do I handle duplicate chapters from multiple scanlators?
+## How do I handle duplicate chapters from the same series?
 
 Bookmark or mark-as-read the chapters you don't want, then use the **Filter** to hide bookmarked or read chapters so they're out of the way as you read.
 
