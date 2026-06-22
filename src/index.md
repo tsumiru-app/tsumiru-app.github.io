@@ -6,9 +6,6 @@ hero:
   name: Tsumiru
   text: Your Suwayomi library, everywhere
   tagline: A fast, multiplatform reader for your Suwayomi server — manga, manhwa, and webtoons on Android, desktop, and the web.
-  image:
-    alt: Tsumiru
-    src: /img/tsumiru-icon.png
   actions:
     - theme: brand
       text: Get started
@@ -30,12 +27,12 @@ features:
     icon: <svg height="24" width="24" viewBox="0 -960 960 960" fill="var(--vp-c-brand-1)" xmlns="http://www.w3.org/2000/svg"><path d="M160-120v-80h80v-440q0-33 23.5-56.5T320-720h480q33 0 56.5 23.5T880-640v440h80v80H160Zm-80-80v-80h40v80H80Zm240 0h480v-440H320v440Zm0 0v-440 440Z"/></svg>
     link: /download/
     linkText: Get the apps
-  - title: Powered by Suwayomi
-    details: Your Suwayomi server handles the sources and extensions. Tsumiru is the reader — point it at your server and your whole library is there.
-    icon: <svg height="24" width="24" viewBox="0 -960 960 960" fill="var(--vp-c-brand-1)" xmlns="http://www.w3.org/2000/svg"><path d="M160-160q-33 0-56.5-23.5T80-240v-100q0-33 23.5-56.5T160-420h640q33 0 56.5 23.5T880-340v100q0 33-23.5 56.5T800-160H160Zm0-80h640v-100H160v100Zm0-300q-33 0-56.5-23.5T80-620v-100q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v100q0 33-23.5 56.5T800-540H160Zm0-80h640v-100H160v100Zm60-40h80v-20h-80v20Zm0 380h80v-20h-80v20Zm-60-300v-100 100Zm0 300v-100 100Z"/></svg>
-    link: /docs/guides/getting-started
-    linkText: Connect your server
-  - title: Library, your way
+  - title: Read offline, anywhere
+    details: Download chapters to your device and keep reading offline — on a plane, underground, anywhere. The pages stay with you; the sources come from Suwayomi.
+    icon: <svg height="24" width="24" viewBox="0 0 24 24" fill="var(--vp-c-brand-1)" xmlns="http://www.w3.org/2000/svg"><path d="M7 17h10v-2H7zm5-3l4-4l-1.4-1.4l-1.6 1.55V6h-2v4.15L9.4 8.6L8 10zm0 8q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"/></svg>
+    link: /docs/guides/offline-reading
+    linkText: How offline works
+  - title: Your library, your way
     details: Custom sorts and filters, bulk downloads, and read-state detection keep your pile of unread chapters under control.
     icon: <svg height="24" width="24" viewBox="0 -960 960 960" fill="var(--vp-c-brand-1)" xmlns="http://www.w3.org/2000/svg"><path d="M120-240v-80h240v80H120Zm0-200v-80h480v80H120Zm0-200v-80h720v80H120Z"/></svg>
     link: /docs/faq/library

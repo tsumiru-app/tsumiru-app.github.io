@@ -31,6 +31,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           text: 'Reader settings',
           link: '/docs/guides/reader-settings',
         },
+        {
+          text: 'Offline reading',
+          link: '/docs/guides/offline-reading',
+        },
         { text: 'Categories', link: '/docs/guides/categories' },
         { text: 'Backups', link: '/docs/guides/backups' },
         {
