@@ -13,7 +13,7 @@ const headConfig: HeadConfig[] = [
   ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
   ['meta', { name: 'twitter:card', content: 'summary' }],
   ['meta', { property: 'og:site_name', content: 'Tsumiru' }],
-  ['meta', { property: 'og:description', content: 'A fast, multiplatform reader for your Suwayomi server. Read manga, manhwa, and webtoons on Android, desktop, and the web.' }],
+  ['meta', { property: 'og:description', content: 'A manga and manhwa reader for your own Suwayomi server. Built for offline and webtoon reading on Android, iOS, desktop, and the web.' }],
   ['meta', { property: 'og:locale', content: 'en_US' }],
   ['meta', { property: 'og:type', content: 'website' }],
 ]

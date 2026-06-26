@@ -26,7 +26,7 @@ const octokit = new Octokit()
 const releaseDateCache = new Map<string, string>()
 
 const title = 'Tsumiru'
-const description = 'A fast, multiplatform reader for your Suwayomi server. Read manga, manhwa, and webtoons on Android, desktop, and the web.'
+const description = 'A manga and manhwa reader for your own Suwayomi server. Built for offline and webtoon reading on Android, iOS, desktop, and the web.'
 
 const env = loadEnv('', process.cwd())
 const hostname: string = env.VITE_HOSTNAME || 'http://localhost:4173'
