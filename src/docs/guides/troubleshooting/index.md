@@ -18,7 +18,7 @@ Tsumiru connects to your Suwayomi server over the network. Most issues trace bac
 
 1. Open **Tsumiru** and navigate to **Settings → Server**.
 1. Confirm the server URL matches the address and port your Suwayomi server is running on (e.g. `http://192.168.1.100:4567`).
-1. Make sure you are using `http://` or `https://` as appropriate — mixing them up is a common source of connection errors.
+1. Make sure you are using `http://` or `https://` as appropriate; mixing them up is a common source of connection errors.
 
 ### Checking that the server is reachable
 

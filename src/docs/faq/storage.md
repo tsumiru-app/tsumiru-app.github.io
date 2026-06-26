@@ -1,7 +1,7 @@
 ---
 title: Storage
 titleTemplate: Frequently Asked Questions
-description: Where Tsumiru keeps downloads and backups — on your server.
+description: Where Tsumiru keeps downloads and backups, on your server.
 ---
 
 # Storage
@@ -12,7 +12,7 @@ The exception is [offline reading](/docs/guides/offline-reading): when you keep 
 
 ## Where are my downloads kept?
 
-On the **server**, at the path set in **Settings → Downloads → Download location** — described in-app as "the path to the directory on the server where downloaded files should get saved in." You can also choose **Save as CBZ archive** to control the download format. Server downloads are never written to your device — the separate [offline reading](/docs/guides/offline-reading) feature is the only thing that stores chapters locally.
+On the **server**, at the path set in **Settings → Downloads → Download location**, described in-app as "the path to the directory on the server where downloaded files should get saved in." You can also choose **Save as CBZ archive** to control the download format. Server downloads are never written to your device. The separate [offline reading](/docs/guides/offline-reading) feature is the only thing that stores chapters locally.
 
 ## Where are backups kept?
 
@@ -20,6 +20,6 @@ Backups are created and stored by the **server** too. Automatic backups go to th
 
 ## Does Tsumiru use much space on my device?
 
-By default, very little — pages you're reading are cached temporarily for performance, and your settings are stored locally. The space a downloaded series takes up is managed on your **server**, not your phone or computer.
+By default, very little: pages you're reading are cached temporarily for performance, and your settings are stored locally. The space a downloaded series takes up is managed on your **server**, not your phone or computer.
 
 That changes only if you use [offline reading](/docs/guides/offline-reading), which deliberately keeps chapters on the device. That space is shown under **Settings → Offline → Storage used**, and you can cap it or auto-remove old downloads there.

@@ -11,13 +11,13 @@ Frequently Asked Questions about the Library.
 
 Tap the organizer icon in the Library toolbar for three tabs:
 
-* **Filter** — show/hide by **Unread**, **Started**, **Completed**, **Bookmarked**, and **Downloaded** (each toggles include / exclude / off).
-* **Sort** — **Alphabetical**, **Date Added**, **Unread**, **Last Updated**, **Last Chapter Date**, **Total Chapters**, or **Last Read** (ascending or descending).
-* **Display** — **Grid**, **List**, or **Descriptive List**, plus **Downloaded** and **Unread** badges.
+* **Filter**: show/hide by **Unread**, **Started**, **Completed**, **Bookmarked**, and **Downloaded** (each toggles include / exclude / off).
+* **Sort**: **Alphabetical**, **Date Added**, **Unread**, **Last Updated**, **Last Chapter Date**, **Total Chapters**, or **Last Read** (ascending or descending).
+* **Display**: **Grid**, **List**, or **Descriptive List**, plus **Downloaded** and **Unread** badges.
 
 ## How do I update my library?
 
-From the Library (or Updates) overflow menu choose **Global Update** to refresh everything, or **Category Update** to refresh just the category you're viewing. Updating runs as a job on your **Suwayomi server** — Tsumiru just kicks it off and shows progress.
+From the Library (or Updates) overflow menu choose **Global Update** to refresh everything, or **Category Update** to refresh just the category you're viewing. Updating runs as a job on your **Suwayomi server**. Tsumiru kicks it off and shows progress.
 
 You can also enable **Automatic Update** in **Settings → Library** to refresh on an interval, and **Automatically refresh metadata** to pull new covers and details during updates.
 
@@ -37,7 +37,7 @@ The **Updates** tab lists newly fetched chapters grouped by date, newest first. 
 
 ## Can I sync between devices?
 
-There's nothing to enable — your library, read progress, bookmarks, categories, and download state all live on the **Suwayomi server**. Any device pointed at the same server sees the same state automatically. Only UI preferences (sort, filter, display) are stored per-device.
+There's nothing to enable: your library, read progress, bookmarks, categories, and download state all live on the **Suwayomi server**. Any device pointed at the same server sees the same state automatically. Only UI preferences (sort, filter, display) are stored per-device.
 
 ## How do I handle duplicate chapters from the same series?
 

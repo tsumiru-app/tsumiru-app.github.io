@@ -14,9 +14,9 @@ This page covers **server** downloads. To keep chapters **on your device** and r
 
 ## How do I download chapters?
 
-* **A single chapter** — tap the download icon on the chapter row. Tap it again while it's queued to cancel, or once it's downloaded to delete it.
-* **A batch from a series** — on the series page, tap the **download** button in the toolbar and choose a preset: **Next chapter**, **Next 5 / 10 / 25 chapters**, **Unread**, or **All**.
-* **Hand-picked chapters** — long-press a chapter to enter selection mode, then pick the ones you want (use **Select next 10**, **Select unread**, or **Select in between** to help), and tap the download icon in the bottom bar.
+* **A single chapter**: tap the download icon on the chapter row. Tap it again while it's queued to cancel, or once it's downloaded to delete it.
+* **A batch from a series**: on the series page, tap the **download** button in the toolbar and choose a preset: **Next chapter**, **Next 5 / 10 / 25 chapters**, **Unread**, or **All**.
+* **Hand-picked chapters**: long-press a chapter to enter selection mode, then pick the ones you want (use **Select next 10**, **Select unread**, or **Select in between** to help), and tap the download icon in the bottom bar.
 
 ## Can I download multiple chapters or series at once?
 
@@ -43,4 +43,4 @@ Because downloads run on the server, a failure usually means the server lost acc
 
 ## Where are downloaded files stored?
 
-On the **server** — in the path set under **Settings → Downloads → Download location**. Tsumiru shows your series and chapters from the server's metadata, so there's nothing to manage in local files on your device.
+On the **server**, in the path set under **Settings → Downloads → Download location**. Tsumiru shows your series and chapters from the server's metadata, so there's nothing to manage in local files on your device.

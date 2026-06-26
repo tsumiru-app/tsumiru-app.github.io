@@ -69,3 +69,21 @@ provide('toggle-appearance', () => {
   }
 }
 </style>
+
+<!-- Non-scoped: tame VitePress's mobile hero negative margins. By default the
+     stacked hero pulls the image up (margin-top:-76px → the tilted phone's top
+     leaks into the nav) and pulls the heading up (margin-bottom:-48px → the
+     phone's bottom overlaps "Your Suwayomi library"). Our screenshot is taller
+     and tilted, so those overlaps are severe. Reset the margins and let the
+     image container reserve the phone's real height, with a clean gap below. -->
+<style>
+@media (max-width: 959px) {
+  .VPHero .image {
+    margin: 0 auto 2rem;
+  }
+
+  .VPHero .image-container {
+    height: auto;
+  }
+}
+</style>

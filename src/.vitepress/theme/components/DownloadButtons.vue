@@ -74,6 +74,7 @@ onMounted(() => {
 <style lang="stylus">
 .download-buttons {
   display: flex
+  flex-wrap: wrap
   gap: 0.75em
   justify-content: center
   align-items: center

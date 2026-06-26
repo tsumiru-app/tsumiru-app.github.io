@@ -6,14 +6,14 @@ description: Back up and restore your library, right from Tsumiru.
 
 # Backups
 
-Your library — series, categories, and read history — lives on your **Suwayomi server**, and Tsumiru can create and restore the server's backups directly. Open **Settings → Backup & Restore**.
+Your library (series, categories, and read history) lives on your **Suwayomi server**, and Tsumiru can create and restore the server's backups directly. Open **Settings → Backup & Restore**.
 
 A backup is a standard Suwayomi (Tachidesk) backup file, so it can be restored to any Suwayomi server.
 
 ## Create a backup
 
 1. Go to **Settings → Backup & Restore → Create Backup**.
-2. Choose what to include — **Categories** and/or **Chapters** (both on by default).
+2. Choose what to include: **Categories** and/or **Chapters** (both on by default).
 3. The server generates the backup file and hands it to you to download. Save it somewhere safe.
 
 ## Restore a backup
@@ -30,11 +30,11 @@ Restoring merges/overwrites library data on the server. Create a fresh backup fi
 
 Under **Settings → Backup & Restore → Automatic Backup** you can have the server back up on a schedule:
 
-* **Backup Location** — a path on the server where automatic backups are saved.
-* **Backup Time** — the time of day to run.
-* **Backup Interval** — how often, in days.
-* **Backup Cleanup** — how long to keep old backups before they're pruned.
+* **Backup Location**: a path on the server where automatic backups are saved.
+* **Backup Time**: the time of day to run.
+* **Backup Interval**: how often, in days.
+* **Backup Cleanup**: how long to keep old backups before they're pruned.
 
 ## What isn't in a backup
 
-The backup covers your **server-side** library. Tsumiru's own device-local preferences (reader settings, sort/filter/display choices) aren't part of it — you'd reconfigure those if you reinstall or switch devices. Note that because everything else is on the server, pointing a new device at the same server already restores your library and progress without a backup.
+The backup covers your **server-side** library. Tsumiru's own device-local preferences (reader settings, sort/filter/display choices) aren't part of it; you'd reconfigure those if you reinstall or switch devices. Note that because everything else is on the server, pointing a new device at the same server already restores your library and progress without a backup.

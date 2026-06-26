@@ -54,6 +54,7 @@ $info    = #2dd4bf
 }
 
 // === Indigo Night (dark) — the default appearance ===
+
 .dark {
   --vp-c-bg: $bg
   --vp-c-bg-alt: $bg2
@@ -85,7 +86,7 @@ $info    = #2dd4bf
   --vp-button-brand-active-text: #ffffff
 
   --vp-button-alt-bg: rgba(255, 255, 255, 0.05)
-  --vp-button-alt-hover-bg: rgba(255, 255, 255, 0.10)
+  --vp-button-alt-hover-bg: rgba(255, 255, 255, 0.1)
   --vp-button-alt-active-bg: rgba(255, 255, 255, 0.12)
   --vp-button-alt-border: $brd
   --vp-button-alt-hover-border: rgba(124, 123, 255, 0.5)
@@ -163,6 +164,7 @@ html:not(.dark) {
 }
 
 // Signature indigo→cyan gradient buttons (theme --grad: 135deg, #7c7bff → #33d6ff)
+
 .VPButton.brand,
 .download-button.primary {
   border: 0 !important
@@ -189,10 +191,11 @@ html:not(.dark) {
 
 // Custom-block colors from theme-kit indigo.css semantic tokens
 // (tip=accent indigo, warning=gold #ffcf5c, danger=#ff6b6b, info=#2dd4bf) — no muddy browns.
+
 :root {
   --vp-custom-block-tip-border: $accent
   --vp-custom-block-tip-text: darken($accent, 12%)
-  --vp-custom-block-tip-bg: rgba(124, 123, 255, 0.10)
+  --vp-custom-block-tip-bg: rgba(124, 123, 255, 0.1)
 
   --vp-custom-block-warning-border: $warning
   --vp-custom-block-warning-text: darken($warning, 28%)
@@ -204,7 +207,7 @@ html:not(.dark) {
 
   --vp-custom-block-info-border: $info
   --vp-custom-block-info-text: darken($info, 22%)
-  --vp-custom-block-info-bg: rgba(45, 212, 191, 0.10)
+  --vp-custom-block-info-bg: rgba(45, 212, 191, 0.1)
 }
 
 .dark {

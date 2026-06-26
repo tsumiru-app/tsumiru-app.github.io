@@ -48,6 +48,16 @@ const changelog = computed(() => formatChangelog(md, release[type.value].body))
   height: 100%
   margin: 1.5em auto 0.5em
 
+  // Release-note bodies are rendered via markdown-it + v-html, so their code
+  // fences become RAW <pre> (no VitePress div.language- wrapper / overflow
+  // rule). A long line — e.g. the flatpak repo URL — would otherwise widen the
+  // whole page and let it scroll sideways on mobile. Clip + scroll in-block.
+
+  pre {
+    overflow-x: auto
+    max-width: 100%
+  }
+
   header {
     display: flex
     justify-content: center

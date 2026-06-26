@@ -20,6 +20,19 @@ Tsumiru requires a running Suwayomi server to function. If you see a connection 
 * **Check your network.** If the server is on your local network, make sure your device is on the same network (not on mobile data). If accessing remotely, confirm your reverse proxy or port forwarding is set up correctly.
 * **Check authentication.** If your Suwayomi server requires a login, make sure the credentials in **Settings → Server** are correct.
 
+### "Test connection" couldn't confirm it's Suwayomi
+
+In the setup wizard, **Test connection** probes the address you typed and only reports success if it gets a genuine Suwayomi response. If you see *"Reachable, but doesn't look like a Suwayomi server"*:
+
+* **Check the port.** Tsumiru tries Suwayomi's default **4567** first, then the bare port (`:80` / `:443`). If your server runs on a different port, type it explicitly, e.g. `192.168.1.10:4568`. The message shows the exact address **and port** that answered, so you can see what was actually reached.
+* **You probably reached something else.** A bare LAN IP on `:80` is often a router's admin page or another app, not Suwayomi. Point Tsumiru at the host *and port* where Suwayomi is actually listening.
+* **Confirm Suwayomi is running** and reachable from this device by opening its web UI in a browser first.
+* **Behind a reverse proxy?** Enter its `https://` domain instead of the LAN IP. See Suwayomi's [server configuration docs](https://github.com/Suwayomi/Suwayomi-Server) for port and base-URL settings.
+
+### My server needs a login
+
+Tsumiru supports all of Suwayomi's authentication modes (**Basic auth**, **Simple login**, and **UI login**) as well as no auth. When a server is protected, the setup wizard detects it and prompts for your username and password, then works out the right mode for you. If it can't tell, choose the mode you configured on the server. For how each mode works, see [Suwayomi-Server](https://github.com/Suwayomi/Suwayomi-Server) and its configuration docs.
+
 ### Connected but library is empty
 
 Sources and extensions are managed on the **Suwayomi server**, not inside Tsumiru. If your library appears empty:
@@ -65,7 +78,7 @@ These errors appear when Tsumiru receives an unexpected HTTP response from your 
 Your server credentials are incorrect or have expired. Go to **Settings → Server** and re-enter your username and password.
 
 ### `HTTP Error: 403` - Forbidden
-The server or the source is refusing the request. Check that your server credentials are correct. If the source itself is returning 403, the source may be enforcing IP-based blocking or rate limits — this is a server-side issue to investigate in the Suwayomi server logs.
+The server or the source is refusing the request. Check that your server credentials are correct. If the source itself is returning 403, the source may be enforcing IP-based blocking or rate limits. This is a server-side issue to investigate in the Suwayomi server logs.
 
 ### `HTTP Error: 404` - Not Found
 The requested resource does not exist. The series or chapter may have been removed from the source.
