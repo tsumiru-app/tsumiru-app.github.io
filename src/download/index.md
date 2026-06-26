@@ -15,7 +15,7 @@ import Changelog from "@theme/components/Changelog.vue";
 
 # Download
 
-The latest version of **Tsumiru** was released **<ReleaseDate type="stable" />**. Pick your platform below — Tsumiru runs on **Android, Windows, macOS, Linux, and the web**.
+The latest version of **Tsumiru** was released **<ReleaseDate type="stable" />**. Pick your platform below. Tsumiru runs on **Android, Windows, macOS, Linux, and the web**.
 
 Tsumiru is a client for a [Suwayomi server](/docs/guides/getting-started); you'll need one running to read. New to it? Start with [Getting started](/docs/guides/getting-started).
 
@@ -27,7 +27,7 @@ Tsumiru signs every release with the same key, so updates install cleanly over t
 
 ## On Linux
 
-The recommended way to run Tsumiru on Linux is the **Flatpak** — it installs from our own signed repo (not Flathub), integrates with your desktop, and **auto-updates**:
+The recommended way to run Tsumiru on Linux is the **Flatpak**. It installs from our own signed repo (not Flathub), integrates with your desktop, and **auto-updates**:
 
 ```sh
 flatpak remote-add --if-not-exists tsumiru https://tsumiru-app.github.io/tsumiru/index.flatpakrepo
@@ -36,6 +36,6 @@ flatpak install tsumiru io.github.aaronbamblett.tsumiru
 
 Then launch it from your app menu, or with `flatpak run io.github.aaronbamblett.tsumiru`. Updates arrive with `flatpak update` (or automatically via your software centre).
 
-Prefer a portable single file? Grab the **Linux (AppImage)** above — `chmod +x` it and run, no repo and no install, but no auto-update.
+Prefer a portable single file? Grab the **Linux (AppImage)** above: `chmod +x` it and run. No repo, no install, but no auto-update.
 
 <Changelog type="stable" />
