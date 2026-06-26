@@ -64,8 +64,8 @@ onMounted(() => {
     <span class="version-disclaimer">
       Tsumiru <strong>{{ tagName }}</strong>.
       Android needs <strong>8.0</strong> or higher. On Android, use the
-      <strong>universal</strong> APK unless you know your device's ABI —
-      per-architecture builds are on the
+      <strong>universal</strong> APK unless you know your device's ABI.
+      Per-architecture builds are on the
       <a :href="releasePageUrl" target="_blank" rel="noopener">release page</a>.
     </span>
   </div>
