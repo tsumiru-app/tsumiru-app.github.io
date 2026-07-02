@@ -21,6 +21,12 @@ const themeConfig: DefaultTheme.Config = {
       link: 'https://github.com/Suwayomi/Suwayomi-Tsumiru',
       ariaLabel: 'Project GitHub',
     },
+    {
+      icon: 'discord',
+      // #suwayomi-tsumiru channel on the Suwayomi Discord.
+      link: 'https://discord.com/invite/DDZdqZWaHA',
+      ariaLabel: 'Suwayomi Discord (#suwayomi-tsumiru)',
+    },
   ],
 
   footer: {
