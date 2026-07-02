@@ -9,11 +9,12 @@ Frequently Asked Questions about the Library.
 
 ## How do I sort, filter, and change the layout?
 
-Tap the organizer icon in the Library toolbar for three tabs:
+Tap the organizer icon in the Library toolbar for four tabs:
 
-* **Filter**: show/hide by **Unread**, **Started**, **Completed**, **Bookmarked**, and **Downloaded** (each toggles include / exclude / off).
-* **Sort**: **Alphabetical**, **Date Added**, **Unread**, **Last Updated**, **Last Chapter Date**, **Total Chapters**, or **Last Read** (ascending or descending).
-* **Display**: **Grid**, **List**, or **Descriptive List**, plus **Downloaded** and **Unread** badges.
+* **Filter**: show/hide by **Unread**, **Started**, **Completed**, **Bookmarked**, **Downloaded**, and **On device** (each toggles include / exclude / off), filter by **tracker**, and include or exclude specific **categories**.
+* **Sort**: **Alphabetical**, **Date Added**, **Unread**, **Last Updated**, **Last Chapter Date**, **Total Chapters**, **Last Read** (the default), **Random**, or **Tracker score** (ascending or descending).
+* **Display**: **Grid**, **Cover-only grid**, **List**, or **Descriptive List**; column-count sliders for portrait and landscape; badges for **Downloaded**, **Unread**, **Language**, **Local**, and **Source**; the continue-reading button; and tab options (category tabs, item counts, showing hidden categories).
+* **Group**: group the library by **Source**, **Status**, or **Tracker status**, or leave it ungrouped.
 
 ## Can library entries jump to my next chapter?
 

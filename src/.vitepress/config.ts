@@ -41,6 +41,8 @@ export default defineConfig({
   description,
   sitemap: {
     hostname,
+    // Sandbox is noindexed; keep it out of the sitemap so signals agree.
+    transformItems: items => items.filter(i => !i.url.includes('sandbox')),
   },
   head: headConfig,
   markdown: markdownConfig,
@@ -56,7 +58,7 @@ export default defineConfig({
         let publishedAt = releaseDateCache.get(tag)
         if (!publishedAt) {
           try {
-            const { data } = await octokit.repos.getReleaseByTag({ owner: 'tsumiru-app', repo: 'tsumiru', tag })
+            const { data } = await octokit.repos.getReleaseByTag({ owner: 'Suwayomi', repo: 'Suwayomi-Tsumiru', tag })
             publishedAt = data.published_at || data.created_at || ''
             if (publishedAt)
               releaseDateCache.set(tag, publishedAt)

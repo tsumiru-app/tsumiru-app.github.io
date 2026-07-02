@@ -4,8 +4,8 @@ export default {
   async paths() {
     const octokit = new Octokit()
     const releases = await octokit.paginate(octokit.repos.listReleases, {
-      owner: 'tsumiru-app',
-      repo: 'tsumiru',
+      owner: 'Suwayomi',
+      repo: 'Suwayomi-Tsumiru',
       per_page: 100,
     })
 

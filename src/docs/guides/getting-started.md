@@ -15,7 +15,7 @@ If you don't already have one, you'll need a running Suwayomi-Server. It's free 
 * **Suwayomi-Server:** [github.com/Suwayomi/Suwayomi-Server](https://github.com/Suwayomi/Suwayomi-Server)
 * Follow its README to install the server and add your source extensions there.
 
-> Suwayomi-Server is what manages sources and extensions. Tsumiru does not install extensions itself; once they're set up on the server, every connected client can use them.
+> Suwayomi-Server is where sources and extensions run — but you don't have to leave Tsumiru to manage them. **Browse → Extensions** installs them onto the server for you, and every connected client can then use them. See [Browse: sources & extensions](/docs/guides/browse-and-extensions).
 
 ## 2. Download Tsumiru
 

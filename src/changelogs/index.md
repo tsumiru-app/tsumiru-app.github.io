@@ -13,6 +13,6 @@ import ChangelogsList from "@theme/components/ChangelogsList.vue";
 
 # Changelogs
 
-Changelogs of all Tsumiru releases, which are also available [on GitHub](https://github.com/tsumiru-app/tsumiru/releases).
+Changelogs of all Tsumiru releases, which are also available [on GitHub](https://github.com/Suwayomi/Suwayomi-Tsumiru/releases).
 
 <ChangelogsList />

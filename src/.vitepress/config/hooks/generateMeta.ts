@@ -41,7 +41,7 @@ function generateMeta(context: TransformContext, hostname: string) {
   if (pageData.frontmatter.customMetaTitle) {
     addPropertyTag('og:title', pageData.frontmatter.customMetaTitle)
     addMetaTag('twitter:title', pageData.frontmatter.customMetaTitle)
-    addPropertyTag('og:site_name', '')
+    addPropertyTag('og:site_name', 'Tsumiru')
   }
   else {
     addPropertyTag('og:title', pageData.frontmatter.title)

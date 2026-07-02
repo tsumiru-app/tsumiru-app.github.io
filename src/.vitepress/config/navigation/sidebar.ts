@@ -18,6 +18,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           text: 'Changelogs',
           link: '/changelogs/',
         },
+        {
+          text: 'Compare readers',
+          link: '/docs/compare/',
+        },
       ],
     },
     {
@@ -26,6 +30,18 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
         {
           text: 'Getting started',
           link: '/docs/guides/getting-started',
+        },
+        {
+          text: 'Coming from Mihon or Komikku',
+          link: '/docs/guides/migrate-from-mihon',
+        },
+        {
+          text: 'Install on iOS (sideloading)',
+          link: '/docs/guides/install-ios',
+        },
+        {
+          text: 'Browse: sources & extensions',
+          link: '/docs/guides/browse-and-extensions',
         },
         {
           text: 'Reader settings',
@@ -37,6 +53,7 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
         },
         { text: 'Categories', link: '/docs/guides/categories' },
         { text: 'Tracking', link: '/docs/guides/tracking' },
+        { text: 'Migrate manga between sources', link: '/docs/guides/source-migration' },
         { text: 'Backups', link: '/docs/guides/backups' },
         {
           text: 'Troubleshooting',
@@ -46,6 +63,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
             {
               text: 'Common issues',
               link: '/docs/guides/troubleshooting/common-issues',
+            },
+            {
+              text: 'Diagnosis',
+              link: '/docs/guides/troubleshooting/diagnosis',
             },
           ],
         },

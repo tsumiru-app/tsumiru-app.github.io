@@ -24,6 +24,10 @@ Your Suwayomi server connects to third-party sources and, optionally, tracking s
 
 If you open an external link from within the app, you'll be taken to a site we don't operate; review that site's own privacy policy.
 
+## This website
+
+The same goes for tsumiru.app itself: this site sets no cookies and runs no analytics or trackers of any kind.
+
 ## Changes to this policy
 
 We may update this policy from time to time. Any changes will be published on this page.

@@ -15,6 +15,7 @@ Tsumiru's settings are split into these sections:
 * **Reader**: reading mode and all reader behaviour (see [Reader settings](/docs/guides/reader-settings)).
 * **Browse**: source/server browse options.
 * **Backup & Restore**: create and restore server backups (see [Backups](/docs/guides/backups)).
+* **Tracking**: connect tracker accounts like AniList (see [Tracking](/docs/guides/tracking)).
 * **Server**: the Suwayomi server's own admin config (bindings, proxy, Cloudflare, and so on). This configures the server itself, not how this app connects to it.
 
 How Tsumiru **connects** to the server (the address, port, and sign-in) lives separately under **More → Connection**.

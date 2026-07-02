@@ -1,5 +1,7 @@
 ---
-title: Home
+title: Tsumiru — offline manga & webtoon reader for Suwayomi
+titleTemplate: false
+description: Free open-source manga and manhwa reader for your Suwayomi server. Read offline, built for webtoons, on Android, iOS, Windows, macOS, Linux, and the web.
 layout: home
 
 hero:

@@ -40,27 +40,6 @@ If your Suwayomi server has authentication enabled:
 
 The quickest way to grab a log for a bug report is the **Copy log** action at the bottom of Settings, which copies the app's latest log to your clipboard. If Tsumiru ever fails to start, the error screen shows the same copy-log button, so you can still get the log when the app won't open.
 
-For deeper crash investigations, navigate to **Settings → Advanced** and tap **Dump crash logs**.
-
-<img
-  class="only-light"
-  src="/docs/guides/troubleshooting/dump-crash-logs.dark.webp"
-  alt="Dump crashlogs"
-  width="512"
-  height="386"
-  loading="lazy"
-  decoding="async"
-/>
-<img
-  class="only-dark"
-  src="/docs/guides/troubleshooting/dump-crash-logs.dark.webp"
-  alt="Dump crashlogs"
-  width="512"
-  height="386"
-  loading="lazy"
-  decoding="async"
-/>
-
 ### Obtaining more logs
 
 To diagnose abnormal app behavior on Android, record device logs using a [Logcat Reader](https://github.com/darshanparajuli/LogcatReader/releases).

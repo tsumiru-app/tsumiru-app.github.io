@@ -3,13 +3,14 @@ import { computed, onMounted, ref } from 'vue'
 import { data as release } from '../data/release.data'
 
 interface Platform {
-  key: 'android' | 'windows' | 'macos' | 'linux' | 'web'
+  key: 'android' | 'ios' | 'windows' | 'macos' | 'linux' | 'web'
   label: string
   match: RegExp
 }
 
 const PLATFORMS: Platform[] = [
   { key: 'android', label: 'Android', match: /-android-universal\.apk$/ },
+  { key: 'ios', label: 'iOS (sideload)', match: /-ios\.ipa$/ },
   { key: 'windows', label: 'Windows', match: /-windows-x64\.zip$/ },
   { key: 'macos', label: 'macOS', match: /-macos-x64\.zip$/ },
   { key: 'linux', label: 'Linux (AppImage)', match: /-linux-x86_64\.AppImage$/ },
@@ -35,6 +36,8 @@ onMounted(() => {
   const ua = navigator.userAgent
   if (/android/i.test(ua))
     current.value = 'android'
+  else if (/iphone|ipad|ipod/i.test(ua))
+    current.value = 'ios'
   else if (/windows/i.test(ua))
     current.value = 'windows'
   else if (/mac os x|macintosh/i.test(ua))
@@ -67,6 +70,8 @@ onMounted(() => {
       <strong>universal</strong> APK unless you know your device's ABI.
       Per-architecture builds are on the
       <a :href="releasePageUrl" target="_blank" rel="noopener">release page</a>.
+      The iOS build is unsigned — see
+      <a href="/docs/guides/install-ios">installing on iOS</a> before downloading it.
     </span>
   </div>
 </template>
