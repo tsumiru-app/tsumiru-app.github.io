@@ -26,4 +26,4 @@ Yes. Connect the trackers your Suwayomi server supports, bind one to a series, a
 **Tsumiru** is not designed for anime streaming.
 
 ## What's a fork?
-A fork is a copy of an open-source app that develops in its own direction. Tsumiru is one: it started from Tachidesk-Sorayomi and has grown its own features (offline reading, the webtoon reader, the library organizer).
+A fork is a copy of an open-source app that develops in its own direction. Tsumiru began as a fork of another Suwayomi client and has grown its own features (offline reading, the webtoon reader, the library organizer).

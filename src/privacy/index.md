@@ -1,6 +1,6 @@
 ---
 title: Privacy policy
-description: How Tsumiru handles your data: it doesn't collect any.
+description: "How Tsumiru handles your data: it doesn't collect any."
 editLink: false
 ---
 

@@ -42,4 +42,4 @@ If you're on Mihon already, your library moves over in one backup file: [Coming 
 
 ## Where Tsumiru sits
 
-Tsumiru is a fork of Tachidesk-Sorayomi, heavily extended, and younger than Mihon. It never talks to sources directly, and your device's content is always a subset of what the server has. If the client-server model fits how you read, Tsumiru is the client built around it; if not, use one of the other two.
+Tsumiru is younger than Mihon. It never talks to sources directly, and your device's content is always a subset of what the server has. If the client-server model fits how you read, Tsumiru is the client built around it. If not, use one of the other two.
