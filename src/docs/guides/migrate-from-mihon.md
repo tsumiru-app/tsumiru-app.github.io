@@ -6,13 +6,13 @@ description: "Switch from Mihon or Komikku to Tsumiru: restore your .tachibk bac
 
 # Coming from Mihon or Komikku
 
-If you read in Mihon or Komikku today, your library can come with you. Suwayomi restores Mihon's backup format directly, so the whole move is one backup file. This guide walks through it.
+Suwayomi restores Mihon's backup format directly, so moving from Mihon or Komikku is one backup file: create it there, restore it here.
 
 ## What actually changes
 
 One conceptual shift: in Mihon, sources and extensions run on your phone. With Tsumiru, they run on your **Suwayomi server**, and Tsumiru is a client you point at it, on as many devices as you like.
 
-The honest tradeoff: you need to run a server. In exchange, every device shows the same library, the same categories, and the same reading progress, and your phone is no longer the only copy of your reading life. If running a server isn't for you, Mihon remains the better fit; see [how they compare](/docs/compare/).
+The tradeoff: you run a server. In exchange, every device shows the same library, categories, and reading progress, and your phone is no longer the only copy of your library. If running a server isn't for you, Mihon remains the better fit; see [how they compare](/docs/compare/).
 
 ## 1. Set up a Suwayomi server
 

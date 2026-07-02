@@ -8,7 +8,7 @@ description: Install manga source extensions on your Suwayomi server from Tsumir
 
 The **Browse** tab is where you find manga. It has two tabs: **Sources** lists every source you can browse, and **Extensions** is where you install the extensions that provide those sources.
 
-One thing to understand up front: **extensions don't install into Tsumiru — they install onto your Suwayomi server.** Install an extension from your phone and its sources appear on the desktop and web apps too, because every client shares the server's set.
+**Extensions don't install into Tsumiru — they install onto your Suwayomi server.** Install an extension from your phone and its sources appear on the desktop and web apps too, because every client shares the server's set.
 
 ## The Extensions tab
 

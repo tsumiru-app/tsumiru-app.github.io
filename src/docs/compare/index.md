@@ -1,11 +1,11 @@
 ---
 title: Tsumiru vs Mihon vs Suwayomi WebUI
-description: "An honest comparison of Tsumiru, Mihon/Komikku, and Suwayomi WebUI: where sources run, multi-device sync, offline reading, platforms, and setup effort."
+description: "How Tsumiru, Mihon/Komikku, and Suwayomi WebUI compare: where sources run, multi-device sync, offline reading, platforms, and setup effort."
 ---
 
 # Tsumiru vs Mihon vs Suwayomi WebUI
 
-These three overlap a lot, and each is genuinely the right choice for someone. Here's the honest version.
+These three overlap a lot. Which one fits comes down to one question: do you want your library on your phone, or on a server?
 
 A note on names: **Komikku** is a Mihon fork with extra features (a richer library organizer, among other things). For this comparison they behave the same way, so they're treated as one column. **Suwayomi WebUI** is the web interface that ships with Suwayomi-Server itself.
 
@@ -24,15 +24,15 @@ A note on names: **Komikku** is a Mihon fork with extra features (a richer libra
 
 ## Pick Mihon (or Komikku) if…
 
-You read on **one Android device** and don't want to run a server. That's most people, and it's a completely reasonable place to be. Setup is one APK, everything lives on the phone, and the ecosystem around it is the largest of the three. Komikku is worth a look over stock Mihon if you want more library organization out of the box.
+You read on **one Android device** and don't want to run a server. Setup is one APK, everything lives on the phone, and the ecosystem around it is the largest of the three. Komikku is worth a look over stock Mihon if you want more library organization out of the box.
 
-The cost you're accepting: your phone is the single copy of your library, and moving to a second device means shuttling backup files by hand.
+The cost: your phone is the single copy of your library, and moving to a second device means shuttling backup files by hand.
 
 ## Pick Tsumiru if…
 
 You read on **more than one device**, or you already self-host. Your library, categories, progress, and downloads live on your Suwayomi server; Tsumiru clients on your phone, desktop, and browser all see the same state, with no sync step. Offline reading is per-series keep rules rather than manual download queues, and webtoon reading is what the app is built around.
 
-The cost you're accepting: you have to run Suwayomi-Server somewhere, and keep it running. If that sentence sounds like a chore rather than a Tuesday, start with Mihon.
+In exchange, you have to run Suwayomi-Server somewhere, and keep it running. If keeping a server running sounds like a chore, start with Mihon.
 
 Already on Mihon and curious? Your library moves over in one backup file: [Coming from Mihon or Komikku](/docs/guides/migrate-from-mihon).
 
@@ -42,4 +42,4 @@ Already on Mihon and curious? Your library moves over in one backup file: [Comin
 
 ## Where Tsumiru sits
 
-Tsumiru is a fork of Tachidesk-Sorayomi, heavily extended, and younger than Mihon. It doesn't try to replace your server; it never talks to sources directly, and your device's content is always a subset of what the server has. If the client-server model fits how you read, that's the pitch. If it doesn't, one of the other two columns is your answer, and that's fine.
+Tsumiru is a fork of Tachidesk-Sorayomi, heavily extended, and younger than Mihon. It never talks to sources directly, and your device's content is always a subset of what the server has. If the client-server model fits how you read, Tsumiru is the client built around it; if not, use one of the other two columns.

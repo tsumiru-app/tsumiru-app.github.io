@@ -6,7 +6,7 @@ description: Move a series to a different source when one dies or breaks, carryi
 
 # Migrate manga between sources
 
-Sources come and go. A site shuts down, an extension breaks, or another source simply has better scans. Migration moves a series in your library from one source to another **without losing your place**: the new entry takes over, and your reading progress, categories, and tracking come along.
+Sources come and go. A site shuts down, an extension breaks, or another source has better scans. Migration moves a series in your library from one source to another **without losing your place**: the new entry takes over, and your reading progress, categories, and tracking come along.
 
 ## Start a migration
 
@@ -36,7 +36,7 @@ Under **Migration Options** you choose what carries over:
 
 By default chapters, categories, and delete are on and tracking is off. The **Quick** preset is the safe pick: chapters and categories on, and the original kept in your library so you can verify the new entry before removing the old one yourself. **Custom** just means you've changed the switches.
 
-Tap **Start Migration**, confirm the from/to titles, and a progress screen takes it from there. When it finishes you get a summary of what moved, with warnings for anything that couldn't.
+Tap **Start Migration** and confirm the from/to titles; the migration runs with a progress screen, and when it finishes you get a summary of what moved, with warnings for anything that couldn't.
 
 ::: warning No undo
 Migration can't be reversed. If **Delete Source Manga** is on, the original leaves your library when it completes — double-check you picked the right target first.

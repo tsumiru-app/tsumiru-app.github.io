@@ -6,7 +6,7 @@ description: Install Tsumiru on iPhone or iPad by sideloading the unsigned .ipa 
 
 # Install on iOS (sideloading)
 
-There is **no App Store build** of Tsumiru. Every release ships an **unsigned `.ipa`**, and Apple won't let an iPhone run an app that isn't signed — so you can't just download it and tap Install. Instead, a sideloading tool signs the app **to your own Apple account** on your own device. It's a few extra steps the first time, and entirely doable.
+There is **no App Store build** of Tsumiru. Every release ships an **unsigned `.ipa`**, and Apple won't let an iPhone run an app that isn't signed — so you can't just download it and tap Install. Instead, a sideloading tool signs the app **to your own Apple account** on your own device.
 
 ## 1. Grab the .ipa
 
@@ -34,12 +34,10 @@ AltStore works the same way but does its re-signing through **AltServer**, a com
 
 TrollStore exploits a signing bug to install apps **permanently** — no expiry, no refreshing, ever. The catch: that bug only exists on certain iOS versions (roughly iOS 14.0–16.6.1, plus 16.7 RC and 17.0; anything newer will never be supported). If your device is on a supported version, this is the most hassle-free option. Check the install guide to see if yours qualifies.
 
-## The re-signing reality
-
-Worth knowing before you commit:
+## Expiry and account limits
 
 * With a **free** Apple account, sideloaded apps expire after **7 days** and you can have at most **3 sideloaded apps** installed at once. SideStore and AltStore both automate the re-signing; your reading data isn't affected by a refresh — an expired app just won't open until it's refreshed.
-* A **paid** Apple Developer account ($99/year) extends signing to a year and lifts the 3-app cap. Not required, just more comfortable.
+* A **paid** Apple Developer account ($99/year) extends signing to a year and lifts the 3-app cap. Not required — it matters only if the 7-day refresh or the 3-app cap bites you.
 * **TrollStore** skips all of this, on the iOS versions where it works.
 
 ## Updating Tsumiru
