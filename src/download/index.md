@@ -30,9 +30,11 @@ Tsumiru signs every release with the same key, so updates install cleanly over t
 The recommended way to run Tsumiru on Linux is the **Flatpak**. It installs from our own signed repo (not Flathub), integrates with your desktop, and **auto-updates**:
 
 ```sh
-flatpak remote-add --if-not-exists tsumiru https://tsumiru-app.github.io/tsumiru/index.flatpakrepo
+flatpak remote-add --if-not-exists tsumiru https://suwayomi.github.io/Suwayomi-Tsumiru/index.flatpakrepo
 flatpak install tsumiru io.github.aaronbamblett.tsumiru
 ```
+
+> Added the `tsumiru` remote before? It may still point at the old `tsumiru-app.github.io` URL. Run `flatpak remote-delete tsumiru` first, then the commands above.
 
 Then launch it from your app menu, or with `flatpak run io.github.aaronbamblett.tsumiru`. Updates arrive with `flatpak update` (or automatically via your software centre).
 

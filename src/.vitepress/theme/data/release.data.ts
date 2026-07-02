@@ -17,8 +17,8 @@ export { data }
 export default defineLoader({
   async load(): Promise<AppRelease> {
     const { data: stable } = await octokit.repos.getLatestRelease({
-      owner: 'tsumiru-app',
-      repo: 'tsumiru',
+      owner: 'Suwayomi',
+      repo: 'Suwayomi-Tsumiru',
     })
 
     // Tsumiru has no separate preview/beta channel; mirror the stable release.
