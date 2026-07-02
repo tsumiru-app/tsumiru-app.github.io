@@ -20,16 +20,16 @@ There are two ways to save chapters offline.
 
 ### Keep a whole series offline
 
-On a series page, tap **Keep offline** (next to **In Library**) to choose a rule. Tsumiru then keeps the matching chapters on your device automatically, and tops them up whenever new chapters are downloaded on the server:
+On a series page, tap **Offline** (next to **In library**) to choose a rule. Once chapters are saved it reads **On device**. Tsumiru then keeps the matching chapters on your device automatically, and tops them up whenever new chapters are downloaded on the server:
 
-* **Next 5 / 10 / 25 unread**: a rolling buffer of upcoming chapters, refilled as you read.
-* **All unread**: every unread chapter.
-* **All**: every chapter in the series.
+* **Keep next 5 / 10 / 25 unread**: a rolling buffer of upcoming chapters, refilled as you read.
+* **Keep all unread**: every unread chapter.
+* **Keep all chapters**: every chapter in the series.
 
-The series' current keep mode is shown on its title, so it's clear why chapters are being kept.
+The series page shows its current keep mode, so it's clear why chapters are being kept.
 You can also keep several series offline at once: select them in the library, choose **Keep offline**, and pick how much of each to keep.
 
-To stop keeping a series offline, open the same sheet and choose **Remove downloads**, which clears the rule and deletes that series' chapters from the device. Your server library is untouched.
+To stop keeping a series offline, open the same sheet and choose **Remove all (this series)**, which clears the rule and deletes that series' chapters from the device. To drop the rule but keep the files, use **Downloads → On device**, where each series offers **Stop keeping (keep files)** or **Stop keeping & delete files**. Your server library is untouched either way.
 
 ### Save individual chapters
 
@@ -62,7 +62,7 @@ To see only what you can read offline, open the library **filter** and turn on *
 
 ## Managing storage
 
-The **Downloads** screen has two tabs: **Server** (what your Suwayomi server is downloading) and **On device** (what's stored locally). Open **Downloads → On device** to see everything on this device: total **storage used**, and a row per series with its chapter count and size. From a series page you can **Remove downloads** for that series, and individual chapters can be removed with their pin button.
+The **Downloads** screen has two tabs: **Server** (what your Suwayomi server is downloading) and **On device** (what's stored locally). Open **Downloads → On device** to see everything on this device: total **storage used**, and a row per series with its chapter count and size. From a series page you can **Delete on-device downloads** for that series, and individual chapters can be removed with their pin button.
 
 You can **pause** and **resume** the on-device download queue from the same screen, so a large batch doesn't have to run all at once.
 
@@ -79,7 +79,7 @@ Categories can also download on their own: pick which ones under the download se
 
 Three optional safety nets keep offline storage from growing without limit. All are **off** by default, and none ever removes chapters you've **pinned** by hand:
 
-* **Delete after reading**: remove an auto-kept chapter once you finish it, so storage doesn't pile up. Set it per device or for the server under **Settings → Downloads**.
+* **Delete finished chapters while reading**: remove an auto-kept chapter once you finish it, so storage doesn't pile up. Set it per device or for the server under **Settings → Downloads**.
 * **Limit offline storage**: set a ceiling (default 2 GB). When you go over it, the oldest auto-kept chapters are removed first.
 * **Auto-remove old downloads**: delete auto-kept chapters older than a set age (default 30 days).
 

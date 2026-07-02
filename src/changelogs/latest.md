@@ -17,8 +17,8 @@ onMounted(async () => {
   try {
     const octokit = new Octokit()
     const { data } = await octokit.repos.listReleases({
-      owner: 'tsumiru-app',
-      repo: 'tsumiru',
+      owner: 'Suwayomi',
+      repo: 'Suwayomi-Tsumiru',
       per_page: 1,
     })
 

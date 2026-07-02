@@ -6,9 +6,7 @@ description: Facing connection or app issues with Tsumiru? Here's how to trouble
 
 # Troubleshooting
 
-Facing connection or app issues with Tsumiru? Here's how to troubleshoot.
-
-Be sure to check the [Frequently Asked Questions](/docs/faq/general) for how to address common issues too.
+Most Tsumiru problems are connection problems: the app can't reach your Suwayomi server, or reaches the wrong thing. Start here, then check the [FAQ](/docs/faq/general).
 
 ## Server connection
 
@@ -38,7 +36,7 @@ If your Suwayomi server has authentication enabled:
 
 ### Obtaining crash/error logs
 
-The quickest way to grab a log for a bug report is the **Copy log** action at the bottom of Settings, which copies the app's latest log to your clipboard. If Tsumiru ever fails to start, the error screen shows the same copy-log button, so you can still get the log when the app won't open.
+The quickest way to grab a log for a bug report is the **Copy crash log** action at the bottom of Settings, which copies the app's latest log to your clipboard. If Tsumiru ever fails to start, the error screen shows the same copy-crash-log button, so you can still get the log when the app won't open.
 
 ### Obtaining more logs
 

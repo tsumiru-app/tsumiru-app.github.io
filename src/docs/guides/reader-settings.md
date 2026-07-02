@@ -22,7 +22,7 @@ You can set a different mode for an individual series from the in-reader quick s
 
 ## Navigation & gestures
 
-* **Navigation layout**: tap-zone layout for paging: Default, L-Shaped, Right and Left, Edge, Kindle-ish, or Disabled (default is Disabled; tap anywhere to toggle the overlay).
+* **Navigation layout**: tap-zone layout for paging: Default, L Shaped, Right And Left, Edge, Kindle-ish, or Disabled (default is Disabled; tap anywhere to toggle the overlay).
 * **Invert tapping**: reverse the tap directions.
 * **Swipe toggle**: swipe to change chapter. **Last page swipe** restricts that to the last/first page only.
 * **Pinch to Zoom**: pinch to zoom, including in the continuous/webtoon reader *(Android & iOS)*.
@@ -40,6 +40,6 @@ You can set a different mode for an individual series from the in-reader quick s
 * **Reader initial overlay**: show the title and quick settings when you open a chapter.
 * **Ignore Safe Area**: let content extend into the notch and home-indicator areas *(Android & iOS)*.
 * **Keep screen on**: hold the screen awake while you're reading so it doesn't dim or lock (on by default).
-* **Silence reader messages**: hide the reader's feedback toasts (such as "no more chapters") while you read.
+* **Reading feedback toasts**: turn off to hide the reader's feedback toasts (such as "no more chapters") while you read.
 
 The page number, chapter-skip buttons, bookmark toggle, reading-mode switch, and the settings drawer all live in the reader's bottom bar; tap to bring up the overlay.

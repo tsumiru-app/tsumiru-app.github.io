@@ -36,10 +36,10 @@ The restore happens on the server, and Tsumiru can drive it:
 2. Pick your `.tachibk` file.
 3. Tsumiru validates it first and lists any **missing sources**. If some are missing, install those extensions (next step) and run the restore again so everything resolves.
 
-You can also restore through the server's own WebUI if you prefer; the result is the same.
+You can also restore through the server's own WebUI. The result is the same.
 
 ::: warning
-Restoring merges into whatever library the server already has. On a fresh server that's a non-issue; on an existing one, create a server backup first.
+Restoring merges into whatever library the server already has. On an existing server, create a server backup first (a fresh server has nothing to overwrite).
 :::
 
 ## 4. Install matching extensions
@@ -59,7 +59,7 @@ Once installed on the server, the sources are available to every device you conn
 
 * **Downloaded chapter files.** Mihon's own backups never include them, so there's nothing to transfer. You'll re-download on the server side; see the next section.
 * **Local series** (Mihon's local source) travel as entries, not files. Copy the files to your server's local source directory if you use it.
-* **Mihon's app settings.** Tsumiru is a different app; reader and appearance preferences are set up fresh.
+* **Mihon's app settings.** Tsumiru is a different app, so reader and appearance preferences are set up fresh.
 * **Custom covers** aren't in Mihon backups.
 
 Tracker bindings are part of the Mihon backup format, but check the [Suwayomi restore notes](https://github.com/Suwayomi/Suwayomi-Server) for what a restore preserves on the server side. Either way you'll sign in to each tracker again; see below.

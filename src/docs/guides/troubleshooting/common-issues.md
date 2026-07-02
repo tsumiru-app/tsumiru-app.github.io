@@ -6,9 +6,6 @@ description: Facing issues connecting Tsumiru to your server or loading content?
 
 # Common issues
 
-Facing issues connecting Tsumiru to your server or loading content?
-Here's how to tackle common challenges.
-
 ## Connection issues
 
 ### Tsumiru can't connect to my server
@@ -22,7 +19,7 @@ Tsumiru requires a running Suwayomi server to function. If you see a connection 
 
 ### "Test connection" couldn't confirm it's Suwayomi
 
-In the setup wizard, **Test connection** probes the address you typed and only reports success if it gets a genuine Suwayomi response. If you see *"Reachable, but doesn't look like a Suwayomi server"*:
+In the setup wizard, **Test connection** probes the address you typed and only reports success if it gets a genuine Suwayomi response. If you see *"Reached …, but it didn't respond as a Suwayomi server"*:
 
 * **Check the port.** Tsumiru tries Suwayomi's default **4567** first, then the bare port (`:80` / `:443`). If your server runs on a different port, type it explicitly, e.g. `192.168.1.10:4568`. The message shows the exact address **and port** that answered, so you can see what was actually reached.
 * **You probably reached something else.** A bare LAN IP on `:80` is often a router's admin page or another app, not Suwayomi. Point Tsumiru at the host *and port* where Suwayomi is listening.

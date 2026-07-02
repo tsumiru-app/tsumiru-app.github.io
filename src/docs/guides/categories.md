@@ -27,7 +27,7 @@ Pair this with [Incognito mode](/docs/faq/settings#does-tsumiru-have-an-incognit
 
 ## Add a series to categories
 
-Open a series, then use its **Edit categories** option and tick every category you want it in (a series can be in several at once). Untick to remove it.
+Open a series, then use its **Edit Category** option and tick every category you want it in (a series can be in several at once). Untick to remove it.
 
 ## Updating by category
 

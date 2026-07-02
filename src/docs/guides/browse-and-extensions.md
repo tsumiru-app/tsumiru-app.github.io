@@ -23,7 +23,7 @@ Extensions with adult content are marked **18+** in red.
 
 ### Install from a file
 
-Have an extension as an `.apk` file that isn't in any repository? On the Extensions tab, tap the **+** icon in the toolbar and pick the file. It uploads to your server and installs like any other extension.
+If you have an extension as an `.apk` file that isn't in any repository: on the Extensions tab, tap the **+** icon in the toolbar and pick the file. It uploads to your server and installs like any other extension.
 
 ## Extension repositories
 

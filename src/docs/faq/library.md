@@ -11,14 +11,14 @@ Frequently Asked Questions about the Library.
 
 Tap the organizer icon in the Library toolbar for four tabs:
 
-* **Filter**: show/hide by **Unread**, **Started**, **Completed**, **Bookmarked**, **Downloaded**, and **On device** (each toggles include / exclude / off), filter by **tracker**, and include or exclude specific **categories**.
-* **Sort**: **Alphabetical**, **Date Added**, **Unread**, **Last Updated**, **Last Chapter Date**, **Total Chapters**, **Last Read** (the default), **Random**, or **Tracker score** (ascending or descending).
+* **Filter**: show/hide by **Unread**, **Started**, **Completed**, **Bookmarked**, **Downloaded**, and **On device** (each toggles include / exclude / off), filter by **Tracked**, and include or exclude specific **categories**.
+* **Sort**: **Alphabetical**, **Date Added**, **Unread**, **Chapter Fetch Date**, **Latest Chapter**, **Total Chapters**, **Last Read** (the default), **Random**, or **Tracker score** (ascending or descending).
 * **Display**: **Grid**, **Cover-only grid**, **List**, or **Descriptive List**; column-count sliders for portrait and landscape; badges for **Downloaded**, **Unread**, **Language**, **Local**, and **Source**; the continue-reading button; and tab options (category tabs, item counts, showing hidden categories).
-* **Group**: group the library by **Source**, **Status**, or **Tracker status**, or leave it ungrouped.
+* **Group**: group the library **By source**, **By status**, or **By track status**, keep the **Default** category tabs, or pick **Ungrouped** for one flat tab.
 
 ## Can library entries jump to my next chapter?
 
-Yes. Turn on the **continue-reading button** in the library display settings (off by default), and each entry gets a button that opens your next unread chapter directly, without going through the series page first.
+Yes. Turn on the **Continue reading button** in the library display settings (off by default), and each entry gets a button that opens your next unread chapter directly, without going through the series page first.
 
 ## What happens when a source site is down?
 
@@ -40,7 +40,7 @@ In **Settings → Library → Skip updating entries** you can skip entries:
 * **That haven't been started**
 * **With unread chapter(s)**
 
-This reduces unnecessary requests. We recommend reading your unread chapters and letting the server update the rest.
+This reduces unnecessary requests.
 
 ## Where do I see recently updated chapters?
 

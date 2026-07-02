@@ -1,6 +1,6 @@
 ---
 title: Privacy policy
-description: How Tsumiru handles your data. Short version, it doesn't collect any.
+description: How Tsumiru handles your data: it doesn't collect any.
 editLink: false
 ---
 
@@ -8,7 +8,7 @@ editLink: false
 
 Tsumiru is a free, open-source app. It is provided at no cost and is intended for use as is.
 
-**Tsumiru does not collect, store, or transmit any personal information to us or to any third party.** There is no analytics, no crash reporting, no telemetry, and no account with us.
+**Tsumiru does not collect, store, or transmit any personal information to us or to any third party.** There are no analytics, no crash reporting, no telemetry, and no account with us.
 
 ## How Tsumiru works
 
@@ -26,7 +26,7 @@ If you open an external link from within the app, you'll be taken to a site we d
 
 ## This website
 
-The same goes for tsumiru.app itself: this site sets no cookies and runs no analytics or trackers of any kind.
+The same goes for tsumiru.app itself: this site sets no cookies and runs no analytics or trackers.
 
 ## Changes to this policy
 

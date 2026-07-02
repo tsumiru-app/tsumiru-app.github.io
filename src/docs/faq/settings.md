@@ -30,8 +30,8 @@ Under **More → Connection → Authentication**, pick an **Authentication Type*
 
 * **None**: no authentication.
 * **Basic Auth**: HTTP basic auth (username + password), e.g. when your server sits behind a reverse proxy.
-* **Simple Login**: Suwayomi's native simple login.
-* **UI Login (recommended)**: Suwayomi's native UI login.
+* **Simple Login**: the server's older username-and-password sign-in.
+* **UI Login (recommended)**: the sign-in the server's own web UI uses. Tsumiru signs in once and stays signed in.
 
 Enter your **Credentials** for the chosen type. Use **Log out** to clear stored credentials. Credentials are kept in your device's secure storage.
 
@@ -45,11 +45,11 @@ Under **Settings → General → Timeout Settings** you can raise the **Server R
 
 ## Does Tsumiru have an incognito mode?
 
-**Yes.** Turn on **Incognito mode** from the **More** menu and Tsumiru stops recording reading history and "last read" progress while it's active. You can read or catch up on something without it showing up in your history or reordering your library. While it's on, an app-wide banner keeps the state visible; tap the banner to switch it back off. It's **session-only**, so it also resets whenever you restart the app.
+Yes. Turn on **Incognito mode** from the **More** menu and Tsumiru stops recording reading history and "last read" progress while it's active. You can read or catch up on something without it showing up in your history or reordering your library. While it's on, an app-wide banner keeps the state visible. Tap the banner to switch it back off. It's **session-only**, so it also resets whenever you restart the app.
 
 Incognito works well with **hideable categories** (see [Categories](/docs/guides/categories)), which keep chosen library tabs off the main view entirely.
 
-This is a [Komikku](https://github.com/komikku-app/komikku)-style feature. Mihon doesn't have it.
+This is a [Komikku](https://github.com/komikku-app/komikku)-style feature.
 
 ## How do I hide adult content?
 
