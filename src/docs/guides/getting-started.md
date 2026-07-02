@@ -36,7 +36,7 @@ The first time you open Tsumiru, a short setup wizard walks you through it:
 3. If your server needs a sign-in, **Test connection** detects it and reveals a login form. Enter your username and password. Tsumiru works out which of Suwayomi's auth modes (Basic / Simple / UI login) to use, or pick the mode yourself, then tap **Sign in**.
 4. Finish, and your library loads.
 
-In a hurry? **Skip** (top-right) lets you set things up later. You can change the address any time under **Settings → Server**.
+In a hurry? **Skip** (top-right) lets you set things up later. You can change the address, port, and sign-in any time under **More → Connection**.
 
 > **Tip:** A local-network address (`192.168.x.x`, default port 4567) is the simplest place to start. To read away from home, put your server behind a reverse proxy with HTTPS and enter that domain instead.
 
@@ -48,6 +48,8 @@ Because sources live on the server, anything you've enabled in Suwayomi shows up
 2. Pick a source and use its **Popular** / **Latest** listings, or search for a title.
 3. Open a series and tap **Add to library**. It's now in your library on every device.
 
+**Pin** the sources you use most to keep them at the top of the Browse list. When you search across sources, you can filter that global search down to the sources you care about.
+
 ### Trouble finding a specific series?
 
 * Check your spelling, and try the **romanized** title; some sources index by it.
@@ -57,4 +59,4 @@ Because sources live on the server, anything you've enabled in Suwayomi shows up
 
 ## 5. Read
 
-Open any series, tap a chapter, and you're in. Tsumiru ships a rebuilt continuous reader tuned for long webtoon strips, with smooth vertical scrolling and pinch-to-zoom. See [Reader settings](/docs/guides/reader-settings) to tailor it to how you read.
+Open any series, tap a chapter, and you're reading. Tsumiru's continuous reader is built for long webtoon strips: vertical scrolling with pinch-to-zoom. See [Reader settings](/docs/guides/reader-settings) to tailor it to how you read.

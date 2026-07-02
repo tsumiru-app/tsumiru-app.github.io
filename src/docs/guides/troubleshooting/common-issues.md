@@ -15,17 +15,17 @@ Here's how to tackle common challenges.
 
 Tsumiru requires a running Suwayomi server to function. If you see a connection error:
 
-* **Check the server URL.** Go to **Settings → Server** and verify the address, port, and scheme (`http` vs `https`). A common mistake is using `https://` when the server is only listening on plain `http://`.
+* **Check the server URL.** Go to **More → Connection** and verify the address, port, and scheme (`http` vs `https`). A common mistake is using `https://` when the server is only listening on plain `http://`.
 * **Check that the server is running.** Open the server's web UI in a browser from the same device. If the browser can't load it either, the server is not running or not reachable.
 * **Check your network.** If the server is on your local network, make sure your device is on the same network (not on mobile data). If accessing remotely, confirm your reverse proxy or port forwarding is set up correctly.
-* **Check authentication.** If your Suwayomi server requires a login, make sure the credentials in **Settings → Server** are correct.
+* **Check authentication.** If your Suwayomi server requires a login, make sure the credentials in **More → Connection** are correct.
 
 ### "Test connection" couldn't confirm it's Suwayomi
 
 In the setup wizard, **Test connection** probes the address you typed and only reports success if it gets a genuine Suwayomi response. If you see *"Reachable, but doesn't look like a Suwayomi server"*:
 
 * **Check the port.** Tsumiru tries Suwayomi's default **4567** first, then the bare port (`:80` / `:443`). If your server runs on a different port, type it explicitly, e.g. `192.168.1.10:4568`. The message shows the exact address **and port** that answered, so you can see what was actually reached.
-* **You probably reached something else.** A bare LAN IP on `:80` is often a router's admin page or another app, not Suwayomi. Point Tsumiru at the host *and port* where Suwayomi is actually listening.
+* **You probably reached something else.** A bare LAN IP on `:80` is often a router's admin page or another app, not Suwayomi. Point Tsumiru at the host *and port* where Suwayomi is listening.
 * **Confirm Suwayomi is running** and reachable from this device by opening its web UI in a browser first.
 * **Behind a reverse proxy?** Enter its `https://` domain instead of the LAN IP. See Suwayomi's [server configuration docs](https://github.com/Suwayomi/Suwayomi-Server) for port and base-URL settings.
 
@@ -44,7 +44,7 @@ Sources and extensions are managed on the **Suwayomi server**, not inside Tsumir
 
 ### Images won't load
 
-* Confirm Tsumiru is connected to the server (check **Settings → Server**).
+* Confirm Tsumiru is connected to the server (check **More → Connection**).
 * The server fetches images from the source on demand. If a source is slow or rate-limiting, images may fail to load. Try again after a moment.
 * Check that the Suwayomi server has network access to the source.
 
@@ -75,7 +75,7 @@ When installing a new version of Tsumiru on Android, the signing certificate of 
 These errors appear when Tsumiru receives an unexpected HTTP response from your Suwayomi server or from a source via the server.
 
 ### `HTTP Error: 401` - Unauthorized
-Your server credentials are incorrect or have expired. Go to **Settings → Server** and re-enter your username and password.
+Your server credentials are incorrect or have expired. Go to **More → Connection** and re-enter your username and password.
 
 ### `HTTP Error: 403` - Forbidden
 The server or the source is refusing the request. Check that your server credentials are correct. If the source itself is returning 403, the source may be enforcing IP-based blocking or rate limits. This is a server-side issue to investigate in the Suwayomi server logs.
@@ -90,5 +90,5 @@ The source has temporarily rate-limited the server's IP. Pause downloads on the 
 The Suwayomi server or the upstream source is experiencing an error. Check the server logs for details.
 
 ::: warning
-For unlisted errors or if the steps above don't resolve your issue, refer to [Diagnosis](/docs/guides/troubleshooting/diagnosis) or open an issue at [github.com/tsumiru-app/tsumiru](https://github.com/tsumiru-app/tsumiru).
+For unlisted errors or if the steps above don't resolve your issue, refer to [Diagnosis](/docs/guides/troubleshooting/diagnosis) or open an issue at [github.com/Suwayomi/Suwayomi-Tsumiru](https://github.com/Suwayomi/Suwayomi-Tsumiru).
 :::

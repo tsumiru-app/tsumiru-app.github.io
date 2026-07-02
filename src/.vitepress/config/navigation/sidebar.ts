@@ -36,6 +36,7 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           link: '/docs/guides/offline-reading',
         },
         { text: 'Categories', link: '/docs/guides/categories' },
+        { text: 'Tracking', link: '/docs/guides/tracking' },
         { text: 'Backups', link: '/docs/guides/backups' },
         {
           text: 'Troubleshooting',

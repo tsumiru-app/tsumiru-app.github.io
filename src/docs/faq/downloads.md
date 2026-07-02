@@ -18,24 +18,28 @@ This page covers **server** downloads. To keep chapters **on your device** and r
 * **A batch from a series**: on the series page, tap the **download** button in the toolbar and choose a preset: **Next chapter**, **Next 5 / 10 / 25 chapters**, **Unread**, or **All**.
 * **Hand-picked chapters**: long-press a chapter to enter selection mode, then pick the ones you want (use **Select next 10**, **Select unread**, or **Select in between** to help), and tap the download icon in the bottom bar.
 
+Queueing a large batch asks you to confirm first, so you don't kick off a huge download by accident.
+
 ## Can I download multiple chapters or series at once?
 
-Yes. Tsumiru imposes no artificial download limit of its own. How many downloads run in parallel is governed by your **Suwayomi server**, not the app. Since the content you're downloading comes from your own server, throttling is something you tune server-side, not something the client restricts.
+Yes. Tsumiru imposes no download limit of its own. How many downloads run in parallel is governed by your **Suwayomi server**, not the app. Since the content you're downloading comes from your own server, throttling is something you tune server-side, not something the client restricts.
 
 ## How do I manage what's downloading?
 
-Open the **Downloads** screen to see the queue. You can:
+The **Downloads** screen has two tabs: **Server** for the server queue, and **On device** for chapters saving to this device (see [Offline reading](/docs/guides/offline-reading)). On the **Server** tab you can:
 
 * Reorder items with the up/down arrows, or **Move to top** / **Move to bottom**.
 * **Delete** an item from the queue, or **Retry** one that errored.
 * **Pause** / **Resume** the whole queue with the floating button.
 * **Clear** the entire queue with the sweep icon in the toolbar.
 
-The queue lives on the server, so it's the same from every device.
+The server queue lives on the server, so it's the same from every device. The on-device queue is per device, and it can be paused and resumed too.
 
 ## Can Tsumiru download new chapters automatically?
 
 Yes. In **Settings → Downloads → Auto-download**, turn on **Auto-download new chapters**. You can set a **Chapter download limit** and optionally **ignore entries that still have unread chapters**. The server downloads new chapters when it finds them during a library update.
+
+You can also choose **which categories** download on their own, so only the ones you pick fetch new chapters automatically.
 
 ## Why did a download stop or fail?
 
