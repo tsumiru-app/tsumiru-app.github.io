@@ -11,19 +11,21 @@ Tsumiru's settings are split into these sections:
 * **General**: app language, quick search, and request-timeout behaviour.
 * **Appearance**: theme and look of the app.
 * **Library**: global update interval, skip rules, and category management.
-* **Downloads**: download location (on the server), CBZ option, and auto-download.
+* **Downloads**: server and on-device download options, split into **Server** and **On device** tabs (see [Offline reading](/docs/guides/offline-reading)).
 * **Reader**: reading mode and all reader behaviour (see [Reader settings](/docs/guides/reader-settings)).
 * **Browse**: source/server browse options.
 * **Backup & Restore**: create and restore server backups (see [Backups](/docs/guides/backups)).
-* **Server**: how Tsumiru connects to your Suwayomi server.
+* **Server**: the Suwayomi server's own admin config (bindings, proxy, Cloudflare, and so on). This configures the server itself, not how this app connects to it.
+
+How Tsumiru **connects** to the server (the address, port, and sign-in) lives separately under **More → Connection**.
 
 ## How do I connect to my server?
 
-Open **Settings → Server**. Set the **Server URL** and **Server Port** (for example `http://192.168.1.10` and `4567`). On non-web platforms there's an auto-discovery button to find a server on your network.
+Open **More → Connection**. Set the **Server URL** and **Server Port** (for example `http://192.168.1.10` and `4567`). On non-web platforms there's an auto-discovery button to find a server on your network.
 
 ## My server needs a login: how do I authenticate?
 
-Under **Settings → Server → Authentication**, pick an **Authentication Type**:
+Under **More → Connection → Authentication**, pick an **Authentication Type**:
 
 * **None**: no authentication.
 * **Basic Auth**: HTTP basic auth (username + password), e.g. when your server sits behind a reverse proxy.
@@ -48,6 +50,10 @@ Incognito works well with **hideable categories** (see [Categories](/docs/guides
 
 This is a [Komikku](https://github.com/komikku-app/komikku)-style feature. Mihon doesn't have it.
 
+## How do I hide adult content?
+
+Turn off adult content in **Settings → Browse**. This hides adult sources entirely, not just adult extensions, so their entries stay out of browse and search.
+
 ## Is there an app lock / biometric lock?
 
-Not yet. Tsumiru has no app-lock or screenshot-blocking today (though it does have an [incognito mode](#does-tsumiru-have-an-incognito-mode)). If app-lock matters to you, [open an issue](https://github.com/tsumiru-app/tsumiru/issues).
+Not yet. Tsumiru has no app-lock or screenshot-blocking today (though it does have an [incognito mode](#does-tsumiru-have-an-incognito-mode)). If app-lock matters to you, [open an issue](https://github.com/Suwayomi/Suwayomi-Tsumiru/issues).

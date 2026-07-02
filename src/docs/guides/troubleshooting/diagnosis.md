@@ -33,8 +33,8 @@ Some sources enforce their own undisclosed rate limits and protections. Heavy bu
 
 If the problem affects everyone, it may be Tsumiru or the source:
 
-1. Check [open issues](https://github.com/tsumiru-app/tsumiru/issues).
-2. Check [closed issues](https://github.com/tsumiru-app/tsumiru/issues?q=is%3Aissue+is%3Aclosed) in case it's already fixed but not yet released.
+1. Check [open issues](https://github.com/Suwayomi/Suwayomi-Tsumiru/issues).
+2. Check [closed issues](https://github.com/Suwayomi/Suwayomi-Tsumiru/issues?q=is%3Aissue+is%3Aclosed) in case it's already fixed but not yet released.
 3. If it's not reported, open a new issue: include your Tsumiru version, your server version, and the source/series/chapter affected.
 
 ::: warning

@@ -6,7 +6,7 @@ description: Download chapters to your device and keep reading with no server an
 
 # Offline reading
 
-Tsumiru can keep chapters **on your device** so you can read them with no connection to your Suwayomi server, on a plane, underground, or anywhere the server can't be reached. The sources still come from Suwayomi; offline reading just stores the pages locally so the app doesn't need the server in your pocket.
+Tsumiru can keep chapters **on your device** so you can read them with no connection to your Suwayomi server. The sources still come from Suwayomi; offline reading stores the pages on your device, so the app doesn't need to reach the server while you read.
 
 This is separate from [server-side downloads](/docs/faq/downloads). A *server download* tells your Suwayomi server to fetch a chapter and keep it **on the server**. An *offline download* copies that chapter onto **this device**. The two work together: a chapter has to be downloaded on the server before it can be saved to your device, and if it isn't yet, Tsumiru queues the server download for you automatically.
 
@@ -22,9 +22,12 @@ There are two ways to save chapters offline.
 
 On a series page, tap **Keep offline** (next to **In Library**) to choose a rule. Tsumiru then keeps the matching chapters on your device automatically, and tops them up whenever new chapters are downloaded on the server:
 
-* **Keep 3 unread**: the next 3 unread chapters, refilled as you read.
-* **Keep all unread**: every unread chapter.
-* **Keep all**: every chapter in the series.
+* **Next 5 / 10 / 25 unread**: a rolling buffer of upcoming chapters, refilled as you read.
+* **All unread**: every unread chapter.
+* **All**: every chapter in the series.
+
+The series' current keep mode is shown on its title, so it's clear why chapters are being kept.
+You can also keep several series offline at once: select them in the library, choose **Keep offline**, and pick how much of each to keep.
 
 To stop keeping a series offline, open the same sheet and choose **Remove downloads**, which clears the rule and deletes that series' chapters from the device. Your server library is untouched.
 
@@ -53,24 +56,30 @@ When Tsumiru can't reach your server, it falls back to what's stored on the devi
 * Opening a saved chapter reads the pages straight from the device, no network needed.
 * Your **reading progress** is saved locally and synced back to the server automatically the next time you reconnect.
 
-Chapters that aren't saved offline simply aren't available until the server is reachable again.
+Chapters you haven't saved offline aren't available until the server is reachable again.
 
 To see only what you can read offline, open the library **filter** and turn on **On device**.
 
 ## Managing storage
 
-Open **Downloads → On device** to see everything stored locally: total **storage used**, and a row per series with its chapter count and size. From a series page you can **Remove downloads** for that series, and individual chapters can be removed with their pin button.
+The **Downloads** screen has two tabs: **Server** (what your Suwayomi server is downloading) and **On device** (what's stored locally). Open **Downloads → On device** to see everything on this device: total **storage used**, and a row per series with its chapter count and size. From a series page you can **Remove downloads** for that series, and individual chapters can be removed with their pin button.
+
+You can **pause** and **resume** the on-device download queue from the same screen, so a large batch doesn't have to run all at once.
 
 To configure offline storage, go to **Settings → Offline**:
 
 * **Storage used**: how much space your offline chapters take up.
 * **Remove all downloads**: clears every offline chapter from this device in one step (your server library is untouched).
 * **Simultaneous downloads**: how many pages download at once (1–8, default 2). Lower it on a slow or metered connection.
+* **Download over Wi-Fi only**: on by default, so background downloads don't spend mobile data. Turn it off to allow downloads on any connection.
+
+Categories can also download on their own: pick which ones under the download settings, and their new chapters are saved without you asking each time.
 
 ### Keeping storage in check
 
-Two optional safety nets keep offline storage from growing without limit. Both are **off** by default, and neither ever removes chapters you've **pinned** by hand:
+Three optional safety nets keep offline storage from growing without limit. All are **off** by default, and none ever removes chapters you've **pinned** by hand:
 
+* **Delete after reading**: remove an auto-kept chapter once you finish it, so storage doesn't pile up. Set it per device or for the server under **Settings → Downloads**.
 * **Limit offline storage**: set a ceiling (default 2 GB). When you go over it, the oldest auto-kept chapters are removed first.
 * **Auto-remove old downloads**: delete auto-kept chapters older than a set age (default 30 days).
 
@@ -78,6 +87,6 @@ Two optional safety nets keep offline storage from growing without limit. Both a
 
 On **Android**, offline downloads keep running when Tsumiru is in the background or closed. A **"Downloading chapters"** notification shows progress (and lets you keep an eye on a long batch without leaving the app open); it clears itself when the batch finishes.
 
-If your connection drops mid-batch, downloading pauses and waits for the network, then resumes on its own when you're back online, with no errors and no lost progress. The first time you download in the background, Android may ask you to exempt Tsumiru from battery optimization so it doesn't pause long batches.
+If your connection drops mid-batch, downloading pauses and waits for the network, then resumes on its own when you're back online, picking up where it stopped. The first time you download in the background, Android may ask you to exempt Tsumiru from battery optimization so it doesn't pause long batches.
 
 On **desktop** (Windows, macOS, Linux), downloads continue as long as the app is running, including when its window is minimized.

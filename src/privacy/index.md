@@ -30,4 +30,4 @@ We may update this policy from time to time. Any changes will be published on th
 
 ## Contact
 
-Questions or suggestions? Open an issue on [GitHub](https://github.com/tsumiru-app/tsumiru/issues).
+Questions or suggestions? Open an issue on [GitHub](https://github.com/Suwayomi/Suwayomi-Tsumiru/issues).

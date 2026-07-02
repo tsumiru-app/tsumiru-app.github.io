@@ -16,7 +16,7 @@ Tsumiru connects to your Suwayomi server over the network. Most issues trace bac
 
 ### Verifying your server URL
 
-1. Open **Tsumiru** and navigate to **Settings → Server**.
+1. Open **Tsumiru** and navigate to **More → Connection**.
 1. Confirm the server URL matches the address and port your Suwayomi server is running on (e.g. `http://192.168.1.100:4567`).
 1. Make sure you are using `http://` or `https://` as appropriate; mixing them up is a common source of connection errors.
 
@@ -30,7 +30,7 @@ Tsumiru connects to your Suwayomi server over the network. Most issues trace bac
 
 If your Suwayomi server has authentication enabled:
 
-1. Navigate to **Settings → Server** in Tsumiru.
+1. Navigate to **More → Connection** in Tsumiru.
 1. Enter the correct username and password.
 1. Save and try reconnecting.
 
@@ -38,7 +38,9 @@ If your Suwayomi server has authentication enabled:
 
 ### Obtaining crash/error logs
 
-For crash investigations, navigate to <nav to="advanced"> and tap **Dump crash logs**.
+The quickest way to grab a log for a bug report is the **Copy log** action at the bottom of Settings, which copies the app's latest log to your clipboard. If Tsumiru ever fails to start, the error screen shows the same copy-log button, so you can still get the log when the app won't open.
+
+For deeper crash investigations, navigate to **Settings → Advanced** and tap **Dump crash logs**.
 
 <img
   class="only-light"

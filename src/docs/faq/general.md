@@ -16,6 +16,9 @@ The first-run setup wizard does it for you. On the same Wi-Fi, **Search my netwo
 ## Where do sources and extensions come from?
 Sources and extensions are managed on your **Suwayomi server**, not inside Tsumiru. Tsumiru does not install extensions or repositories; all of that happens server-side. See the [getting started guide](/docs/guides/getting-started) for details.
 
+## Can I track my reading with AniList or MyAnimeList?
+Yes. Connect the trackers your Suwayomi server supports, bind one to a series, and Tsumiru keeps its progress updated as you read, including chapters you read offline. See [Tracking](/docs/guides/tracking).
+
 ## Can I read light novels?
 **Tsumiru** is an image-based reader, not a text parser, so light novels are not supported.
 
