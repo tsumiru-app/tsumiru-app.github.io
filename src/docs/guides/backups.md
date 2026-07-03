@@ -37,4 +37,4 @@ Under **Settings → Backup & Restore → Automatic Backup** you can have the se
 
 ## What isn't in a backup
 
-The backup covers your **server-side** library. Tsumiru's own device-local preferences (reader settings, sort/filter/display choices) aren't part of it; you'd reconfigure those if you reinstall or switch devices. Note that because everything else is on the server, pointing a new device at the same server already restores your library and progress without a backup.
+The backup covers your **server-side** library, which includes per-series reader settings. Tsumiru's own device-local preferences (global reader defaults, sort/filter/display choices) aren't part of it (you'd reconfigure those if you reinstall or switch devices). Note that because everything else is on the server, pointing a new device at the same server already restores your library and progress without a backup.

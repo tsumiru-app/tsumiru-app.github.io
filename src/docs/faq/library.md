@@ -48,7 +48,7 @@ The **Updates** tab lists newly fetched chapters grouped by date, newest first. 
 
 ## Can I sync between devices?
 
-There's nothing to enable: your library, read progress, bookmarks, categories, and download state all live on the **Suwayomi server**. Any device pointed at the same server sees the same state automatically. Only UI preferences (sort, filter, display) are stored per-device.
+There's nothing to enable: your library, read progress, bookmarks, categories, per-series reader settings, and download state all live on the **Suwayomi server**. Any device pointed at the same server sees the same state automatically. Only UI preferences (sort, filter, display) are stored per-device.
 
 ## How do I handle duplicate chapters from the same series?
 

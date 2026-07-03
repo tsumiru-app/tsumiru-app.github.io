@@ -1,45 +1,108 @@
 ---
 title: Reader settings
 titleTemplate: Guides
-description: Tailor the Tsumiru reader to how you read.
+description: Reading modes, page layout, zoom, color filters, and per-series overrides. Where each reader setting lives and what it does.
 ---
 
 # Reader settings
 
-Configure the reader globally in **Settings → Reader**, or per-series from the **quick settings** drawer inside the reader (the gear in the bottom bar). Per-series choices override the global default.
+Reader settings live in two places:
 
-## Reading mode
+* **Settings → Reader** holds the global defaults that apply to every series.
+* Inside the reader, the **gear** in the bottom bar opens a settings sheet with three tabs: **Reading Mode**, **General**, and **Custom filter**. Changes apply as you make them, and the **For this series** block at the top of the first tab overrides settings for just the series you're reading.
 
-Choose how pages are laid out:
+Per-series overrides are stored on the server, so they follow the series to your other devices.
 
-* **Webtoon**: continuous vertical scroll with no gaps (the default; best for manhwa/long strips).
-* **Continuous Vertical**: continuous vertical with a small gap between pages.
-* **Single Vertical**: one page at a time, vertically.
-* **Single Horizontal (LTR / RTL)**: page-by-page, left-to-right or right-to-left (RTL for manga).
-* **Continuous Horizontal (LTR / RTL)**: continuous horizontal scroll.
+## Reading modes
 
-You can set a different mode for an individual series from the in-reader quick settings.
+Pick a mode from the **Reading mode** chips in the sheet:
 
-## Navigation & gestures
+* **Long strip**: continuous vertical scroll with no gaps (the default, best for manhwa and webtoons).
+* **Long strip with gaps**: continuous vertical scroll with a small gap between pages.
+* **Paged (left to right)**: one page at a time, turning left to right.
+* **Paged (right to left)**: page-by-page in traditional manga order.
+* **Paged (vertical)**: page-by-page, turning vertically.
+* **Default**: follow your global default (when set for a series).
 
-* **Navigation layout**: tap-zone layout for paging: Default, L Shaped, Right And Left, Edge, Kindle-ish, or Disabled (default is Disabled; tap anywhere to toggle the overlay).
-* **Invert tapping**: reverse the tap directions.
+**Settings → Reader** offers the same modes under their classic names: **Webtoon** is Long strip, **Continuous Vertical** is Long strip with gaps, and and **Single Horizontal (LTR)**, **Single Horizontal (RTL)**, and **Single Vertical** are the paged ones. A series still set to the old **Continuous horizontal (legacy)** mode shows a dedicated legacy chip in the sheet until you pick another mode.
+
+## For this series
+
+Everything in the sheet's **For this series** block overrides the global default for the current series only:
+
+* **Reading mode**: the chips above.
+* **Rotation**: lock or free the screen orientation for this series: **Default**, **Free**, **Portrait**, **Landscape**, **Locked portrait**, **Locked landscape**, or **Reverse portrait**.
+* **Tap zones**: the tap layout for paging: **Default**, **L Shaped**, **Right And Left**, **Edge**, **Kindle-ish**, or **Disabled**.
+* **Invert tap zones**: flip the tap directions: **None**, **Horizontal**, **Vertical**, or **Both** (shown while tap zones are enabled).
+* **Reader Padding**: side margins so pages aren't edge-to-edge.
+* **Magnifier Size**: how large the long-press magnifier is (long-press and drag to magnify part of a page).
+
+Below that block, the tab shows the defaults for whichever viewer the current mode uses: **Pager viewer defaults** for the paged modes, **Long strip viewer defaults** for the strips. Those groups are global and mirror **Settings → Reader**.
+
+## Paged modes
+
+The **Pager viewer defaults** group controls the paged modes:
+
+* **Scale type**: how each page fits the screen: **Fit screen**, **Fit width**, **Fit height**, **Original size**, **Smart fit**, or **Stretch**.
+* **Page layout**: **Single page**, **Double pages**, or **Automatic** (two pages side by side when the screen has room).
+* **Center margin type**: add a gutter down the middle of a spread: **None**, **Double pages**, **Wide pages**, or **Double and wide**.
+* **Split wide pages**: cut a double-width scan into two screen-sized halves. **Invert split pages placement** swaps which half you see first.
+* **Rotate wide pages to fit**: turn a wide page 90° so it fills the screen instead of shrinking. **Invert rotation of wide pages** rotates it the other way.
+* **Invert double pages**: swap the left/right order of a double-page layout.
+* **Dual page spread in landscape**: show a true two-page spread when the device is in landscape.
+* **Crop borders**: trim the empty margins around pages.
+* **Smaller tap zones**: shrink the page-turn tap areas.
+* **Animate page transitions**: animate page turns instead of snapping.
+
+### Zoom
+
+* **Double tap to zoom**: on by default. Double-tap to zoom in at the point you tapped, and double-tap again to zoom back out.
+* **Pinch to Zoom**: pinch to zoom, in the long strips as well as the paged modes.
+* **Disable zoom in** / **Disable zoom out**: turn off zooming in that direction.
+
+## Long strips
+
+The **Long strip viewer defaults** group covers the strip modes:
+
+* **Smart scale on wide screen**: on wide displays, cap the strip's width to a ratio: **Fit screen**, **3:2**, **4:3**, **16:9**, or **20:9**.
+* **Crop borders**: trim page margins, set separately for **Long strip** and **Long strip with gaps**.
+
+The zoom and tap-zone toggles above apply to the strips too, and the sheet repeats them in this group so you can set them without leaving the reader.
+
+## General tab
+
+The sheet's **General** tab collects the global display and behavior settings (also in **Settings → Reader**):
+
+* **Background color**: **Black**, **Gray**, **White**, or **Auto**.
+* **Show page number**: overlay the current page number while you read.
+* Seekbar: vertical modes run the seekbar down the side. **Left-handed vertical seekbar** moves it to the left, **Show vertical seekbar in landscape** keeps it vertical in landscape, and **Force horizontal seekbar** makes it horizontal everywhere.
+* **Fullscreen**: hide the system bars while reading. **Show content in cutout area** lets pages extend into the camera cutout.
+* **Keep screen on**: hold the screen awake while you're reading.
+* **Show actions on long tap**: on by default. Long-press a page for **Copy**, **Open In Web**, **Share image**, and **Save to gallery**.
+* **Always show chapter transition**: always show the between-chapters transition page.
+* **Flash on page change**: flash the screen on each page turn (helps ghosting on e-ink screens). Tune it with **Flash duration**, **Flash every** (1 to 10 pages), and **Flash with** (**Black**, **White**, or **White and Black**).
+* **Auto Webtoon Mode**: switch to the long-strip reader automatically for entries that look like long strips.
+
+## Custom filter tab
+
+On the **Custom filter** tab the sheet's backdrop turns transparent so the page stays visible, and every change previews live:
+
+* **Custom brightness**: a reader-only brightness level, independent of the system slider.
+* **Custom color filter**: tint the page with **Red**, **Green**, **Blue**, and **Alpha** sliders, and pick a **Color filter blend mode**: **Default**, **Multiply**, **Screen**, **Overlay**, **Dodge / Lighten**, or **Burn / Darken**.
+* **Grayscale**: render pages in black and white.
+* **Inverted**: invert page colors.
+
+## Only in Settings → Reader
+
+A few settings live only on the global screen:
+
+* **Navigation layout** and **Invert tapping**: the global defaults for tap zones (the per-series versions are in the sheet).
 * **Swipe toggle**: swipe to change chapter. **Last page swipe** restricts that to the last/first page only.
-* **Pinch to Zoom**: pinch to zoom, including in the continuous/webtoon reader *(Android & iOS)*.
 * **Volume Keys**: page with the volume keys, with an **Invert Volume Keys** option *(Android)*.
-* **Magnifier**: long-press and drag to magnify part of a page; adjust its size with **Magnifier Size**.
-
-## Continuous / webtoon reading
-
-* **Infinity Scrolling Mode**: automatically load the next (or previous) chapter when you scroll past the end of the current one. *(Available in Webtoon mode.)*
-* **Reader Padding**: adds side margins so wide strips aren't edge-to-edge.
+* **Reader initial overlay**: show the title and controls when you open a chapter.
+* **Infinity Scrolling Mode**: automatically load the next or previous chapter when you scroll past the end of the current one.
 * **Scroll animation**: animate page jumps instead of snapping instantly.
-
-## Display
-
-* **Reader initial overlay**: show the title and quick settings when you open a chapter.
+* **Reading feedback toasts**: turn off to hide messages like "loading next chapter" and "no more chapters".
 * **Ignore Safe Area**: let content extend into the notch and home-indicator areas *(Android & iOS)*.
-* **Keep screen on**: hold the screen awake while you're reading so it doesn't dim or lock (on by default).
-* **Reading feedback toasts**: turn off to hide the reader's feedback toasts (such as "no more chapters") while you read.
 
-The page number, chapter-skip buttons, bookmark toggle, reading-mode switch, and the settings drawer all live in the reader's bottom bar; tap to bring up the overlay.
+The page number, chapter-skip buttons, bookmark toggle, and the settings gear all live in the reader's bottom bar. Tap the page to bring up the overlay.

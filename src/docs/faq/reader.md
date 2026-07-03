@@ -14,10 +14,19 @@ Long strip (the webtoon default), Long strip with gaps, Paged (left to right), P
 Aside from a network hiccup, the image may have failed to come through from the server. Exit and re-enter the reader, which usually resolves it. If pages consistently fail, check that your Suwayomi server is reachable.
 
 ## Can I pinch to zoom in the webtoon reader?
-Yes. Pinch-to-zoom works in the continuous/webtoon reader as well as the paged modes, on Android and iOS.
+Yes. Pinch-to-zoom works in the long-strip reader as well as the paged modes. **Double tap to zoom** is on by default too: double-tap to zoom in at the point you tapped, and double-tap again to zoom back out.
 
 ## Can I see two pages at once?
-Not currently. A reliable dual-page spread is hard to do well given inconsistent page sizes across sources. It may come later.
+Yes. In the paged modes, set **Page layout** to **Double pages**, or to **Automatic** to use two pages whenever the screen has room. The settings next to it fine-tune the spread: **Split wide pages** cuts double-width scans into two pages, **Rotate wide pages to fit** turns them 90° instead, **Invert double pages** swaps the reading order, and **Center margin type** adds a gutter down the middle of a spread. Turn on **Dual page spread in landscape** to get a true spread when you rotate the device. See [Reader settings](/docs/guides/reader-settings).
+
+## How do I save or share a page?
+Long-press the page while reading. With **Show actions on long tap** enabled (it is by default), a sheet offers **Copy**, **Open In Web**, **Share image**, and **Save to gallery**.
+
+## Can I dim the page or read in grayscale?
+Yes. Open the reader's settings sheet (the gear in the bottom bar) and switch to the **Custom filter** tab. **Custom brightness** dims the reader independently of the system, **Custom color filter** tints the page, and **Grayscale** and **Inverted** change how pages are rendered. The sheet's backdrop turns transparent on this tab, so you see every change on the actual page.
+
+## Can one series have its own reader settings?
+Yes. The **For this series** block at the top of the in-reader settings sheet overrides the reading mode, rotation, tap zones, reader padding, and magnifier size for just that series. The overrides are stored on the server, so they follow the series to your other devices.
 
 ## What do all the settings do?
 See the guide [here on reader settings](/docs/guides/reader-settings).

@@ -6,7 +6,7 @@ description: Where Tsumiru keeps downloads and backups, on your server.
 
 # Storage
 
-By default, Tsumiru stores almost nothing on your device. Your library, downloads, and backups all live on your **Suwayomi server**; the app keeps only small UI preferences (server address, sort/filter/display choices, reader settings) locally.
+By default, Tsumiru stores almost nothing on your device. Your library, downloads, and backups all live on your **Suwayomi server**. The app keeps only small UI preferences (server address, sort/filter/display choices, global reader defaults) locally. Per-series reader settings live on the server with the series.
 
 The exception is [offline reading](/docs/guides/offline-reading): when you keep a series or save a chapter offline, Tsumiru copies those chapters onto the device so you can read them without the server. You decide how much space that's allowed to use in **Settings → Downloads**, on the **On device** tab.
 
