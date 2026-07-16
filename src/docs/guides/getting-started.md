@@ -29,7 +29,7 @@ Visit the [download page](/download/) and grab the build for your platform:
 
 The first time you open Tsumiru, a short setup wizard walks you through it:
 
-1. Pick a theme.
+1. Pick a theme. You can change it later, and pick from more themes, under [Settings → Appearance](/docs/faq/settings#how-do-i-change-the-theme).
 2. On **Connect your server**, point Tsumiru at your server. Two helpers do the work:
    * **Search my network** scans your local network and fills in a Suwayomi server automatically. On the same Wi-Fi this is the easiest path.
    * **Test connection** checks an address you type. You can enter just the host (`192.168.1.10` or `suwayomi.mydomain.com`) and Tsumiru works out the scheme and port for you, trying Suwayomi's default **4567** first. For a custom port, include it: `192.168.1.10:4568`. It then tells you exactly what it found: connected, needs a login, unreachable, or reached something that isn't Suwayomi.

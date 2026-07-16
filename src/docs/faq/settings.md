@@ -35,6 +35,8 @@ Under **More → Connection → Authentication**, pick an **Authentication Type*
 
 Enter your **Credentials** for the chosen type. Use **Log out** to clear stored credentials. Credentials are kept in your device's secure storage.
 
+If your sign-in expires while you're using Tsumiru, an inline banner asks you to sign in again. It doesn't log you out — sign in from the banner and you carry on where you were.
+
 ## What about proxy or advanced connection settings?
 
 Advanced network options are **server-side**, configured under **Settings → Server**. Tsumiru surfaces whatever settings your server exposes; the server does the work.
@@ -42,6 +44,20 @@ Advanced network options are **server-side**, configured under **Settings → Se
 ## Why are some requests timing out?
 
 Under **Settings → General → Timeout Settings** you can raise the **Server Request Timeout** and enable **Auto-refresh on Timeout** (with a retry delay). This helps on slow connections or a busy server.
+
+## How do I change the theme?
+
+**Settings → Appearance** controls how the app looks:
+
+* **App Theme Mode**: **System**, **Light**, or **Dark**.
+* **Pure black (AMOLED)**: swap dark backgrounds for true black to save power on OLED screens (shown in the dark and system modes).
+* **Theme**: pick from the built-in themes — **Indigo Night** (the default), **Carbon**, **Plum**, **Regression**, **Ember**, **Synthwave**, **Terminal**, **Catppuccin Mocha**, **Nord**, **Gruvbox**, **Dracula**, **Monochrome**, **Royal**, or **Custom**.
+* **Custom color**: with **Custom** picked, choose your own accent color from the wheel.
+* **Manga Grid Size**: how large the covers are in the library grid.
+
+## What is Quick Search?
+
+Quick Search is an overlay you open with `Ctrl` + `F` or `Ctrl` + `P` (see [Keyboard shortcuts](/docs/guides/keyboard-shortcuts)). It searches your **library**, offers **Go to** jumps to screens, settings, and categories, and can hand your text to a full **source search** across your extensions. It understands the same `key:value` [search operators](/docs/faq/library#how-do-i-search-my-library) as the library search box. Turn it on or off with **Quick Search** in **Settings → General**.
 
 ## Does Tsumiru have an incognito mode?
 

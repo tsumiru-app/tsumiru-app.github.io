@@ -11,10 +11,29 @@ Frequently Asked Questions about the Library.
 
 Tap the organizer icon in the Library toolbar for four tabs:
 
-* **Filter**: show/hide by **Unread**, **Started**, **Completed**, **Bookmarked**, **Downloaded**, and **On device** (each toggles include / exclude / off), filter by **Tracked**, and include or exclude specific **categories**.
+* **Filter**: show or hide by **Downloaded**, **On device**, **Unread**, **Started**, **Bookmarked**, **Completed**, and **Lewd**; set a **Minimum rating** with the star row; and include or exclude specific **Categories**, **Tags**, and (once a tracker is connected) **Tracked** services.
 * **Sort**: **Alphabetical**, **Date Added**, **Unread**, **Chapter Fetch Date**, **Latest Chapter**, **Total Chapters**, **Last Read** (the default), **Random**, or **Tracker score** (ascending or descending).
 * **Display**: **Grid**, **Cover-only grid**, **List**, or **Descriptive List**; column-count sliders for portrait and landscape; badges for **Downloaded**, **Unread**, **Language**, **Local**, and **Source**; the continue-reading button; and tab options (category tabs, item counts, showing hidden categories).
 * **Group**: group the library **By source**, **By status**, or **By track status**, keep the **Default** category tabs, or pick **Ungrouped** for one flat tab.
+
+## How do I search my library?
+
+The library search box takes field filters, not just plain text. Type `key:value` to filter by a field, and combine as many as you like:
+
+* `tag:seinen` — a source tag or one of your own (exact match)
+* `genre:action` — a source genre
+* `author:oda` — the author (use `artist:` for the artist)
+* `status:ongoing` — also `completed`, `hiatus`, or `cancelled`
+* `source:mangadex` — the source name
+* `tracked:true`, or `tracked:anilist` for a specific tracker
+* `rating:>=4` — your own rating, with `>=`, `<=`, `>`, `<`, or `=`
+* `unread:true` / `downloaded:true`
+
+Wrap multi-word values in quotes (`tag:"slice of life"`), exclude a term with a leading minus (`-tag:dropped`), and match either of two things with a group (`{genre:action|genre:romance}`). Plain words with no `key:` still search titles, authors, genres, and tags as usual. The **?** beside the search box opens the same tips in the app.
+
+## Where do I see what I've read?
+
+The **History** tab lists your recently-read chapters grouped by day, newest first, with a search box to find something you read a while ago. Use a chapter's menu to drop an entry with **Remove from History**. On tablets and desktop, History sits in the main navigation between **Updates** and **Browse**; on phones it's under the **More** menu. (While [Incognito mode](/docs/faq/settings#does-tsumiru-have-an-incognito-mode) is on, nothing is added to History.)
 
 ## Can library entries jump to my next chapter?
 
