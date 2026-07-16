@@ -69,6 +69,17 @@ The **Long strip viewer defaults** group covers the strip modes:
 
 The zoom and tap-zone toggles above apply to the strips too, and the sheet repeats them in this group so you can set them without leaving the reader.
 
+## Auto-scroll and auto-advance
+
+Tsumiru can move through a chapter hands-free. Pull down the handle at the top of the reader to open the auto-scroll bar, then flip the switch:
+
+* In the long-strip modes it's **Auto scroll**: the page glides down on its own.
+* In the paged modes it's **Auto advance**: it turns one page at a time.
+
+The **−** and **+** buttons set the pace in seconds per step, from 1 to 30. Long strips start at 3 seconds and paged modes at 5, and each remembers its own pace. It stops the moment you scroll or swipe by hand, when you switch away from the app, and when there are no more pages to show. On a keyboard, **Space** starts and stops auto-scroll in the long-strip modes, and **=** / **−** change the pace.
+
+**Smooth Auto Scroll** (in **Settings → Reader**, on by default) sets how the long-strip glide moves: a continuous drift, or a fixed jump each interval.
+
 ## General tab
 
 The sheet's **General** tab collects the global display and behavior settings (also in **Settings → Reader**):

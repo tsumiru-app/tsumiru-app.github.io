@@ -19,6 +19,9 @@ Yes. Pinch-to-zoom works in the long-strip reader as well as the paged modes. **
 ## Can I see two pages at once?
 Yes. In the paged modes, set **Page layout** to **Double pages**, or to **Automatic** to use two pages whenever the screen has room. The settings next to it fine-tune the spread: **Split wide pages** cuts double-width scans into two pages, **Rotate wide pages to fit** turns them 90° instead, **Invert double pages** swaps the reading order, and **Center margin type** adds a gutter down the middle of a spread. Turn on **Dual page spread in landscape** to get a true spread when you rotate the device. See [Reader settings](/docs/guides/reader-settings).
 
+## Can the reader scroll or turn pages by itself?
+Yes. Pull down the handle at the top of the reader to open the auto-scroll bar. In the long-strip modes it's **Auto scroll**, gliding the page down on its own; in the paged modes it's **Auto advance**, turning one page at a time. The **−** and **+** buttons set the pace in seconds. On a keyboard, **Space** starts and stops auto-scroll in the long-strip modes. See [Reader settings](/docs/guides/reader-settings#auto-scroll-and-auto-advance).
+
 ## How do I save or share a page?
 Long-press the page while reading. With **Show actions on long tap** enabled (it is by default), a sheet offers **Copy**, **Open In Web**, **Share image**, and **Save to gallery**.
 

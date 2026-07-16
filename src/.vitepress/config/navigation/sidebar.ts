@@ -48,6 +48,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           link: '/docs/guides/reader-settings',
         },
         {
+          text: 'Keyboard shortcuts',
+          link: '/docs/guides/keyboard-shortcuts',
+        },
+        {
           text: 'Offline reading',
           link: '/docs/guides/offline-reading',
         },
