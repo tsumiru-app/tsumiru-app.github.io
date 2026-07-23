@@ -44,6 +44,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           link: '/docs/guides/browse-and-extensions',
         },
         {
+          text: 'Extension stores',
+          link: '/docs/guides/adding-sources',
+        },
+        {
           text: 'Reader settings',
           link: '/docs/guides/reader-settings',
         },
