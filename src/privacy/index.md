@@ -51,7 +51,7 @@ If you open an external link from within the app, you'll be taken to a site we d
 
 ## This website
 
-The same goes for tsumiru.app itself: this site sets no cookies and runs no analytics or trackers.
+tsumiru.app itself sets no cookies and runs no analytics or trackers.
 
 ## Changes to this policy
 
