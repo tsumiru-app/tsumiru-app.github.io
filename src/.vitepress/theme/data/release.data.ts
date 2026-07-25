@@ -2,7 +2,7 @@ import type { GetResponseDataTypeFromEndpointMethod } from '@octokit/types'
 import { Octokit } from '@octokit/rest'
 import { defineLoader } from 'vitepress'
 
-const octokit = new Octokit()
+const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
 
 type GitHubRelease = GetResponseDataTypeFromEndpointMethod<typeof octokit.repos.getLatestRelease>
 

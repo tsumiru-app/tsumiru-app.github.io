@@ -22,7 +22,7 @@ import markdownConfig from './config/markdownConfig'
 // For use with loading Markdown plugins
 import themeConfig from './config/themeConfig'
 
-const octokit = new Octokit()
+const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
 const releaseDateCache = new Map<string, string>()
 
 const title = 'Tsumiru'
