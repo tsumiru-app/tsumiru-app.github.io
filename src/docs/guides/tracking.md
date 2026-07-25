@@ -30,7 +30,7 @@ Once bound, the same panel shows the tracking record and lets you edit it:
 
 * **Status**: reading, completed, on hold, dropped, plan to read.
 * **Score**: your rating, in whatever scale the service uses.
-* **Chapters read**: the progress count, shown against the tracker's chapter total when it has one, which Tsumiru also keeps up to date as you read (see below). Tap it to set the count by hand.
+* **Chapters read**: your progress, shown against the tracker's chapter total when it has one. Tsumiru keeps it up to date as you read (see below); tap it to set the count by hand.
 
 ## Progress updates as you read
 

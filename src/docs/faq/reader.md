@@ -8,7 +8,7 @@ description: Frequently Asked Questions about the Reader in Tsumiru.
 Frequently Asked Questions about the Reader.
 
 ## Which reading modes are there?
-Long strip, Long strip with gaps, Paged (left to right), Paged (right to left) (the default), Paged (vertical), and Continuous horizontal (legacy). Use Paged (right to left) for traditional manga; webtoon-style series open as a long strip automatically. You can set a mode globally or per-series. See [Reader settings](/docs/guides/reader-settings).
+Long strip, Long strip with gaps, Paged (left to right), Paged (right to left), Paged (vertical), and Continuous horizontal (legacy). The default is **Paged (right to left)** — use it for traditional manga; webtoon-style series open as a long strip automatically. You can set a mode globally or per-series. See [Reader settings](/docs/guides/reader-settings).
 
 ## Why didn't a page load?
 Aside from a network hiccup, the image may have failed to come through from the server. Exit and re-enter the reader, which usually resolves it. If pages consistently fail, check that your Suwayomi server is reachable.

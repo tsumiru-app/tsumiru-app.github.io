@@ -73,25 +73,25 @@ There's nothing to enable: your library, read progress, bookmarks, categories, p
 
 ## How do I handle duplicate chapters from the same series?
 
-When several scanlation groups post the same chapters, open the series' **Filter** and set **Preferred groups**. Check the groups you trust in the order you prefer them: Tsumiru shows one copy of each chapter from your top-ranked group, falling back to the next group for chapters yours didn't cover. Leave it on **No preference** to see everything, or turn on **Show all versions** to bring every group's copy back.
+When several scanlation groups post the same chapters, open the series' **Filter** and set **Preferred groups**. Check the groups you trust in the order you prefer them: Tsumiru shows one copy of each chapter from your top-ranked group, falling back to the next group for chapters your top pick didn't release. Leave it on **No preference** to see everything, or turn on **Show all versions** to bring every group's copy back.
 
 ## Does Tsumiru catch duplicate series?
 
-Yes. When you add a series whose name closely matches something already in your library, a **Possible duplicates** dialog appears first, asking you to *select an entry to migrate or add anyway*. You can open the existing entry, [migrate](/docs/guides/source-migration) the new one into it, or add it anyway. When a tracker confirms it's the same title, the match is labelled **Same AniList entry** (or whichever tracker) so you know it's certain, not just a similar name.
+Yes. When you add a series whose name closely matches something already in your library, a **Possible duplicates** dialog appears first, asking you to *select an entry to migrate or add anyway*. You can open the existing entry, [migrate](/docs/guides/source-migration) the new one into it, or add it anyway. When a tracker confirms it's the same title, the match is labelled **Same AniList entry** (or whichever tracker) so you know the two really are the same series.
 
 Adding a batch from Browse works the same way, but pauses on each likely duplicate with **Allow all**, **Skip it**, and **Skip all**, and finishes with an *Added N, skipped M* summary.
 
 To clean up duplicates already in your library, open **Scan for duplicates** from the library overflow menu (or **Settings → Library → Duplicated entries**). Turn on **Check description** to also match on the synopsis, then select the entries you want gone and remove them. Offline, the scan can only match by title.
 
 ::: warning
-Removing an entry from the scan also deletes its downloaded chapters on this device.
+Removing an entry here removes it from your library and deletes its downloaded chapters on this device.
 :::
 
 ## Can Tsumiru suggest similar titles?
 
 A series' details page shows a **Suggestions** row of similar titles, and **See Recommendations** opens a full screen of them. The suggestions come from public manga databases (AniList, MyAnimeList, MangaDex, MangaUpdates, and Comick), which Tsumiru queries directly with the series' title — see the [privacy policy](/privacy/) for what's shared.
 
-It's on by default. Turn it off, or move it into the overflow menu, under **Settings → Appearance** with **Show recommendations** and **Recommendations in overflow**.
+It's on by default. **Settings → Appearance → Show recommendations** turns it off, and **Recommendations in overflow** moves the row into the overflow menu instead.
 
 ## Why were some chapters marked unread again?
 

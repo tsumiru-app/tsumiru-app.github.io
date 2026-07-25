@@ -1,12 +1,12 @@
 ---
 title: Notifications
 titleTemplate: Guides
-description: Get notified when your followed series get new chapters, when downloads finish, and when updates or errors need your attention.
+description: Get notified when your followed series get new chapters, when downloads finish, and when something fails.
 ---
 
 # Notifications
 
-Tsumiru can tell you when there's something to read or something went wrong, without leaving the app open. Everything lives under **Settings → Notifications**.
+Tsumiru can tell you when there's something new to read, or when something goes wrong, even while the app is closed. Everything lives under **Settings → Notifications**.
 
 ## New chapters
 
@@ -18,7 +18,7 @@ Turn this off with **New chapter notifications** if you'd rather check for updat
 
 ## Downloads, updates, and errors
 
-The rest are on-demand alerts, each with its own switch:
+The other alerts each have their own switch:
 
 * **Download notifications**: a **Downloads complete** notification when an offline batch finishes.
 * **Error notifications**: cover **Failed downloads and library updates**, so a source going down or a chapter that won't download doesn't fail silently.
@@ -36,6 +36,6 @@ New-chapter checks run in the background, and a few settings decide when:
 * **Check now**: run a check immediately instead of waiting for the interval.
 * **Hide notification content**: show only a count, not titles or covers, for a bit of privacy on your lock screen.
 
-::: tip A note on timing
+::: tip Timing
 Checks run periodically, not instantly, and some devices restrict background updates to save battery. If notifications seem late or missing, exempt Tsumiru from battery optimization in your system settings.
 :::

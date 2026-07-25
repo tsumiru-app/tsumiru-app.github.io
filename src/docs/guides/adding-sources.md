@@ -16,7 +16,7 @@ An extension store is a catalog of extensions your Suwayomi server can install f
 You can also reach this screen from the extension stores icon in the Extensions tab toolbar.
 
 ::: tip Older servers
-Extension stores need a reasonably current Suwayomi server. On an older server this screen is disabled and the Extensions tab shows **Update your Suwayomi server to manage extensions** instead, so update the server to manage extensions at all.
+Extension stores need Suwayomi v2.3.2223 or newer. On an older server this screen is disabled and the Extensions tab shows **Update your Suwayomi server to manage extensions** instead; updating the server is the only fix.
 :::
 
 ## Trust and content ratings

@@ -85,7 +85,7 @@ Three optional safety nets keep offline storage from growing without limit. All 
 
 ## Downloading in the background
 
-On **Android**, offline downloads keep running when Tsumiru is in the background or closed. A **"Downloading chapters"** notification shows progress (and lets you keep an eye on a long batch without leaving the app open); it clears itself when the batch finishes. When a batch finishes, a **Downloads complete** notification lets you know. Turn download notifications on or off under **Settings → Notifications** (see [Notifications](/docs/guides/notifications)).
+On **Android**, offline downloads keep running when Tsumiru is in the background or closed. A **"Downloading chapters"** notification shows progress (and lets you keep an eye on a long batch without leaving the app open); it clears itself when the batch finishes, and a **Downloads complete** notification lets you know. Turn download notifications on or off under **Settings → Notifications** (see [Notifications](/docs/guides/notifications)).
 
 If your connection drops mid-batch, downloading pauses and waits for the network, then resumes on its own when you're back online, picking up where it stopped. The first time you download in the background, Android may ask you to exempt Tsumiru from battery optimization so it doesn't pause long batches.
 

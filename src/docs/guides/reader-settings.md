@@ -24,9 +24,9 @@ Pick a mode from the **Reading mode** chips in the sheet:
 * **Paged (vertical)**: page-by-page, turning vertically.
 * **Default**: follow your global default (when set for a series).
 
-The factory default is **Paged (right to left)**. Webtoon-style series still open as a long strip when **Auto Webtoon Mode** is on (see below).
+The factory default is **Paged (right to left)**. Manhwa, manhua, and webtoons still open as a long strip when **Auto reading mode** is on (see below).
 
-**Settings → Reader** offers the same modes under their classic names: **Webtoon** is Long strip, **Continuous Vertical** is Long strip with gaps, and and **Single Horizontal (LTR)**, **Single Horizontal (RTL)**, and **Single Vertical** are the paged ones. A series still set to the old **Continuous horizontal (legacy)** mode shows a dedicated legacy chip in the sheet until you pick another mode.
+**Settings → Reader** offers the same modes under their classic names: **Webtoon** is Long strip, **Continuous Vertical** is Long strip with gaps, and **Single Horizontal (LTR)**, **Single Horizontal (RTL)**, and **Single Vertical** are the paged ones. A series still set to the old **Continuous horizontal (legacy)** mode shows a dedicated legacy chip in the sheet until you pick another mode.
 
 ## For this series
 
@@ -94,7 +94,7 @@ The sheet's **General** tab collects the global display and behavior settings (a
 * **Show actions on long tap**: on by default. Long-press a page for **Copy**, **Open In Web**, **Share image**, and **Save to gallery**.
 * **Always show chapter transition**: always show the between-chapters transition page.
 * **Flash on page change**: flash the screen on each page turn (helps ghosting on e-ink screens). Tune it with **Flash duration**, **Flash every** (1 to 10 pages), and **Flash with** (**Black**, **White**, or **White and Black**).
-* **Auto Webtoon Mode**: switch to the long-strip reader automatically for entries that look like long strips.
+* **Auto reading mode**: open manhwa, manhua, and webtoons in the long-strip reader automatically.
 
 ## Custom filter tab
 

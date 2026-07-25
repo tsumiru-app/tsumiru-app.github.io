@@ -16,7 +16,7 @@ There are three ways in:
 
 * **One series**: open it, then tap **Migrate** (the **⋮** menu on phone, the swap-arrows button on tablet and desktop).
 * **A selection**: multi-select series in your library and choose **Migrate**.
-* **A whole source**: open **Browse → Migrate**, tap **Migrate off a source**, and pick the source. Tsumiru gathers every series you have on it. The picker can sort sources, **Show obsolete only** to find dead extensions, and select all at once. This is the way to clear a source that's shutting down in one pass.
+* **A whole source**: open **Browse → Migrate**, tap **Migrate off a source**, and pick the source. Tsumiru gathers every series you have on it. The picker can sort sources, **Show obsolete only** to find dead extensions, and select all at once. This is the way to clear a dying source in one pass.
 
 ## Choose the target source
 
@@ -47,8 +47,8 @@ The gear on the migration list opens **Data to migrate**, which decides what mov
 * **Keep-offline rule** (on): the series' offline download rule.
 * **Migrate Downloads** (off): the downloaded chapter files themselves. Left off by default, since those came from the old source — queue fresh downloads on the new entry instead.
 
-A few things to know about the match:
+A few things to know about matching:
 
-* **Reading progress** is matched chapter by chapter, by number first and then by name. When two sources number their chapters differently, some read statuses may not find a match. Nothing is ever marked unread; matches are only ever marked read.
+* **Reading progress** is matched chapter by chapter, by number first and then by name. When two sources number their chapters differently, some read statuses may not find a match. Nothing is ever marked unread; matches are only marked read.
 * **Categories** are *added* to the new entry. Nothing is removed from the old one.
 * If your server sign-in expires mid-run, migration pauses (**Paused — sign in again to continue**) and picks up where it left off once you sign back in.

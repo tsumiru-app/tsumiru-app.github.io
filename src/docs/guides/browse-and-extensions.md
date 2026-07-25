@@ -1,7 +1,7 @@
 ---
 title: "Browse: sources & extensions"
 titleTemplate: Guides
-description: Install manga source extensions on your Suwayomi server from Tsumiru, manage repositories, pin sources, and search every source at once.
+description: Install manga source extensions on your Suwayomi server from Tsumiru, manage extension stores, pin sources, and search every source at once.
 ---
 
 # Browse: sources & extensions
@@ -17,13 +17,13 @@ Extensions are listed in groups: **Updates pending** at the top, then **Installe
 * **Install**: tap **Install** on the extension's row. Its source appears in the Sources tab right away (installing an extension also enables its language for you, so the new source isn't hidden by the language filter).
 * **Update**: rows with a pending update show an **Update** button. Pull down on the list to make the server re-check for updates.
 * **Uninstall**: tap **Uninstall** on an installed row. When a row shows **Update** instead, use the trash icon next to it.
-* **Obsolete** (in red) means the extension was removed from its repository. It may keep working for a while, but the only action left is to uninstall it.
+* **Obsolete** (in red) means the extension was removed from its store. It may keep working for a while, but the only action left is to uninstall it.
 
 Extensions with adult content are marked **18+** in red.
 
 ### Install from a file
 
-If you have an extension as an `.apk` file that isn't in any repository: on the Extensions tab, tap the **+** icon in the toolbar and pick the file. It uploads to your server and installs like any other extension.
+If you have an extension as an `.apk` file that isn't in any store: on the Extensions tab, tap the **+** icon in the toolbar and pick the file. It uploads to your server and installs like any other extension.
 
 ## Extension stores
 
@@ -32,7 +32,7 @@ The Extensions tab lists whatever the stores configured on your server provide. 
 Add one under **More → Settings → Browse → Extension stores**, or from the extension stores icon in the Extensions tab toolbar. Stores are a server setting, so one you add applies to every client connected to your server. See the [Extension stores guide](/docs/guides/adding-sources) for how trust and content ratings work.
 
 ::: tip Older servers
-Managing extensions needs a Suwayomi server new enough to support extension stores. On an older server the Extensions tab shows **Update your Suwayomi server to manage extensions** instead, and the settings row is disabled until you update.
+Managing extensions needs [a server new enough for Extension stores](/docs/guides/adding-sources). On an older server the Extensions tab shows **Update your Suwayomi server to manage extensions** instead, and the settings row is disabled until you update.
 :::
 
 ## NSFW and language filters
