@@ -6,13 +6,13 @@ description: Install manga source extensions on your Suwayomi server from Tsumir
 
 # Browse: sources & extensions
 
-The **Browse** tab is where you find manga. It has two tabs: **Sources** lists every source you can browse, and **Extensions** is where you install the extensions that provide those sources.
+The **Browse** tab is where you find manga. It has three tabs: **Sources** lists every source you can browse, **Extensions** is where you install the extensions that provide those sources, and **Migrate** moves your library off a source that's dying or broken (see [Migrate manga between sources](/docs/guides/source-migration)).
 
 **Extensions don't install into Tsumiru — they install onto your Suwayomi server.** Install an extension from your phone and its sources appear on the desktop and web apps too, because every client shares the server's set.
 
 ## The Extensions tab
 
-Extensions are listed in groups: **Updates pending** at the top, then **Installed**, then everything available, grouped by language. The search icon in the toolbar filters the list as you type.
+Extensions are listed in groups: **Updates pending** at the top, then **Installed**, then everything available, grouped by language. An inline search field at the top filters the list as you type.
 
 * **Install**: tap **Install** on the extension's row. Its source appears in the Sources tab right away (installing an extension also enables its language for you, so the new source isn't hidden by the language filter).
 * **Update**: rows with a pending update show an **Update** button. Pull down on the list to make the server re-check for updates.
@@ -25,16 +25,15 @@ Extensions with adult content are marked **18+** in red.
 
 If you have an extension as an `.apk` file that isn't in any repository: on the Extensions tab, tap the **+** icon in the toolbar and pick the file. It uploads to your server and installs like any other extension.
 
-## Extension repositories
+## Extension stores
 
-The Extensions tab lists whatever the repositories configured on your server provide. If it's empty, no repository is set yet.
+The Extensions tab lists whatever the stores configured on your server provide. If it's empty, no store is set yet.
 
-Manage them under **More → Settings → Browse → Extension Repository**:
+Add one under **More → Settings → Browse → Extension stores**, or from the extension stores icon in the Extensions tab toolbar. Stores are a server setting, so one you add applies to every client connected to your server. See the [Extension stores guide](/docs/guides/adding-sources) for how trust and content ratings work.
 
-* Tap the **+** button and paste a repository URL to add it.
-* Each repository row has a copy button and a delete button.
-
-This is a server setting, so repositories you add here apply to every client connected to your server.
+::: tip Older servers
+Managing extensions needs a Suwayomi server new enough to support extension stores. On an older server the Extensions tab shows **Update your Suwayomi server to manage extensions** instead, and the settings row is disabled until you update.
+:::
 
 ## NSFW and language filters
 
@@ -50,11 +49,15 @@ Two controls decide what Browse shows you:
 
 ## The Sources tab
 
-Every source from your installed extensions, with **Pinned** and **Last Used** groups at the top, then sources grouped by language. Tap a source to browse it; the **Latest** button on a row jumps straight to its newest releases.
+Every source from your installed extensions, with **Pinned** and **Last Used** groups at the top, then sources grouped by language. Tap a source to browse it; the **Latest** button on a row jumps straight to its newest releases. The toolbar has a **Global Search** icon (below) and a **Filter sources** icon.
 
 ### Pin your favorites
 
 Tap the pin icon on a source's row to pin it. Pinned sources sit in their own group at the top of the list, and global search can be scoped to just them. Tap the pin again to unpin.
+
+### Filter the source list
+
+The **Filter sources** icon in the toolbar opens a screen for hiding sources you never use. Each language groups its sources, and you can hide a whole language or individual sources so they drop out of the Sources tab and out of global search. It leaves your installed extensions in place — it only decides what shows up here.
 
 ### Browsing a source
 
@@ -66,9 +69,11 @@ Inside a source:
 * The display icon switches between grid and list.
 * Some sources have their own settings — if one does, a gear icon appears in its toolbar.
 
+**Add several at once**: long-press a cover to start selecting, tap more covers to add them, and add the whole selection to your library in one go. If any of them look like something you already have, Tsumiru pauses to ask (see [duplicate detection](/docs/faq/library#does-tsumiru-catch-duplicate-series)).
+
 ## Global search
 
-To search every source at once, tap the search icon on the **Sources** tab, type a title, and submit. **Global Search** queries each source and shows a row of results per source.
+To search every source at once, tap the **Global Search** icon on the **Sources** tab, type a title, and submit. It queries each source and shows a row of results per source.
 
 Three chips control the scope:
 
@@ -77,3 +82,7 @@ Three chips control the scope:
 * **Has results** hides sources that found nothing.
 
 Results already in your library are shown darkened, so you can tell what you have at a glance. Only sources in your enabled languages are searched — trim the language list to keep global search fast.
+
+## The Migrate tab
+
+The **Migrate** tab moves your library off a source in bulk — handy when a source shuts down or an extension goes obsolete. Pick a source, and Tsumiru finds every series you have on it and helps you move them to another source, carrying your read progress, categories, and more. The full walkthrough is in [Migrate manga between sources](/docs/guides/source-migration).
