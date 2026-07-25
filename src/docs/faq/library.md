@@ -79,11 +79,11 @@ When several scanlation groups post the same chapters, open the series' **Filter
 
 When you add a series whose name closely matches something already in your library, a **Possible duplicates** dialog appears first, asking you to *select an entry to migrate or add anyway*. You can open the existing entry, [migrate](/docs/guides/source-migration) the new one into it, or add it anyway. When a tracker confirms it's the same title, the match is labelled **Same AniList entry** (or whichever tracker) so you know the two really are the same series.
 
-### Adding a batch from Browse
+### Batch adds from Browse
 
 Adding a batch works the same way, but pauses on each likely duplicate with **Allow all**, **Skip it**, and **Skip all**, and finishes with an *Added N, skipped M* summary.
 
-### Cleaning up duplicates already in your library
+### Duplicates already in your library
 
 Open **Scan for duplicates** from the library overflow menu (or **Settings → Library → Duplicated entries**). Turn on **Check description** to also match on the synopsis, then select the entries you want gone and remove them. Offline, the scan can only match by title.
 
