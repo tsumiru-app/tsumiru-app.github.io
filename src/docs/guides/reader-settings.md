@@ -80,7 +80,7 @@ Tsumiru can move through a chapter hands-free. Pull down the handle at the top o
 
 The **−** and **+** buttons set the pace in seconds per step, from 1 to 30. Long strips start at 3 seconds and paged modes at 5, and each remembers its own pace. It stops the moment you scroll or swipe by hand, when you switch away from the app, and when there are no more pages to show. On a keyboard, **Space** starts and stops auto-scroll in the long-strip modes, and **=** / **−** change the pace.
 
-**Smooth Auto Scroll** (in **Settings → Reader**, on by default) sets how the long-strip glide moves: a continuous drift, or a fixed jump each interval.
+**Smooth Auto Scroll** (in **Settings → Reader**, on by default) makes the long-strip glide a continuous drift; turn it off for a fixed jump each interval.
 
 ## General tab
 
