@@ -59,6 +59,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           text: 'Offline reading',
           link: '/docs/guides/offline-reading',
         },
+        {
+          text: 'Notifications',
+          link: '/docs/guides/notifications',
+        },
         { text: 'Categories', link: '/docs/guides/categories' },
         { text: 'Tracking', link: '/docs/guides/tracking' },
         { text: 'Migrate manga between sources', link: '/docs/guides/source-migration' },

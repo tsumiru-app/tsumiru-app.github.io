@@ -12,6 +12,7 @@ Tsumiru's settings are split into these sections:
 * **Appearance**: theme and look of the app.
 * **Library**: global update interval, skip rules, and category management.
 * **Downloads**: server and on-device download options, split into **Server** and **On device** tabs (see [Offline reading](/docs/guides/offline-reading)).
+* **Notifications**: new-chapter, download, update, and error alerts (see [Notifications](/docs/guides/notifications)).
 * **Reader**: reading mode and all reader behaviour (see [Reader settings](/docs/guides/reader-settings)).
 * **Browse**: source/server browse options.
 * **Backup & Restore**: create and restore server backups (see [Backups](/docs/guides/backups)).
@@ -54,6 +55,7 @@ Under **Settings → General → Timeout Settings** you can raise the **Server R
 * **Theme**: pick from the built-in themes — **Indigo Night** (the default), **Carbon**, **Plum**, **Regression**, **Ember**, **Synthwave**, **Terminal**, **Catppuccin Mocha**, **Nord**, **Gruvbox**, **Dracula**, **Monochrome**, **Royal**, or **Custom**.
 * **Custom color**: with **Custom** picked, choose your own accent color from the wheel.
 * **Manga Grid Size**: how large the covers are in the library grid.
+* **Show recommendations**: show a row of similar titles on a series' details page (on by default; see [reading suggestions](/docs/faq/library#can-tsumiru-suggest-similar-titles)). **Recommendations in overflow** tucks that row into the overflow menu instead.
 
 ## What is Quick Search?
 
@@ -61,7 +63,7 @@ Quick Search is an overlay you open with `Ctrl` + `F` or `Ctrl` + `P` (see [Keyb
 
 ## Does Tsumiru have an incognito mode?
 
-Yes. Turn on **Incognito mode** from the **More** menu and Tsumiru stops recording reading history and "last read" progress while it's active. You can read or catch up on something without it showing up in your history or reordering your library. While it's on, an app-wide banner keeps the state visible. Tap the banner to switch it back off. It's **session-only**, so it also resets whenever you restart the app.
+Turn on **Incognito mode** from the **More** menu and Tsumiru stops recording reading history and "last read" progress while it's active. You can read or catch up on something without it showing up in your history or reordering your library. While it's on, an app-wide banner keeps the state visible. Tap the banner to switch it back off. It's **session-only**, so it also resets whenever you restart the app.
 
 Incognito works well with **hideable categories** (see [Categories](/docs/guides/categories)), which keep chosen library tabs off the main view entirely.
 

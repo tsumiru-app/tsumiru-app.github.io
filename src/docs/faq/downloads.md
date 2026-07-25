@@ -22,7 +22,7 @@ Queueing a large batch asks you to confirm first, so you don't kick off a huge d
 
 ## Can I download multiple chapters or series at once?
 
-Yes. Tsumiru sets no limit of its own. How many downloads run in parallel, and any throttling, is configured on your Suwayomi server.
+Tsumiru sets no limit of its own. How many downloads run in parallel, and any throttling, is configured on your Suwayomi server.
 
 ## How do I manage what's downloading?
 
@@ -37,7 +37,7 @@ The server queue lives on the server, so it's the same from every device. The on
 
 ## Can Tsumiru download new chapters automatically?
 
-Yes. In **Settings → Downloads → Auto-download**, turn on **Download new chapters**. You can set a **Chapter download limit**, and **Ignore automatic chapter downloads for entries with unread chapters** skips series you're behind on.
+In **Settings → Downloads → Auto-download**, turn on **Download new chapters**. You can set a **Chapter download limit**, and **Ignore automatic chapter downloads for entries with unread chapters** skips series you're behind on.
 
 You can also choose **which categories** download on their own, so only the ones you pick fetch new chapters automatically.
 

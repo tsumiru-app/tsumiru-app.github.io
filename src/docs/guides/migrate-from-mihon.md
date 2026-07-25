@@ -46,8 +46,8 @@ Restoring merges into whatever library the server already has. On an existing se
 
 Extensions now live on the server, but you manage them from Tsumiru:
 
-1. Add the extension repos you used in Mihon under **Settings → Browse → Extension Repository**.
-2. Open **Browse → Extensions** and install the sources your library uses. There's a language filter, and installing from a file is supported for anything not in a repo.
+1. Add an extension store under **Settings → Browse → Extension stores** (this needs [a server new enough for Extension stores](/docs/guides/adding-sources)).
+2. Open **Browse → Extensions** and install the sources your library uses. There's a language filter, and installing from a file is supported for anything not in a store.
 
 Once installed on the server, the sources are available to every device you connect.
 

@@ -13,7 +13,7 @@ A backup is a standard Suwayomi (Tachidesk) backup file, so it can be restored t
 ## Create a backup
 
 1. Go to **Settings → Backup & Restore → Create Backup**.
-2. Choose what to include: **Categories** and/or **Chapters** (both on by default).
+2. Choose what to include: **Categories**, **Chapters**, **History**, and **Tracking** (all on by default).
 3. The server generates the backup file and hands it to you to download. Save it somewhere safe.
 
 ## Restore a backup

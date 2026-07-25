@@ -105,7 +105,7 @@ async function generateOgImages(config: SiteConfig) {
   }
 
   // Generate OG images for dynamic changelog pages
-  const octokit = new Octokit()
+  const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
   const releases = await octokit.paginate(octokit.repos.listReleases, {
     owner: 'Suwayomi',
     repo: 'Suwayomi-Tsumiru',

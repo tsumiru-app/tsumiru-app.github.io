@@ -1,51 +1,54 @@
 ---
 title: Migrate manga between sources
 titleTemplate: Guides
-description: Move a series to a different source when one dies or breaks, carrying your read chapters, categories, and tracking with it.
+description: Move a series, or a whole source's worth of series, to a different source when one dies or breaks, carrying your read chapters, categories, and more.
 ---
 
 # Migrate manga between sources
 
-Sources come and go. A site shuts down, an extension breaks, or another source has better scans. Migration moves a series in your library from one source to another **without losing your place**: the new entry takes over, and your reading progress, categories, and tracking come along.
+Sources come and go. A site shuts down, an extension breaks, or another source has better scans. Migration moves a series in your library from one source to another **without losing your place**: the new entry takes over, and your reading progress, categories, and reader settings come along.
+
+Whether you're moving one series or clearing out a dead source, it's the same flow: pick where the series should go, review the matches, then migrate or copy.
 
 ## Start a migration
 
-Open the series you want to move:
+There are three ways in:
 
-* **Phone**: tap the **⋮** menu in the top bar and choose **Migrate**.
-* **Tablet / desktop**: tap the swap-arrows **Migrate** button in the top bar.
+* **One series**: open it, then tap **Migrate** (the **⋮** menu on phone, the swap-arrows button on tablet and desktop).
+* **A selection**: multi-select series in your library and choose **Migrate**.
+* **A whole source**: open **Browse → Migrate**, tap **Migrate off a source**, and pick the source. Tsumiru gathers every series you have on it. The picker can sort sources, **Show obsolete only** to find dead extensions, and select all at once. This is the way to clear a dying source in one pass.
 
-## Find the series on another source
+## Choose the target source
 
-Tsumiru opens **Search All Sources** and immediately searches every source for the series' title. Each source shows its matches as a row of covers; entries already in your library appear darkened.
+On the **Select sources** screen, move the sources you want to search from **Available** into **Selected**. The shortcuts **Select pinned**, **Select enabled**, **Select all**, and **Select none** speed this up. Tsumiru searches these sources, in the order you pick them, for a match to each series. Tap **Continue**.
 
-If the right match doesn't show up, edit the search yourself. Sources often index under slightly different names, so try the romanized title (**Boku no Hero Academia** instead of **My Hero Academia**).
+Two helpers narrow the results: **Extra search query** appends text to every title before searching, and **Hide entries with no match** and **Hide entries without new chapters** trim the list to what's worth moving.
 
-Tap the cover of the series on its new source.
+## Review the matches
 
-## Review the preview
+The **Migrate** list shows each series next to the match Tsumiru found, including its **Latest chapter**. Where nothing matched, it reads **No match found** — tap that entry to **Search manually**, or **Skip** it.
 
-The **Migration Preview** shows the old and new entries side by side. Check the title, source, and chapter details before going further.
+Run the whole list from the toolbar's **Migrate** or **Copy** actions, or handle one entry at a time from its menu with **Migrate now** and **Copy now**.
 
-Under **Migration Options** you choose what carries over:
-
-* **Migrate Chapters**: copies your read status (plus last-read page and bookmarks) to the matching chapters on the new source.
-* **Migrate Categories**: puts the new entry in the same categories as the old one.
-* **Migrate Tracking**: points your tracker links (AniList, MyAnimeList, …) at the new entry.
-* **Delete Source Manga**: removes the original entry from your library once migration finishes.
-
-By default chapters, categories, and delete are on and tracking is off. The **Quick** preset is the safe pick: chapters and categories on, and the original kept in your library so you can verify the new entry before removing the old one yourself. **Custom** just means you've changed the switches.
-
-Tap **Start Migration** and confirm the from/to titles; the migration runs with a progress screen, and when it finishes you get a summary of what moved, with warnings for anything that couldn't.
+**Copy vs migrate**: **Copy** adds the new entry and keeps the original in your library. **Migrate** replaces the original with the new entry. Copy first if you want to check the new source before dropping the old one.
 
 ::: warning No undo
-Migration can't be reversed. If **Delete Source Manga** is on, the original leaves your library when it completes. Double-check you picked the right target first.
+**Migrate** removes the original entry when it finishes, and it can't be reversed. Double-check you picked the right target, or **Copy** instead and remove the old entry yourself once you're happy.
 :::
 
-## What carries over, exactly
+## What carries over
 
-* **Reading progress**: chapters are matched between the two sources by chapter number first, then by chapter name. When the two sources number their chapters differently, some read statuses may not find a match (the summary tells you if that happens). Nothing is marked unread; matches are only ever marked read.
-* **Categories**: the new entry is *added* to the old entry's categories. Nothing is removed from the old one.
-* **Tracking**: each tracker bound to the old entry is bound to the new one.
-* **Server downloads do not move.** Chapters your server downloaded came from the old source; queue fresh downloads on the new entry if you want them.
-* **Delete Source Manga** removes the old series from your library and nothing else from your server.
+The gear on the migration list opens **Data to migrate**, which decides what moves with each series:
+
+* **Migrate Chapters** (on): your read status, last-read page, and bookmarks, matched to the chapters on the new source.
+* **Migrate Categories** (on): the new entry joins the old one's categories.
+* **Migrate Tracking** (off): re-point your tracker links (AniList, MyAnimeList, …) at the new entry.
+* **Reader settings** (on): the series' per-series reader overrides.
+* **Keep-offline rule** (on): the series' offline download rule.
+* **Migrate Downloads** (off): the downloaded chapter files themselves. Left off by default, since those came from the old source — queue fresh downloads on the new entry instead.
+
+A few things to know about matching:
+
+* **Reading progress** is matched chapter by chapter, by number first and then by name. When two sources number their chapters differently, some read statuses may not find a match. Nothing is ever marked unread; matches are only marked read.
+* **Categories** are *added* to the new entry. Nothing is removed from the old one.
+* If your server sign-in expires mid-run, migration pauses (**Paused — sign in again to continue**) and picks up where it left off once you sign back in.

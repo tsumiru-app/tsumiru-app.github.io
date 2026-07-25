@@ -17,14 +17,16 @@ Per-series overrides are stored on the server, so they follow the series to your
 
 Pick a mode from the **Reading mode** chips in the sheet:
 
-* **Long strip**: continuous vertical scroll with no gaps (the default, best for manhwa and webtoons).
+* **Long strip**: continuous vertical scroll with no gaps (best for manhwa and webtoons).
 * **Long strip with gaps**: continuous vertical scroll with a small gap between pages.
 * **Paged (left to right)**: one page at a time, turning left to right.
-* **Paged (right to left)**: page-by-page in traditional manga order.
+* **Paged (right to left)**: page-by-page in traditional manga order (the default).
 * **Paged (vertical)**: page-by-page, turning vertically.
 * **Default**: follow your global default (when set for a series).
 
-**Settings → Reader** offers the same modes under their classic names: **Webtoon** is Long strip, **Continuous Vertical** is Long strip with gaps, and and **Single Horizontal (LTR)**, **Single Horizontal (RTL)**, and **Single Vertical** are the paged ones. A series still set to the old **Continuous horizontal (legacy)** mode shows a dedicated legacy chip in the sheet until you pick another mode.
+The factory default is **Paged (right to left)**. Manhwa, manhua, and webtoons still open as a long strip when **Auto reading mode** is on (see below).
+
+**Settings → Reader** offers the same modes under their classic names: **Webtoon** is Long strip, **Continuous Vertical** is Long strip with gaps, and **Single Horizontal (LTR)**, **Single Horizontal (RTL)**, and **Single Vertical** are the paged ones. A series still set to the old **Continuous horizontal (legacy)** mode shows a dedicated legacy chip in the sheet until you pick another mode.
 
 ## For this series
 
@@ -78,7 +80,7 @@ Tsumiru can move through a chapter hands-free. Pull down the handle at the top o
 
 The **−** and **+** buttons set the pace in seconds per step, from 1 to 30. Long strips start at 3 seconds and paged modes at 5, and each remembers its own pace. It stops the moment you scroll or swipe by hand, when you switch away from the app, and when there are no more pages to show. On a keyboard, **Space** starts and stops auto-scroll in the long-strip modes, and **=** / **−** change the pace.
 
-**Smooth Auto Scroll** (in **Settings → Reader**, on by default) sets how the long-strip glide moves: a continuous drift, or a fixed jump each interval.
+**Smooth Auto Scroll** (in **Settings → Reader**, on by default) makes the long-strip glide a continuous drift; turn it off for a fixed jump each interval.
 
 ## General tab
 
@@ -92,7 +94,7 @@ The sheet's **General** tab collects the global display and behavior settings (a
 * **Show actions on long tap**: on by default. Long-press a page for **Copy**, **Open In Web**, **Share image**, and **Save to gallery**.
 * **Always show chapter transition**: always show the between-chapters transition page.
 * **Flash on page change**: flash the screen on each page turn (helps ghosting on e-ink screens). Tune it with **Flash duration**, **Flash every** (1 to 10 pages), and **Flash with** (**Black**, **White**, or **White and Black**).
-* **Auto Webtoon Mode**: switch to the long-strip reader automatically for entries that look like long strips.
+* **Auto reading mode**: open manhwa, manhua, and webtoons in the long-strip reader automatically.
 
 ## Custom filter tab
 

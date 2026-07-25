@@ -2,7 +2,8 @@ import { Octokit } from '@octokit/rest'
 
 export default {
   async paths() {
-    const octokit = new Octokit()
+    // Unauthenticated requests share a tiny per-IP rate limit; use a token when one is around.
+    const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
     const releases = await octokit.paginate(octokit.repos.listReleases, {
       owner: 'Suwayomi',
       repo: 'Suwayomi-Tsumiru',
