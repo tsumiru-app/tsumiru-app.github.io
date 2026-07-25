@@ -12,6 +12,7 @@ Tsumiru's settings are split into these sections:
 * **Appearance**: theme and look of the app.
 * **Library**: global update interval, skip rules, and category management.
 * **Downloads**: server and on-device download options, split into **Server** and **On device** tabs (see [Offline reading](/docs/guides/offline-reading)).
+* **Notifications**: new-chapter, download, update, and error alerts (see [Notifications](/docs/guides/notifications)).
 * **Reader**: reading mode and all reader behaviour (see [Reader settings](/docs/guides/reader-settings)).
 * **Browse**: source/server browse options.
 * **Backup & Restore**: create and restore server backups (see [Backups](/docs/guides/backups)).
@@ -54,6 +55,7 @@ Under **Settings → General → Timeout Settings** you can raise the **Server R
 * **Theme**: pick from the built-in themes — **Indigo Night** (the default), **Carbon**, **Plum**, **Regression**, **Ember**, **Synthwave**, **Terminal**, **Catppuccin Mocha**, **Nord**, **Gruvbox**, **Dracula**, **Monochrome**, **Royal**, or **Custom**.
 * **Custom color**: with **Custom** picked, choose your own accent color from the wheel.
 * **Manga Grid Size**: how large the covers are in the library grid.
+* **Show recommendations**: show a row of similar titles on a series' details page (on by default; see [reading suggestions](/docs/faq/library#can-tsumiru-suggest-similar-titles)). **Recommendations in overflow** tucks that row into the overflow menu instead.
 
 ## What is Quick Search?
 

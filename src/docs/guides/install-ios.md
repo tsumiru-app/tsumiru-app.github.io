@@ -8,6 +8,8 @@ description: Install Tsumiru on iPhone or iPad by sideloading the unsigned .ipa 
 
 There is **no App Store build** of Tsumiru. Every release ships an **unsigned `.ipa`**, and Apple won't let an iPhone run an app that isn't signed, so you can't download it and tap Install. Instead, a sideloading tool signs the app **to your own Apple account** on your own device.
 
+Tsumiru requires **iOS 14 or later**.
+
 ## 1. Grab the .ipa
 
 Download the file ending in **`-ios.ipa`** from the [latest release](https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/latest).

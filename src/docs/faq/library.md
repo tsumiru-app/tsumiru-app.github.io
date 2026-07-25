@@ -33,7 +33,7 @@ Wrap multi-word values in quotes (`tag:"slice of life"`), exclude a term with a 
 
 ## Where do I see what I've read?
 
-The **History** tab lists your recently-read chapters grouped by day, newest first, with a search box to find something you read a while ago. Use a chapter's menu to drop an entry with **Remove from History**. On tablets and desktop, History sits in the main navigation between **Updates** and **Browse**; on phones it's under the **More** menu. (While [Incognito mode](/docs/faq/settings#does-tsumiru-have-an-incognito-mode) is on, nothing is added to History.)
+The **History** tab lists your recently-read chapters grouped by day, newest first, with a search box to find something you read a while ago. A history entry's menu offers **View Manga** to jump back to the series. On tablets and desktop, History sits in the main navigation between **Updates** and **Browse**; on phones it's under the **More** menu. (While [Incognito mode](/docs/faq/settings#does-tsumiru-have-an-incognito-mode) is on, nothing is added to History.)
 
 ## Can library entries jump to my next chapter?
 

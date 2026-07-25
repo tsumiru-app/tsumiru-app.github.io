@@ -17,12 +17,14 @@ Per-series overrides are stored on the server, so they follow the series to your
 
 Pick a mode from the **Reading mode** chips in the sheet:
 
-* **Long strip**: continuous vertical scroll with no gaps (the default, best for manhwa and webtoons).
+* **Long strip**: continuous vertical scroll with no gaps (best for manhwa and webtoons).
 * **Long strip with gaps**: continuous vertical scroll with a small gap between pages.
 * **Paged (left to right)**: one page at a time, turning left to right.
-* **Paged (right to left)**: page-by-page in traditional manga order.
+* **Paged (right to left)**: page-by-page in traditional manga order (the default).
 * **Paged (vertical)**: page-by-page, turning vertically.
 * **Default**: follow your global default (when set for a series).
+
+The factory default is **Paged (right to left)**. Webtoon-style series still open as a long strip when **Auto Webtoon Mode** is on (see below).
 
 **Settings → Reader** offers the same modes under their classic names: **Webtoon** is Long strip, **Continuous Vertical** is Long strip with gaps, and and **Single Horizontal (LTR)**, **Single Horizontal (RTL)**, and **Single Vertical** are the paged ones. A series still set to the old **Continuous horizontal (legacy)** mode shows a dedicated legacy chip in the sheet until you pick another mode.
 

@@ -42,6 +42,6 @@ For a portable single file, grab the **Linux (AppImage)** above: `chmod +x` it a
 
 ## On iOS
 
-The iOS build is **unsigned**. Apple requires apps to be signed to your own account before they'll run, so it can't be installed by just opening the file. The [installing on iOS](/docs/guides/install-ios) guide walks through the sideloading tools (SideStore, AltStore, TrollStore) and the upkeep each one needs.
+The iOS build is **unsigned** and requires **iOS 14 or later**. Apple requires apps to be signed to your own account before they'll run, so it can't be installed by just opening the file. The [installing on iOS](/docs/guides/install-ios) guide walks through the sideloading tools (SideStore, AltStore, TrollStore) and the upkeep each one needs.
 
 <Changelog type="stable" />
