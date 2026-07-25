@@ -17,7 +17,7 @@ The first-run setup wizard does it for you. On the same Wi-Fi, **Search my netwo
 Extensions live on your **Suwayomi server**, but you manage them from Tsumiru. **Browse → Extensions** lets you install, update, and uninstall extensions (they install onto the server, so every connected client gets them), and extension stores are managed under **Settings → Browse → Extension stores**. See the [Browse guide](/docs/guides/browse-and-extensions) for details.
 
 ## Can I track my reading with AniList or MyAnimeList?
-Yes. Connect the trackers your Suwayomi server supports, bind one to a series, and Tsumiru keeps its progress updated as you read, including chapters you read offline. See [Tracking](/docs/guides/tracking).
+Connect the trackers your Suwayomi server supports, bind one to a series, and Tsumiru keeps its progress updated as you read, including chapters you read offline. See [Tracking](/docs/guides/tracking).
 
 ## Can I read light novels?
 **Tsumiru** is an image-based reader, not a text parser, so light novels are not supported.
