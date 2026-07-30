@@ -24,9 +24,9 @@ Pick a mode from the **Reading mode** chips in the sheet:
 * **Paged (vertical)**: page-by-page, turning vertically.
 * **Default**: follow your global default (when set for a series).
 
-The factory default is **Paged (right to left)**. Manhwa, manhua, and webtoons still open as a long strip when **Auto reading mode** is on (see below).
+The factory default is **Paged (right to left)**. Manhwa, manhua, and webtoons still open as a long strip when **Auto reading mode** is on (see below). In the long strips, reaching the end of a chapter scrolls straight on into the next one.
 
-**Settings → Reader** offers the same modes under their classic names: **Webtoon** is Long strip, **Continuous Vertical** is Long strip with gaps, and **Single Horizontal (LTR)**, **Single Horizontal (RTL)**, and **Single Vertical** are the paged ones. A series still set to the old **Continuous horizontal (legacy)** mode shows a dedicated legacy chip in the sheet until you pick another mode.
+**Settings → Reader** offers the same modes under the same names. A series still set to the old **Continuous horizontal (legacy)** mode shows a dedicated legacy chip in the sheet until you pick another mode.
 
 ## For this series
 
@@ -34,16 +34,16 @@ Everything in the sheet's **For this series** block overrides the global default
 
 * **Reading mode**: the chips above.
 * **Rotation**: lock or free the screen orientation for this series: **Default**, **Free**, **Portrait**, **Landscape**, **Locked portrait**, **Locked landscape**, or **Reverse portrait**.
-* **Tap zones**: the tap layout for paging: **Default**, **L Shaped**, **Right And Left**, **Edge**, **Kindle-ish**, or **Disabled**.
+* **Tap zones**: the tap layout for paging: **Default**, **L Shaped**, **Kindle-ish**, **Edge**, **Right And Left**, or **Disabled**. Tap zones are on out of the box: **Default** picks **Right And Left** for the horizontal paged modes and **L Shaped** everywhere else.
 * **Invert tap zones**: flip the tap directions: **None**, **Horizontal**, **Vertical**, or **Both** (shown while tap zones are enabled).
 * **Reader Padding**: side margins so pages aren't edge-to-edge.
 * **Magnifier Size**: how large the long-press magnifier is (long-press and drag to magnify part of a page).
 
-Below that block, the tab shows the defaults for whichever viewer the current mode uses: **Pager viewer defaults** for the paged modes, **Long strip viewer defaults** for the strips. Those groups are global and mirror **Settings → Reader**.
+Below that block, the tab shows the settings for whichever reader the current mode uses, under a **Paged** or **Long strip** heading. Those groups are global and mirror the same groups in **Settings → Reader**.
 
 ## Paged modes
 
-The **Pager viewer defaults** group controls the paged modes:
+The **Paged** group controls the paged modes:
 
 * **Scale type**: how each page fits the screen: **Fit screen**, **Fit width**, **Fit height**, **Original size**, **Smart fit**, or **Stretch**.
 * **Page layout**: **Single page**, **Double pages**, or **Automatic** (two pages side by side when the screen has room).
@@ -55,21 +55,30 @@ The **Pager viewer defaults** group controls the paged modes:
 * **Crop borders**: trim the empty margins around pages.
 * **Smaller tap zones**: shrink the page-turn tap areas.
 * **Animate page transitions**: animate page turns instead of snapping.
+* **Auto advance interval**: the pace for hands-free page turning (see [auto-scroll](#auto-scroll-and-auto-advance)).
+* **Pan wide images**: pan across a page that's wider than the screen instead of shrinking it.
 
 ### Zoom
 
+Each reader has its own zoom settings, so changing one doesn't touch the other:
+
 * **Double tap to zoom**: on by default. Double-tap to zoom in at the point you tapped, and double-tap again to zoom back out.
-* **Pinch to Zoom**: pinch to zoom, in the long strips as well as the paged modes.
-* **Disable zoom in** / **Disable zoom out**: turn off zooming in that direction.
+* **Pinch to Zoom**: pinch to zoom.
+* **Disable zoom in** / **Disable zoom out**: turn off zooming in that direction (the long strips only offer **Disable zoom out**).
 
 ## Long strips
 
-The **Long strip viewer defaults** group covers the strip modes:
+The **Long strip** group covers the strip modes:
 
-* **Smart scale on wide screen**: on wide displays, cap the strip's width to a ratio: **Fit screen**, **3:2**, **4:3**, **16:9**, or **20:9**.
+* **Long strip scale**: how the strip fits the window: **Fit screen**, **4:3**, **3:2**, **16:9**, **20:9**, or **Original size**, which shows pages at their true size instead of stretching them to fit.
+* **Maximum width**: cap how wide the strip can grow, as a percentage of the window (**%**) or a fixed pixel width (**px**). Greyed out under **Original size**, since pages at their native size never widen.
 * **Crop borders**: trim page margins, set separately for **Long strip** and **Long strip with gaps**.
+* **Smaller tap zones**: shrink the page-turn tap areas.
+* **Smooth Auto Scroll** and **Auto scroll interval**: the glide and pace for hands-free scrolling (see [auto-scroll](#auto-scroll-and-auto-advance)).
+* **Keyboard scroll distance**: how far each key press scrolls on a keyboard: **Tiny**, **Small**, **Medium**, or **Large**.
+* **Animate page transitions**: animate page jumps instead of snapping.
 
-The zoom and tap-zone toggles above apply to the strips too, and the sheet repeats them in this group so you can set them without leaving the reader.
+The tap-zone and zoom settings apply per reader here too, so the strips can behave differently from the paged modes.
 
 ## Auto-scroll and auto-advance
 
@@ -78,9 +87,9 @@ Tsumiru can move through a chapter hands-free. Pull down the handle at the top o
 * In the long-strip modes it's **Auto scroll**: the page glides down on its own.
 * In the paged modes it's **Auto advance**: it turns one page at a time.
 
-The **−** and **+** buttons set the pace in seconds per step, from 1 to 30. Long strips start at 3 seconds and paged modes at 5, and each remembers its own pace. It stops the moment you scroll or swipe by hand, when you switch away from the app, and when there are no more pages to show. On a keyboard, **Space** starts and stops auto-scroll in the long-strip modes, and **=** / **−** change the pace.
+The **−** and **+** buttons set the pace in seconds per step, from 1 to 30. Long strips start at 3 seconds and paged modes at 5, and each remembers its own pace. The same paces live in the settings sheet as **Auto scroll interval** (Long strip) and **Auto advance interval** (Paged). It stops the moment you scroll or swipe by hand, when you switch away from the app, and when there are no more pages to show. On a keyboard, **Space** starts and stops auto-scroll in the long-strip modes, and **=** / **−** change the pace.
 
-**Smooth Auto Scroll** (in **Settings → Reader**, on by default) makes the long-strip glide a continuous drift; turn it off for a fixed jump each interval.
+**Smooth Auto Scroll** (in the **Long strip** group, on by default) makes the long-strip glide a continuous drift; turn it off for a fixed jump each interval.
 
 ## General tab
 
@@ -109,11 +118,11 @@ On the **Custom filter** tab the sheet's backdrop turns transparent so the page 
 
 A few settings live only on the global screen:
 
-* **Navigation layout** and **Invert tapping**: the global defaults for tap zones (the per-series versions are in the sheet).
+* **Tap zones** and **Invert tap zones**: the global tap-zone defaults, set separately in the **Paged** and **Long strip** groups (the per-series versions are in the sheet).
+* **Show tap zones overlay**: briefly flash the tap layout when you open a chapter (off by default).
 * **Swipe toggle**: swipe to change chapter. **Last page swipe** restricts that to the last/first page only.
 * **Volume Keys**: page with the volume keys, with an **Invert Volume Keys** option *(Android)*.
 * **Reader initial overlay**: show the title and controls when you open a chapter.
-* **Infinity Scrolling Mode**: automatically load the next or previous chapter when you scroll past the end of the current one.
 * **Scroll animation**: animate page jumps instead of snapping instantly.
 * **Reading feedback toasts**: turn off to hide messages like "loading next chapter" and "no more chapters".
 * **Ignore Safe Area**: let content extend into the notch and home-indicator areas *(Android & iOS)*.

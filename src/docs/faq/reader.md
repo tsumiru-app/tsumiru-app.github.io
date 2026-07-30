@@ -14,7 +14,7 @@ Long strip, Long strip with gaps, Paged (left to right), Paged (right to left), 
 Aside from a network hiccup, the image may have failed to come through from the server. Exit and re-enter the reader, which usually resolves it. If pages consistently fail, check that your Suwayomi server is reachable.
 
 ## Can I pinch to zoom in the webtoon reader?
-Pinch-to-zoom works in the long-strip reader as well as the paged modes. **Double tap to zoom** is on by default too: double-tap to zoom in at the point you tapped, and double-tap again to zoom back out.
+Pinch-to-zoom works in the long-strip reader as well as the paged modes. **Double tap to zoom** is on by default too: double-tap to zoom in at the point you tapped, and double-tap again to zoom back out. The zoom settings are separate for the Paged and Long strip readers, so you can turn zoom off in one without touching the other.
 
 ## Can I see two pages at once?
 In the paged modes, set **Page layout** to **Double pages**, or to **Automatic** to use two pages whenever the screen has room. The settings next to it fine-tune the spread: **Split wide pages** cuts double-width scans into two pages, **Rotate wide pages to fit** turns them 90° instead, **Invert double pages** swaps the reading order, and **Center margin type** adds a gutter down the middle of a spread. Turn on **Dual page spread in landscape** to get a true spread when you rotate the device. See [Reader settings](/docs/guides/reader-settings).
