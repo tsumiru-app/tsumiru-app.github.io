@@ -9,12 +9,13 @@ Frequently Asked Questions about the Library.
 
 ## How do I sort, filter, and change the layout?
 
-Tap the organizer icon in the Library toolbar for four tabs:
+Tap the organizer icon in the Library toolbar for five tabs:
 
-* **Filter**: show or hide by **Downloaded**, **On device**, **Unread**, **Started**, **Bookmarked**, **Completed**, and **Lewd**; set a **Minimum rating** with the star row; and include or exclude specific **Categories**, **Tags**, and (once a tracker is connected) **Tracked** services.
-* **Sort**: **Alphabetical**, **Date Added**, **Unread**, **Chapter Fetch Date**, **Latest Chapter**, **Total Chapters**, **Last Read** (the default), **Random**, or **Tracker score** (ascending or descending).
-* **Display**: **Grid**, **Cover-only grid**, **List**, or **Descriptive List**; column-count sliders for portrait and landscape; badges for **Downloaded**, **Unread**, **Language**, **Local**, and **Source**; the continue-reading button; and tab options (category tabs, item counts, showing hidden categories).
-* **Group**: group the library **By source**, **By status**, or **By track status**, keep the **Default** category tabs, or pick **Ungrouped** for one flat tab.
+* **Filter**: each filter is a chip row with **Any** plus the two states, so you pick a side or leave it off: **Download Status** (**Downloaded** / **Not Downloaded**), **Storage** (**On Device** / **Remote**), **Read Status** (**Unread** / **Read**), **Progress** (**Started** / **Not Started**), **Bookmarks** (**Bookmarked** / **Not Bookmarked**), **Publication Status** (**Completed** / **Not Completed**), and **Content Rating** (**Lewd** / **Not Lewd**). Below the rows: a **Minimum rating** star row, and include or exclude specific **Categories**, **Tags**, and (once a tracker is connected) **Tracked** services.
+* **Sort**: **Alphabetical**, **Rating**, **Total Chapters**, **Last Read** (the default), **Last Update**, **Unread**, **Latest Chapter**, **Chapter Fetch Date**, **Date Added**, **Tracker score**, or **Random** (ascending or descending).
+* **Display**: pick a layout (**List**, **Descriptive List**, **Compact grid**, **Comfortable grid**, or **Cover-only grid**). The grid layouts get column-count sliders for portrait and landscape plus a **Grid style** row: **Uniform** crops every cover to the same cell, **Non-uniform** lets covers keep their shape with rows still aligned, and **Staggered** packs each column independently. The list layouts get a **List size** slider instead. **Limit titles to 2 lines** and **Outline on covers** round the tab out.
+* **Badges**: choose the **Unread badge** style (**Show count**, **Show plain badge** for a badge with no number, or **Hide**), toggle the **Downloaded**, **On device**, **Read progress bar**, **Continue reading button**, **Source icon**, and **Language** badges, and set the **Badge layout**: drag to reorder the badges, and tap the arrow to move one to the other corner of the cover.
+* **Group**: keep the **Default** category tabs, group **By tag**, **By source**, **By status**, **By track status**, or **By language**, or pick **Ungrouped** for one flat tab. **Group display** shows groups as **Tabs** or as **Section headers** in one continuous scroll, and the tab options (category tabs, item counts, showing hidden categories) live here too.
 
 ## How do I search my library?
 
@@ -31,15 +32,17 @@ The library search box takes field filters, not just plain text. Type `key:value
 
 Wrap multi-word values in quotes (`tag:"slice of life"`), exclude a term with a leading minus (`-tag:dropped`), and match either of two things with a group (`{genre:action|genre:romance}`). Plain words with no `key:` still search titles, authors, genres, and tags as usual. The **?** beside the search box opens the same tips in the app.
 
-To keep the search box always in reach, turn on **Persistent search bar** in the library display settings. It sits below the app bar and sticks to the top as you scroll, instead of hiding behind the search icon.
+To keep the search box always in reach, turn on **Persistent search bar** in **Settings → Library**. It sits below the app bar and sticks to the top as you scroll, instead of hiding behind the search icon.
 
 ## Where do I see what I've read?
 
 The **History** tab lists your recently-read chapters grouped by day, newest first, with a search box to find something you read a while ago. A history entry's menu offers **View Manga** to jump back to the series. On tablets and desktop, History sits in the main navigation between **Updates** and **Browse**; on phones it's under the **More** menu. (While [Incognito mode](/docs/faq/settings#does-tsumiru-have-an-incognito-mode) is on, nothing is added to History.)
 
+History covers everything you've read on the server, including series you've since removed from your library. The filter icon narrows the list with the same chip rows as the library: **Series** (**Unfinished** / **Finished**), **Read Status** (**Unread** / **Read**), and **Library** (**In library** / **Not in library**).
+
 ## Can library entries jump to my next chapter?
 
-Turn on the **Continue reading button** in the library display settings (off by default), and each entry gets a button that opens your next unread chapter directly, without going through the series page first.
+Turn on the **Continue reading button** in the organizer's **Badges** tab (off by default), and each entry gets a button that opens your next unread chapter directly, without going through the series page first.
 
 ## What happens when a source site is down?
 
@@ -65,7 +68,7 @@ This reduces unnecessary requests.
 
 ## Where do I see recently updated chapters?
 
-The **Updates** tab lists newly fetched chapters grouped by date, newest first. You can multi-select chapters there for bulk actions.
+The **Updates** tab lists newly fetched chapters grouped by date, newest first. You can multi-select chapters there for bulk actions. The filter icon narrows the list by **Download Status** (**Downloaded** / **Not Downloaded**), **Read Status** (**Unread** / **Read**), **Progress** (**Started** / **Not Started**), and **Bookmarks** (**Bookmarked** / **Not Bookmarked**).
 
 ## Can I sync between devices?
 
