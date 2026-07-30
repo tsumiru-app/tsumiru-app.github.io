@@ -16,6 +16,7 @@ Tsumiru requires a running Suwayomi server to function. If you see a connection 
 * **Check that the server is running.** Open the server's web UI in a browser from the same device. If the browser can't load it either, the server is not running or not reachable.
 * **Check your network.** If the server is on your local network, make sure your device is on the same network (not on mobile data). If accessing remotely, confirm your reverse proxy or port forwarding is set up correctly.
 * **Check authentication.** If your Suwayomi server requires a login, make sure the credentials in **More → Connection** are correct.
+* **Need to read right now?** If you keep chapters on your device, a **View offline** button appears on the library's loading screen while it can't reach the server. Tap it to open your downloaded library without waiting. See [Offline reading](/docs/guides/offline-reading).
 
 ### "Test connection" couldn't confirm it's Suwayomi
 

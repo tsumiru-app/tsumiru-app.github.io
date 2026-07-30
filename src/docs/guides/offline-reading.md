@@ -20,7 +20,7 @@ There are two ways to save chapters offline.
 
 ### Keep a whole series offline
 
-On a series page, tap **Offline** (next to **In library**) to choose a rule. Once chapters are saved it reads **On device**. Tsumiru then keeps the matching chapters on your device automatically, and tops them up whenever new chapters are downloaded on the server:
+On a series page, tap **Offline** (next to **In library**) to choose a rule. Once chapters are saved it reads **On device**. Tsumiru then keeps the matching chapters on your device automatically. After every library update it fetches the new chapters for each kept series (asking the server to download them first when needed) and removes older ones the rule no longer covers:
 
 * **Keep next 5 / 10 / 25 unread**: a rolling buffer of upcoming chapters, refilled as you read.
 * **Keep all unread**: every unread chapter.
@@ -52,9 +52,11 @@ So a chapter that's fully available offline shows both a **pin** (on your device
 
 When Tsumiru can't reach your server, it falls back to what's stored on the device:
 
-* Your **library** shows the series you have saved offline.
+* Your **library** shows the series you have saved offline, with their covers.
 * Opening a saved chapter reads the pages straight from the device, no network needed.
 * Your **reading progress** is saved locally and synced back to the server automatically the next time you reconnect.
+
+Tsumiru notices an unreachable server quickly and switches over on its own. If the library is still trying to connect, a **View offline** button appears on the loading screen whenever there are downloads to show — tap it to go straight to your downloaded library instead of waiting.
 
 Chapters you haven't saved offline aren't available until the server is reachable again.
 
@@ -72,6 +74,7 @@ To configure offline storage, go to **Settings → Downloads** and open the **On
 * **Remove all downloads**: clears every offline chapter from this device in one step (your server library is untouched).
 * **Simultaneous downloads**: how many pages download at once (1–8, default 2). Lower it on a slow or metered connection.
 * **Download over Wi-Fi only**: on by default, so background downloads don't spend mobile data. Turn it off to allow downloads on any connection.
+* **Download new chapters in the background** *(Android)*: fetch new chapters for series you keep offline without opening the app.
 
 Categories can also download on their own: pick which ones under the download settings, and their new chapters are saved without you asking each time.
 
@@ -79,7 +82,7 @@ Categories can also download on their own: pick which ones under the download se
 
 Three optional safety nets keep offline storage from growing without limit. All are **off** by default, and none ever removes chapters you've **pinned** by hand:
 
-* **Delete finished chapters while reading**: remove an auto-kept chapter once you finish it, so storage doesn't pile up. Set it per device or for the server under **Settings → Downloads**.
+* **Delete finished chapters while reading**: remove an auto-kept chapter once you finish it, so storage doesn't pile up. The delete waits until you close the reader, so a chapter never disappears mid-session. Set it per device or for the server under **Settings → Downloads**.
 * **Limit offline storage**: set a ceiling (default 2 GB). When you go over it, the oldest auto-kept chapters are removed first.
 * **Auto-remove old downloads**: delete auto-kept chapters older than a set age (default 30 days).
 
