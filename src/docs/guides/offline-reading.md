@@ -55,6 +55,7 @@ When Tsumiru can't reach your server, it falls back to what's stored on the devi
 * Your **library** shows the series you have saved offline, with their covers.
 * Opening a saved chapter reads the pages straight from the device, no network needed.
 * Your **reading progress** is saved locally and synced back to the server automatically the next time you reconnect.
+* Your **category tabs** work offline too, and you can still hide or show them. A change made offline stays on this device only: it isn't sent to the server, and the server's own setting comes back at the next sync.
 
 The switch happens on its own. If the library is still trying to connect, a **View offline** button appears on the loading screen whenever there are downloads to show. Tap it to go straight to your downloaded library instead of waiting.
 
