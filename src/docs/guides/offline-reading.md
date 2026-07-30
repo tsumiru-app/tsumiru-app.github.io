@@ -56,7 +56,7 @@ When Tsumiru can't reach your server, it falls back to what's stored on the devi
 * Opening a saved chapter reads the pages straight from the device, no network needed.
 * Your **reading progress** is saved locally and synced back to the server automatically the next time you reconnect.
 
-Tsumiru notices an unreachable server quickly and switches over on its own. If the library is still trying to connect, a **View offline** button appears on the loading screen whenever there are downloads to show — tap it to go straight to your downloaded library instead of waiting.
+Tsumiru notices an unreachable server quickly and switches over on its own. If the library is still trying to connect, a **View offline** button appears on the loading screen whenever there are downloads to show. Tap it to go straight to your downloaded library instead of waiting.
 
 Chapters you haven't saved offline aren't available until the server is reachable again.
 
