@@ -41,7 +41,7 @@ In **Settings → Downloads → Auto-download**, turn on **Download new chapters
 
 You can also choose **which categories** download on their own, so only the ones you pick fetch new chapters automatically.
 
-Series you keep on your device top themselves up too: after every library update, new chapters for kept series are fetched and older ones past the keep rule are removed. See [Offline reading](/docs/guides/offline-reading).
+Tsumiru also tops up series you keep on your device: after every library update, new chapters for kept series are fetched and older chapters the rule no longer covers are removed. See [Offline reading](/docs/guides/offline-reading).
 
 ## Why did a download stop or fail?
 

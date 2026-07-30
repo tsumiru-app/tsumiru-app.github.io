@@ -71,7 +71,7 @@ Each reader has its own zoom settings, so changing one doesn't touch the other:
 The **Long strip** group covers the strip modes:
 
 * **Long strip scale**: how the strip fits the window: **Fit screen**, **4:3**, **3:2**, **16:9**, **20:9**, or **Original size**, which shows pages at their true size instead of stretching them to fit.
-* **Maximum width**: cap how wide the strip can grow, as a percentage of the window (**%**) or a fixed pixel width (**px**). Greyed out under **Original size**, since pages at their native size never widen.
+* **Maximum width**: cap how wide the strip can grow, as a percentage of the window (**%**) or a fixed pixel width (**px**). It's greyed out under **Original size**, since pages at their native size never widen.
 * **Crop borders**: trim page margins, set separately for **Long strip** and **Long strip with gaps**.
 * **Smaller tap zones**: shrink the page-turn tap areas.
 * **Smooth Auto Scroll** and **Auto scroll interval**: the glide and pace for hands-free scrolling (see [auto-scroll](#auto-scroll-and-auto-advance)).
