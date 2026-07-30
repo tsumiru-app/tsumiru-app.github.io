@@ -59,7 +59,7 @@ Under **Settings → General → Timeout Settings** you can raise the **Server R
 
 ## What is Quick Search?
 
-Quick Search is an overlay you open with `Ctrl` + `F` or `Ctrl` + `P` (see [Keyboard shortcuts](/docs/guides/keyboard-shortcuts)). It searches your **library**, offers **Go to** jumps to screens, settings, and categories, and can hand your text to a full **source search** across your extensions. It understands the same `key:value` [search operators](/docs/faq/library#how-do-i-search-my-library) as the library search box. Turn it on or off with **Quick Search** in **Settings → General**.
+Quick Search is an overlay you open with `Ctrl` + `F` or `Ctrl` + `P` (see [Keyboard shortcuts](/docs/guides/keyboard-shortcuts)). It searches your **library**, offers **Go to** jumps to screens, settings, and categories, and can hand your text to a full **source search** across your extensions. It understands the same `key:value` [search operators](/docs/faq/library#how-do-i-search-my-library) as the library search box. Turn it on or off with **Quick Search** in **Settings → General**. Since a keyboard shortcut is the only way to open it, it only appears on desktop and the web, not on phones and tablets.
 
 ## Does Tsumiru have an incognito mode?
 
