@@ -38,6 +38,8 @@ jobs:
         env:
           # Used for sitemap + OpenGraph absolute URLs.
           VITE_HOSTNAME: https://tsumiru.app
+          # Release lookups are rate-limited to 60/hour without it.
+          GITHUB_TOKEN: ${{ github.token }}
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:

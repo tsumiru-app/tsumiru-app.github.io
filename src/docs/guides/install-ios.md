@@ -42,6 +42,20 @@ TrollStore exploits a signing bug to install apps **permanently**, with no signi
 * A **paid** Apple Developer account ($99/year) extends signing to a year and lifts the 3-app cap. Not required unless the 7-day refresh or the 3-app cap bites you.
 * **TrollStore** skips all of this, on the iOS versions where it works.
 
+## Add the Tsumiru source
+
+Tsumiru publishes a source that SideStore and AltStore can read, so new releases show up in the app instead of you checking the releases page.
+
+```text
+https://tsumiru.app/apps.json
+```
+
+In SideStore or AltStore, open **Browse**, tap **Sources**, tap **+**, and paste that URL. Tsumiru then appears in the source with an **Install** button, and later releases show an **Update** button.
+
+TrollStore has no source support. Keep installing the `.ipa` by hand.
+
 ## Updating Tsumiru
 
-A refresh only re-signs the version you already have. It doesn't update the app. When a new Tsumiru release comes out, download the new `.ipa` and install it through the same tool; it replaces the old version and keeps your settings.
+A refresh only re-signs the version you already have. It doesn't update the app.
+
+With the source added, tap **Update** when a new release appears. Otherwise download the new `.ipa` and install it through the same tool. Either way it replaces the old version and keeps your settings.

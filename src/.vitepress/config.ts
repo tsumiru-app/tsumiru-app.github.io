@@ -7,6 +7,9 @@ import { defineConfig, loadEnv } from 'vitepress'
 // Theme related config
 import headConfig from './config/headConfig'
 
+// Publishes the AltStore / SideStore source
+import generateAltStoreSource from './config/hooks/generateAltStoreSource'
+
 // Enhanced meta generation
 import generateFeed from './config/hooks/generateFeed'
 
@@ -86,6 +89,7 @@ export default defineConfig({
   buildEnd: async (context) => {
     generateFeed(context, hostname)
     generateOgImages(context)
+    await generateAltStoreSource(context, hostname)
   },
   vite: {
     resolve: {
