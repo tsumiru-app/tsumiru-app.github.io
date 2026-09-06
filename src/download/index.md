@@ -44,4 +44,6 @@ For a portable single file, grab the **Linux (AppImage)** above: `chmod +x` it a
 
 The iOS build is **unsigned** and requires **iOS 14 or later**. Apple requires apps to be signed to your own account before they'll run, so it can't be installed by just opening the file. The [installing on iOS](/docs/guides/install-ios) guide walks through the sideloading tools (SideStore, AltStore, TrollStore) and the upkeep each one needs.
 
+SideStore and AltStore can also install and update Tsumiru from a source. Add `https://tsumiru.app/apps.json` under **Sources**, and new releases appear in the app.
+
 <Changelog type="stable" />
