@@ -26,7 +26,7 @@ Pick a mode from the **Reading mode** chips in the sheet:
 
 The factory default is **Paged (right to left)**. Manhwa, manhua, and webtoons still open as a long strip when **Auto reading mode** is on (see below). In the long strips, reaching the end of a chapter scrolls straight on into the next one.
 
-**Settings → Reader** offers those same modes under the same names, plus two the chip row has no chip for: **Continuous horizontal (LTR, legacy)** and **Continuous horizontal (RTL, legacy)**. Both scroll the pages sideways in one continuous strip instead of turning them one at a time, left to right or right to left. A series set to either shows a single **Continuous horizontal (legacy)** chip in the sheet until you pick another mode.
+**Settings → Reader** offers those same modes under the same names, plus two that don't appear as chips in the sheet: **Continuous horizontal (LTR, legacy)** and **Continuous horizontal (RTL, legacy)**. Both scroll the pages sideways in one continuous strip instead of turning them one at a time, left to right or right to left. A series set to either shows a single **Continuous horizontal (legacy)** chip in the sheet until you pick another mode.
 
 ## For this series
 

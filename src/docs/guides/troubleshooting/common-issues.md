@@ -12,7 +12,7 @@ description: Facing issues connecting Tsumiru to your server or loading content?
 
 Tsumiru requires a running Suwayomi server to function. If you see a connection error:
 
-* **Check the server URL.** Go to **More → Connection** and verify the whole address, port and scheme included (`http` vs `https`). The port is part of the **Server URL**, not a field of its own. A common mistake is using `https://` when the server is only listening on plain `http://`.
+* **Check the server URL.** Go to **More → Connection** and verify the whole address, including the port and scheme (`http` vs `https`). The port is part of the **Server URL**, not a field of its own. A common mistake is using `https://` when the server is only listening on plain `http://`.
 * **Check which address is in use.** If you've set an **Internal / LAN URL** as well, the **Active connection** row says whether Tsumiru is **Using LAN** or **Using remote**. A LAN address won't answer when you're away from home, and a remote one may not resolve on your own network.
 * **Check that the server is running.** Open the server's web UI in a browser from the same device. If the browser can't load it either, the server is not running or not reachable.
 * **Check your network.** If the server is on your local network, make sure your device is on the same network (not on mobile data). If accessing remotely, confirm your reverse proxy or port forwarding is set up correctly.
@@ -87,7 +87,7 @@ Your server credentials are incorrect or have expired. Go to **More → Connecti
 ### `HTTP Error: 403` - Forbidden
 The server or the source is refusing the request. Check that your server credentials are correct.
 
-If your server sits behind an authentication gateway, a Zero Trust guard, or a reverse proxy, the 403 is likely coming from that rather than from Suwayomi, and it's fixable in the app: add the headers it expects under **More → Connection → Custom HTTP headers** with **Add header**, a **Header name**, and a **Header value**.
+If your server sits behind an authentication gateway, a Zero Trust guard, or a reverse proxy, the 403 is likely coming from that rather than from Suwayomi. Add the headers it expects under **More → Connection → Custom HTTP headers** with **Add header**, a **Header name**, and a **Header value**.
 
 If the source itself is returning 403, the source may be enforcing IP-based blocking or rate limits. This is a server-side issue to investigate in the Suwayomi server logs.
 

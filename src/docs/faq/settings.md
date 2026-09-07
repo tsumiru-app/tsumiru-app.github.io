@@ -23,7 +23,7 @@ How Tsumiru **connects** to the server (its address, your sign-in, and any heade
 
 ## How do I connect to my server?
 
-Open **More → Connection**. Under **Server address**, set the **Server URL** to the full address of your server, port included: `http://192.168.1.10:4567`. There's no separate port field — the port is part of the URL.
+Open **More → Connection**. Under **Server address**, set the **Server URL** to the full address of your server, port included: `http://192.168.1.10:4567`. There's no separate port field. The port is part of the URL.
 
 ## Can I have one address at home and another away?
 
@@ -44,7 +44,7 @@ Enter your **Credentials** for the chosen type. Use **Log out** to clear stored 
 
 If your sign-in expires while you're using Tsumiru, an inline banner asks you to sign in again. It doesn't log you out — sign in from the banner and you carry on where you were.
 
-## My server sits behind a gateway that needs extra headers
+## My server sits behind a gateway that needs extra headers: how do I add them?
 
 Add them under **More → Connection → Custom HTTP headers**. Tap **Add header**, fill in the **Header name** and **Header value**, and save. They're sent with every request Tsumiru makes to your server, and you only need them when the server sits behind an authentication gateway, Zero Trust guard, or reverse proxy that expects extra headers.
 
