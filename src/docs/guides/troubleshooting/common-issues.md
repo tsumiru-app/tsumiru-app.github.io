@@ -88,6 +88,7 @@ Your server credentials are incorrect or have expired. Go to **More → Connecti
 The server or the source is refusing the request. Check that your server credentials are correct.
 
 If your server sits behind an authentication gateway, a Zero Trust guard, or a reverse proxy, the 403 is likely coming from that rather than from Suwayomi. Add the headers it expects under **More → Connection → Custom HTTP headers** with **Add header**, a **Header name**, and a **Header value**.
+See [Reaching your server from anywhere](/docs/guides/remote-access) for the full setup.
 
 If the source itself is returning 403, the source may be enforcing IP-based blocking or rate limits. This is a server-side issue to investigate in the Suwayomi server logs.
 

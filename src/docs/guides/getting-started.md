@@ -34,6 +34,7 @@ The first time you open Tsumiru, a short setup wizard walks you through it:
    * **Search my network** scans your local network and fills in a Suwayomi server automatically. On the same Wi-Fi this is the easiest path.
    * **Test connection** checks an address you type. You can enter just the host (`192.168.1.10` or `suwayomi.mydomain.com`) and Tsumiru works out the scheme and port for you, trying Suwayomi's default **4567** first. For a custom port, include it: `192.168.1.10:4568`. It then tells you exactly what it found: connected, needs a login, unreachable, or reached something that isn't Suwayomi.
 3. If your server sits behind an authentication gateway, Zero Trust guard, or reverse proxy that expects extra headers, add them under **Custom HTTP headers** on this same step, using **Add header** with a **Header name** and **Header value**. Do it before you test: without them the test can't reach your server at all, so it reports a failure that has nothing to do with the address you typed.
+See [Reaching your server from anywhere](/docs/guides/remote-access) if you want to read away from home.
 4. If your server needs a sign-in, **Test connection** detects it and reveals a login form. Enter your username and password. Tsumiru works out which of Suwayomi's auth modes (Basic / Simple / UI login) to use, or pick the mode yourself, then tap **Sign in**.
 5. Finish, and your library loads.
 

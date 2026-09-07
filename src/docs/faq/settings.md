@@ -47,6 +47,7 @@ If your sign-in expires while you're using Tsumiru, an inline banner asks you to
 ## My server sits behind a gateway that needs extra headers: how do I add them?
 
 Add them under **More → Connection → Custom HTTP headers**. Tap **Add header**, fill in the **Header name** and **Header value**, and save. They're sent with every request Tsumiru makes to your server, and you only need them when the server sits behind an authentication gateway, Zero Trust guard, or reverse proxy that expects extra headers.
+For the wider picture, see [Reaching your server from anywhere](/docs/guides/remote-access).
 
 ## What about proxy or advanced connection settings?
 
