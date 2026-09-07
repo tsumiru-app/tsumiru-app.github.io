@@ -30,7 +30,7 @@ The other alerts each have their own switch:
 
 New-chapter checks run in the background, and a few settings decide when:
 
-* **Check interval**: how often Tsumiru looks for new chapters.
+* **Check interval**: how often Tsumiru looks for new chapters. The same control appears under **Settings → Downloads → On device**, nested under **Download new chapters in the background**. It's one shared schedule, so changing it in either place changes both.
 * **Only on Wi-Fi**: skip the check on mobile data.
 * **Only while charging**: skip it unless the device is plugged in.
 * **Check now**: run a check immediately instead of waiting for the interval.

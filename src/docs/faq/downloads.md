@@ -17,6 +17,7 @@ This page covers **server** downloads. To keep chapters **on your device** and r
 * **A single chapter**: tap the download icon on the chapter row. Tap it again while it's queued to cancel, or once it's downloaded to delete it.
 * **A batch from a series**: on the series page, tap the **download** button in the toolbar and choose a preset: **Next chapter**, **Next 5 / 10 / 25 chapters**, **Unread**, or **All**.
 * **Hand-picked chapters**: long-press a chapter to enter selection mode, then pick the ones you want (use **Select next 10**, **Select Unread**, or **Select in between** to help), and tap the download icon in the bottom bar.
+* **Whole series from the library**: long-press a cover in the library to start selecting, tap any others you want, then tap **Download to server** in the selection toolbar. Only the chapters your server doesn't already have are queued. Selecting more than one series asks you to confirm first.
 
 Queueing a large batch asks you to confirm first, so you don't kick off a huge download by accident.
 
@@ -26,10 +27,12 @@ Tsumiru sets no limit of its own. How many downloads run in parallel, and any th
 
 ## How do I manage what's downloading?
 
-The **Downloads** screen has two tabs: **Server** for the server queue, and **On device** for chapters saving to this device (see [Offline reading](/docs/guides/offline-reading)). On the **Server** tab you can:
+The **Downloads** screen has two tabs: **Server** for the server queue, and **On device** for chapters saving to this device (see [Offline reading](/docs/guides/offline-reading)).
 
-* Reorder items with the up/down arrows, or **Move to top** / **Move to Bottom**.
-* **Delete** an item from the queue, or **Retry** one that errored.
+The **Server** tab is a single list under a **Queue** header that shows how many chapters are waiting, with the reminder *"Chapters the server is fetching. Long-press a row to reorder."* The chapter being fetched shows its page count (*24/25 pages*) above a thin progress bar. On this tab you can:
+
+* Reorder an item by long-pressing its row and dragging it, or by dragging the handle on the right. Its menu also offers **Move to top** and **Move to Bottom**.
+* **Cancel** an item from its menu. A row that errored gets a **Retry** entry in the same menu.
 * **Pause** / **Resume** the whole queue with the floating button.
 * **Clear** the entire queue with the sweep icon in the toolbar.
 

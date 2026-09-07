@@ -56,6 +56,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           link: '/docs/guides/keyboard-shortcuts',
         },
         {
+          text: 'Reaching your server from anywhere',
+          link: '/docs/guides/remote-access',
+        },
+        {
           text: 'Offline reading',
           link: '/docs/guides/offline-reading',
         },

@@ -68,7 +68,9 @@ This reduces unnecessary requests.
 
 ## Where do I see recently updated chapters?
 
-The **Updates** tab lists newly fetched chapters grouped by date, newest first. You can multi-select chapters there for bulk actions. The filter icon narrows the list by **Download Status** (**Downloaded** / **Not Downloaded**), **Read Status** (**Unread** / **Read**), **Progress** (**Started** / **Not Started**), and **Bookmarks** (**Bookmarked** / **Not Bookmarked**).
+The **Updates** tab lists newly fetched chapters grouped by date, newest first. You can multi-select chapters there for bulk actions.
+
+The filter icon opens **Chapter grouping** at the top, which stacks consecutive chapters from the same series into one foldable entry: **Disabled** lists every chapter on its own, **Collapsed** folds each stack shut, and **Expanded** folds them open. Below that, the sheet narrows the list by **Download Status** (**Downloaded** / **Not Downloaded**), **Read Status** (**Unread** / **Read**), **Progress** (**Started** / **Not Started**), and **Bookmarks** (**Bookmarked** / **Not Bookmarked**).
 
 ## Can I sync between devices?
 
