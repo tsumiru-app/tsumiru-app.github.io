@@ -33,12 +33,13 @@ The first time you open Tsumiru, a short setup wizard walks you through it:
 2. On **Connect your server**, point Tsumiru at your server. Two helpers do the work:
    * **Search my network** scans your local network and fills in a Suwayomi server automatically. On the same Wi-Fi this is the easiest path.
    * **Test connection** checks an address you type. You can enter just the host (`192.168.1.10` or `suwayomi.mydomain.com`) and Tsumiru works out the scheme and port for you, trying Suwayomi's default **4567** first. For a custom port, include it: `192.168.1.10:4568`. It then tells you exactly what it found: connected, needs a login, unreachable, or reached something that isn't Suwayomi.
-3. If your server needs a sign-in, **Test connection** detects it and reveals a login form. Enter your username and password. Tsumiru works out which of Suwayomi's auth modes (Basic / Simple / UI login) to use, or pick the mode yourself, then tap **Sign in**.
-4. Finish, and your library loads.
+3. If your server sits behind an authentication gateway, Zero Trust guard, or reverse proxy that expects extra headers, add them under **Custom HTTP headers** on this same step, using **Add header** with a **Header name** and **Header value**. Do it before you test: without them the test can't reach your server at all, so it reports a failure that has nothing to do with the address you typed.
+4. If your server needs a sign-in, **Test connection** detects it and reveals a login form. Enter your username and password. Tsumiru works out which of Suwayomi's auth modes (Basic / Simple / UI login) to use, or pick the mode yourself, then tap **Sign in**.
+5. Finish, and your library loads.
 
-If you're in a hurry, **Skip** (top-right) lets you set things up later. You can change the address, port, and sign-in any time under **More → Connection**.
+If you're in a hurry, **Skip** (top-right) lets you set things up later. You can change the address, sign-in, and headers any time under **More → Connection**.
 
-> **Tip:** A local-network address (`192.168.x.x`, default port 4567) is the simplest place to start. To read away from home, put your server behind a reverse proxy with HTTPS and enter that domain instead.
+> **Tip:** A local-network address (`192.168.x.x`, default port 4567) is the simplest place to start. To read away from home too, put your server behind a reverse proxy with HTTPS and enter that domain as the **Server URL**, then add your LAN address as the **Internal / LAN URL**. Tsumiru uses whichever one can reach the server, so the same app works at home and away.
 
 ## 4. Browse sources and build your library
 

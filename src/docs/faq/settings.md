@@ -19,11 +19,17 @@ Tsumiru's settings are split into these sections:
 * **Tracking**: connect tracker accounts like AniList (see [Tracking](/docs/guides/tracking)).
 * **Server**: the Suwayomi server's own admin config (bindings, proxy, Cloudflare, and so on). This configures the server itself, not how this app connects to it.
 
-How Tsumiru **connects** to the server (the address, port, and sign-in) lives separately under **More → Connection**.
+How Tsumiru **connects** to the server (its address, your sign-in, and any headers it needs) lives separately under **More → Connection**.
 
 ## How do I connect to my server?
 
-Open **More → Connection**. Set the **Server URL** and **Server Port** (for example `http://192.168.1.10` and `4567`). On non-web platforms there's an auto-discovery button to find a server on your network.
+Open **More → Connection**. Under **Server address**, set the **Server URL** to the full address of your server, port included: `http://192.168.1.10:4567`. There's no separate port field — the port is part of the URL.
+
+## Can I have one address at home and another away?
+
+Yes, and Tsumiru switches between them for you. Under **Server address**, tap **Add a local network address** and fill in the **Internal / LAN URL** (for example `http://192.168.1.100:4567`); the **Server URL** above it stays as the address that works from anywhere else. On non-web platforms the LAN row has an auto-discovery button to find a server on your network.
+
+Once both are set, an **Active connection** row appears showing which one Tsumiru is on: **Using LAN** or **Using remote**.
 
 ## My server needs a login: how do I authenticate?
 
@@ -38,9 +44,13 @@ Enter your **Credentials** for the chosen type. Use **Log out** to clear stored 
 
 If your sign-in expires while you're using Tsumiru, an inline banner asks you to sign in again. It doesn't log you out — sign in from the banner and you carry on where you were.
 
+## My server sits behind a gateway that needs extra headers
+
+Add them under **More → Connection → Custom HTTP headers**. Tap **Add header**, fill in the **Header name** and **Header value**, and save. They're sent with every request Tsumiru makes to your server, and you only need them when the server sits behind an authentication gateway, Zero Trust guard, or reverse proxy that expects extra headers.
+
 ## What about proxy or advanced connection settings?
 
-Advanced network options are **server-side**, configured under **Settings → Server**. Tsumiru surfaces whatever settings your server exposes; the server does the work.
+Proxy, Cloudflare, and binding options are **server-side**, configured under **Settings → Server**. Tsumiru surfaces whatever settings your server exposes; the server does the work. **Custom HTTP headers** is the exception: it's a setting on this device, on the Connection screen, because it decides how Tsumiru reaches the server in the first place.
 
 ## Why are some requests timing out?
 

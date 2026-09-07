@@ -12,7 +12,8 @@ description: Facing issues connecting Tsumiru to your server or loading content?
 
 Tsumiru requires a running Suwayomi server to function. If you see a connection error:
 
-* **Check the server URL.** Go to **More → Connection** and verify the address, port, and scheme (`http` vs `https`). A common mistake is using `https://` when the server is only listening on plain `http://`.
+* **Check the server URL.** Go to **More → Connection** and verify the whole address, port and scheme included (`http` vs `https`). The port is part of the **Server URL**, not a field of its own. A common mistake is using `https://` when the server is only listening on plain `http://`.
+* **Check which address is in use.** If you've set an **Internal / LAN URL** as well, the **Active connection** row says whether Tsumiru is **Using LAN** or **Using remote**. A LAN address won't answer when you're away from home, and a remote one may not resolve on your own network.
 * **Check that the server is running.** Open the server's web UI in a browser from the same device. If the browser can't load it either, the server is not running or not reachable.
 * **Check your network.** If the server is on your local network, make sure your device is on the same network (not on mobile data). If accessing remotely, confirm your reverse proxy or port forwarding is set up correctly.
 * **Check authentication.** If your Suwayomi server requires a login, make sure the credentials in **More → Connection** are correct.
@@ -59,6 +60,14 @@ Content loading speed depends on your Suwayomi server's connection to the source
 * A slow network connection between your device and the server.
 * The server being on hardware with limited resources.
 
+## Download issues
+
+### On-device downloads never start (Android)
+
+Android decides when a background job may run, and it can refuse. When it does, **Downloads → On device** shows a banner naming the reason: *"Android's background download limit was reached. Open Tsumiru to try again."*, *"Waiting for Wi-Fi."*, *"No connection. They'll resume when it's back."*, or *"Couldn't start downloads. Tap Retry in Downloads to try again."*
+
+Tap **Retry** on the banner to start the queue again with the app open, which is when Android is most likely to allow it. If it keeps happening, exempt Tsumiru from battery optimization in your system settings, and check **Download over Wi-Fi only** under **Settings → Downloads → On device** if you're on mobile data. See [Offline reading](/docs/guides/offline-reading).
+
 ## Update issues
 
 ### App updates won't install (Android)
@@ -76,7 +85,11 @@ These errors appear when Tsumiru receives an unexpected HTTP response from your 
 Your server credentials are incorrect or have expired. Go to **More → Connection** and re-enter your username and password.
 
 ### `HTTP Error: 403` - Forbidden
-The server or the source is refusing the request. Check that your server credentials are correct. If the source itself is returning 403, the source may be enforcing IP-based blocking or rate limits. This is a server-side issue to investigate in the Suwayomi server logs.
+The server or the source is refusing the request. Check that your server credentials are correct.
+
+If your server sits behind an authentication gateway, a Zero Trust guard, or a reverse proxy, the 403 is likely coming from that rather than from Suwayomi, and it's fixable in the app: add the headers it expects under **More → Connection → Custom HTTP headers** with **Add header**, a **Header name**, and a **Header value**.
+
+If the source itself is returning 403, the source may be enforcing IP-based blocking or rate limits. This is a server-side issue to investigate in the Suwayomi server logs.
 
 ### `HTTP Error: 404` - Not Found
 The requested resource does not exist. The series or chapter may have been removed from the source.
