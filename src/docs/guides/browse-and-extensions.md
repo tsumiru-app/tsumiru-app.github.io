@@ -16,7 +16,8 @@ Extensions are listed in groups: **Updates pending** at the top, then **Installe
 
 * **Install**: tap **Install** on the extension's row. Its source appears in the Sources tab right away (installing an extension also enables its language for you, so the new source isn't hidden by the language filter).
 * **Update**: rows with a pending update show an **Update** button. Pull down on the list to make the server re-check for updates.
-* **Uninstall**: tap **Uninstall** on an installed row. When a row shows **Update** instead, use the trash icon next to it.
+* **Uninstall**: tap **Uninstall** on an installed row. A row with an update waiting shows **Update** in that spot instead, and keeps **Uninstall** in its overflow menu.
+* **Reinstall**: an installed row with no update waiting has a restart icon beside it, tooltipped **Reinstall**; on a row with an update, **Reinstall** is in the overflow menu. It uninstalls the extension and installs it again, which repairs one that installed without any working sources, or one that keeps offering an update that never applies.
 * **Obsolete** (in red) means the extension was removed from its store. It may keep working for a while, but the only action left is to uninstall it.
 
 Extensions with adult content are marked **18+** in red.

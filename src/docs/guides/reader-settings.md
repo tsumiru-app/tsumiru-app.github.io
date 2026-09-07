@@ -26,7 +26,7 @@ Pick a mode from the **Reading mode** chips in the sheet:
 
 The factory default is **Paged (right to left)**. Manhwa, manhua, and webtoons still open as a long strip when **Auto reading mode** is on (see below). In the long strips, reaching the end of a chapter scrolls straight on into the next one.
 
-**Settings → Reader** offers the same modes under the same names. A series still set to the old **Continuous horizontal (legacy)** mode shows a dedicated legacy chip in the sheet until you pick another mode.
+**Settings → Reader** offers those same modes under the same names, plus two the chip row has no chip for: **Continuous horizontal (LTR, legacy)** and **Continuous horizontal (RTL, legacy)**. Both scroll the pages sideways in one continuous strip instead of turning them one at a time, left to right or right to left. A series set to either shows a single **Continuous horizontal (legacy)** chip in the sheet until you pick another mode.
 
 ## For this series
 
@@ -68,7 +68,7 @@ Each reader has its own zoom settings, so changing one doesn't touch the other:
 
 ## Long strips
 
-The **Long strip** group covers the strip modes:
+The **Long strip** group covers every continuous mode: **Long strip**, **Long strip with gaps**, and both **Continuous horizontal** modes, which scroll sideways rather than down.
 
 * **Long strip scale**: how the strip fits the window: **Fit screen**, **4:3**, **3:2**, **16:9**, **20:9**, or **Original size**, which shows pages at their true size instead of stretching them to fit.
 * **Maximum width**: cap how wide the strip can grow, as a percentage of the window (**%**) or a fixed pixel width (**px**). It's greyed out under **Original size**, since pages at their native size never widen.
