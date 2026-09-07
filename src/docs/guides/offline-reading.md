@@ -67,6 +67,8 @@ To see only what you can read offline, open the library **filter** and turn on *
 
 The **Downloads** screen has two tabs: **Server** (what your Suwayomi server is downloading) and **On device** (what's stored locally). Open **Downloads → On device** to see everything on this device: total **storage used**, and a row per series with its chapter count and size. From a series page you can **Delete on-device downloads** for that series, and individual chapters can be removed with their pin button.
 
+Tap a series row to open its **Downloaded chapters** screen, which splits that series into **Downloading / Queued**, **Downloaded**, and **Failed**. Each chapter has a **Remove from device** button, and a failed one has **Retry**, so one chapter that didn't come through can be fixed without touching the rest.
+
 You can **pause** and **resume** the on-device download queue from the same screen, so a large batch doesn't have to run all at once.
 
 To configure offline storage, go to **Settings → Downloads** and open the **On device** tab:
@@ -75,7 +77,9 @@ To configure offline storage, go to **Settings → Downloads** and open the **On
 * **Remove all downloads**: clears every offline chapter from this device in one step (your server library is untouched).
 * **Simultaneous downloads**: how many pages download at once (1–8, default 2). Lower it on a slow or metered connection.
 * **Download over Wi-Fi only**: on by default, so background downloads don't spend mobile data. Turn it off to allow downloads on any connection.
-* **Download new chapters in the background** *(Android)*: fetch new chapters for series you keep offline without opening the app.
+* **Download new chapters in the background** *(Android)*: fetch new chapters for series you keep offline without opening the app. Turning it on reveals two more:
+  * **Check interval**: how often the background check runs. It's the same schedule the new-chapter check uses (see [Notifications](/docs/guides/notifications)), so setting it in either place sets it in both.
+  * **Download files in the background**: when off, background checks only find and queue new chapters. Files download the next time you open the app.
 
 Categories can also download on their own: pick which ones under the download settings, and their new chapters are saved without you asking each time.
 
@@ -83,7 +87,7 @@ Categories can also download on their own: pick which ones under the download se
 
 Three optional safety nets keep offline storage from growing without limit. All are **off** by default, and none ever removes chapters you've **pinned** by hand:
 
-* **Delete finished chapters while reading**: remove an auto-kept chapter once you finish it, so storage doesn't pile up. The delete waits until you close the reader, so a chapter never disappears mid-session. Set it per device or for the server under **Settings → Downloads**.
+* **Delete finished chapters while reading**: remove an auto-kept chapter once you finish it, so storage doesn't pile up. The delete waits until you close the reader, so a chapter never disappears mid-session. Set it per device or for the server under **Settings → Downloads**. Once the keep window is two chapters or more, a **Keep recently-read chapters downloaded** sub-toggle appears beneath it: turn it on to re-download the keep-window chapters if they're missing from the device.
 * **Limit offline storage**: set a ceiling (default 2 GB). When you go over it, the oldest auto-kept chapters are removed first.
 * **Auto-remove old downloads**: delete auto-kept chapters older than a set age (default 30 days).
 
@@ -92,5 +96,7 @@ Three optional safety nets keep offline storage from growing without limit. All 
 On **Android**, offline downloads keep running when Tsumiru is in the background or closed. A **"Downloading chapters"** notification shows progress (and lets you keep an eye on a long batch without leaving the app open); it clears itself when the batch finishes, and a **Downloads complete** notification lets you know. Turn download notifications on or off under **Settings → Notifications** (see [Notifications](/docs/guides/notifications)).
 
 If your connection drops mid-batch, downloading pauses and waits for the network, then resumes on its own when you're back online, picking up where it stopped. The first time you download in the background, Android may ask you to exempt Tsumiru from battery optimization so it doesn't pause long batches.
+
+When Android won't let a download start at all, **Downloads → On device** shows a banner naming the reason — *"Android's background download limit was reached. Open Tsumiru to try again."*, *"Waiting for Wi-Fi."*, *"No connection. They'll resume when it's back."*, and so on — with a **Retry** button that starts the queue again there and then.
 
 On **desktop** (Windows, macOS, Linux), downloads continue as long as the app is running, including when its window is minimized.
