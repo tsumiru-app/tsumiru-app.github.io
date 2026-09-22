@@ -66,15 +66,27 @@ In **Settings → Library → Skip updating entries** you can skip entries:
 
 This reduces unnecessary requests.
 
+## Where can I find failed library updates?
+
+Open **More → Library update errors**. The count stays visible even when it is zero. The screen lists each series that failed during the latest library update; open a series to inspect it, or tap **Migrate** if its source has stopped working. Pull down to refresh the list after the server state changes.
+
+This screen does not retry an update. Run **Global Update** or **Category Update** again after fixing the source or connection.
+
 ## Where do I see recently updated chapters?
 
 The **Updates** tab lists newly fetched chapters grouped by date, newest first. You can multi-select chapters there for bulk actions.
 
 The filter icon opens **Chapter grouping** at the top, which stacks consecutive chapters from the same series into one foldable entry: **Disabled** lists every chapter on its own, **Collapsed** folds each stack shut, and **Expanded** folds them open. Below that, the sheet narrows the list by **Download Status** (**Downloaded** / **Not Downloaded**), **Read Status** (**Unread** / **Read**), **Progress** (**Started** / **Not Started**), and **Bookmarks** (**Bookmarked** / **Not Bookmarked**).
 
+## How do I select every chapter below one chapter?
+
+On a series page, long-press a chapter and choose **Select below**. Tsumiru extends the selection through every chapter below it in the current sort order. You can then apply a bulk action, such as marking the selection read.
+
 ## Can I sync between devices?
 
-There's nothing to enable: your library, read progress, bookmarks, categories, per-series reader settings, and download state all live on the **Suwayomi server**. Any device pointed at the same server sees the same state automatically. Only UI preferences (sort, filter, display) are stored per-device.
+There's nothing to enable on current servers: your library, read progress, bookmarks, categories, per-series reader settings, and server download state live on the **Suwayomi server**. Devices connected to that server see its shared state automatically. UI preferences such as sort, filter, and display stay on each device.
+
+Suwayomi accounts are not available in stable or preview server builds yet. Tsumiru already includes client support; when a compatible server build exists, only devices signed into the same account will share its library state.
 
 ## How do I handle duplicate chapters from the same series?
 

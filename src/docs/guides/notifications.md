@@ -6,11 +6,11 @@ description: Get notified when your followed series get new chapters, when downl
 
 # Notifications
 
-Tsumiru can tell you when there's something new to read, or when something goes wrong, even while the app is closed. Everything lives under **Settings → Notifications**.
+On Android, Tsumiru can check for new chapters and post alerts while the app is closed. Notification controls are under **Settings → Notifications**.
 
 ## New chapters
 
-**New chapter notifications** let you know when the series you follow get new chapters. Tsumiru checks your library on a schedule and, when something new lands, posts a notification grouped per series (so ten new chapters across three series is three notifications, not ten).
+**New chapter notifications** tell you when followed series get new chapters. Android checks your library on a schedule and groups results by series, so ten chapters across three series produce three notifications.
 
 Each one carries quick actions: **Mark as read**, **View chapters**, and **Download**, so you can clear it, jump straight to the chapters, or queue them for offline reading right from the notification.
 
@@ -28,7 +28,7 @@ The other alerts each have their own switch:
 
 ## Tuning the checks
 
-New-chapter checks run in the background, and a few settings decide when:
+On Android, these settings control background checks:
 
 * **Check interval**: how often Tsumiru looks for new chapters. The same control appears under **Settings → Downloads → On device**, nested under **Download new chapters in the background**. It's one shared schedule, so changing it in either place changes both.
 * **Only on Wi-Fi**: skip the check on mobile data.

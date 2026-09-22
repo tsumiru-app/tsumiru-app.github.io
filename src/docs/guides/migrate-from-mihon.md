@@ -12,7 +12,7 @@ Suwayomi restores Mihon's backup format directly, so moving from Mihon or Komikk
 
 One conceptual shift: in Mihon, sources and extensions run on your phone. With Tsumiru, they run on your **Suwayomi server**, and Tsumiru is a client you point at it, on as many devices as you like.
 
-The tradeoff: you run a server. In exchange, every device shows the same library, categories, and reading progress, and your phone is no longer the only copy of your library. If running a server isn't for you, Mihon remains the better fit; see [how they compare](/docs/compare/).
+The tradeoff is running a server. Connected clients share its library, categories, and reading progress, so your phone is no longer the only copy. If you do not want to run a server, Tsumiru is not a good fit.
 
 ## 1. Set up a Suwayomi server
 
@@ -68,5 +68,5 @@ Tracker bindings are part of the Mihon backup format, but check the [Suwayomi re
 
 Two things replace habits you had in Mihon:
 
-* **Device downloads** → [Offline reading](/docs/guides/offline-reading). Set a keep rule per series (next 5/10/25 unread, all unread, or everything) and Tsumiru keeps chapters on your device automatically. The server fetches from sources; your device syncs from the server.
+* **Device downloads** → [Offline reading](/docs/guides/offline-reading). Set a keep rule per series, or save individual chapters manually. The server fetches from sources; each device stores only the chapters you choose to keep there.
 * **Trackers** → [Tracking](/docs/guides/tracking). Sign in to AniList, MyAnimeList, and the rest under **Settings → Tracking**, then check each series' bindings.

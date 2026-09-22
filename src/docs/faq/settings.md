@@ -78,8 +78,6 @@ Turn on **Incognito mode** from the **More** menu and Tsumiru stops recording re
 
 Incognito works well with **hideable categories** (see [Categories](/docs/guides/categories)), which keep chosen library tabs off the main view entirely.
 
-This is a [Komikku](https://github.com/komikku-app/komikku)-style feature.
-
 ## How do I hide adult content?
 
 Turn off adult content in **Settings → Browse**. This hides adult sources entirely, not just adult extensions, so their entries stay out of browse and search.

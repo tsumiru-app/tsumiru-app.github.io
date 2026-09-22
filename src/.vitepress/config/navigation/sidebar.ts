@@ -19,7 +19,7 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           link: '/changelogs/',
         },
         {
-          text: 'Compare readers',
+          text: 'Tsumiru and WebUI',
           link: '/docs/compare/',
         },
       ],

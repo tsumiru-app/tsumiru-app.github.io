@@ -20,9 +20,9 @@ There are two ways to save chapters offline.
 
 ### Keep a whole series offline
 
-On a series page, tap **Offline** (next to **In library**) to choose a rule. Once chapters are saved it reads **On device**. Tsumiru then keeps the matching chapters on your device automatically. After every library update it fetches the new chapters for each kept series (asking the server to download them first when needed) and removes older ones the rule no longer covers:
+On a series page, tap **Offline** (next to **In library**) to choose a rule. Once chapters are saved it reads **On device**. Tsumiru keeps the matching chapters on your device and checks for new matches after each library update:
 
-* **Keep next 5 / 10 / 25 unread**: a rolling buffer of upcoming chapters, refilled as you read.
+* **Keep next 5 / 10 / 25 unread**: download the next unread chapters after your furthest-read position. Unread chapters already on the device remain there even if they fall outside that next-chapter window.
 * **Keep all unread**: every unread chapter.
 * **Keep all chapters**: every chapter in the series.
 
@@ -33,7 +33,7 @@ To stop keeping a series offline, open the same sheet and choose **Remove all (t
 
 ### Save individual chapters
 
-On the chapter list, each downloaded chapter has a **Save to device** button. Tap it to store just that chapter offline; tap it again (it becomes a filled pin) to remove the device copy. Chapters you save by hand are **pinned**: they stick around regardless of the series' keep rule and are never removed by the storage limits below.
+On the chapter list, each server-downloaded chapter has a **Save to device** button. Tap it to save that chapter offline; tap the filled pin to remove the device copy. Manual saves are **pinned**. Keep rules, storage limits, and age cleanup do not remove them; they remain until you remove them directly or use a command that explicitly deletes device downloads.
 
 ## Reading the chapter list
 
@@ -54,7 +54,7 @@ When Tsumiru can't reach your server, it falls back to what's stored on the devi
 
 * Your **library** shows the series you have saved offline, with their covers.
 * Opening a saved chapter reads the pages straight from the device, no network needed.
-* Your **reading progress** is saved locally and synced back to the server automatically the next time you reconnect.
+* Your **reading progress** is saved locally and synced back to the server when you reconnect.
 * Your **category tabs** work offline too, and you can still hide or show them. A change made offline stays on this device only: it isn't sent to the server, and the server's own setting comes back at the next sync.
 
 The switch happens on its own. If the library is still trying to connect, a **View offline** button appears on the loading screen whenever there are downloads to show. Tap it to go straight to your downloaded library instead of waiting.
@@ -74,7 +74,7 @@ You can **pause** and **resume** the on-device download queue from the same scre
 To configure offline storage, go to **Settings → Downloads** and open the **On device** tab:
 
 * **Storage used**: how much space your offline chapters take up.
-* **Remove all downloads**: clears every offline chapter from this device in one step (your server library is untouched).
+* **Remove all downloads**: clears every offline chapter from this device, including chapters saved manually. Your server library and server downloads are untouched.
 * **Simultaneous downloads**: how many pages download at once (1–8, default 2). Lower it on a slow or metered connection.
 * **Download over Wi-Fi only**: on by default, so background downloads don't spend mobile data. Turn it off to allow downloads on any connection.
 * **Download new chapters in the background** *(Android)*: fetch new chapters for series you keep offline without opening the app. Turning it on reveals two more:
