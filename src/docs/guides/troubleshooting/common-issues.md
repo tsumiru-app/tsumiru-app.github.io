@@ -1,7 +1,7 @@
 ---
 title: Common issues
 titleTemplate: Troubleshooting - Guides
-description: Facing issues connecting Tsumiru to your server or loading content? Here's how to tackle common challenges.
+description: Fix common connection, content, download, and update problems in Tsumiru.
 ---
 
 # Common issues
@@ -10,7 +10,7 @@ description: Facing issues connecting Tsumiru to your server or loading content?
 
 ### Tsumiru can't connect to my server
 
-Tsumiru requires a running Suwayomi server to function. If you see a connection error:
+Tsumiru needs a reachable Suwayomi server for online features. If you see a connection error:
 
 * **Check the server URL.** Go to **More → Connection** and verify the whole address, including the port and scheme (`http` vs `https`). The port is part of the **Server URL**, not a field of its own. A common mistake is using `https://` when the server is only listening on plain `http://`.
 * **Check which address is in use.** If you've set an **Internal / LAN URL** as well, the **Active connection** row says whether Tsumiru is **Using LAN** or **Using remote**. A LAN address won't answer when you're away from home, and a remote one may not resolve on your own network.
@@ -74,8 +74,14 @@ Tap **Retry** on the banner to start the queue again with the app open, which is
 
 When installing a new version of Tsumiru on Android, the signing certificate of the new APK must match the installed version.
 
-* If you downloaded Tsumiru from a different source than the currently installed version (e.g. switching from a debug build to a release build or vice versa), Android will block the install due to a signature mismatch. Uninstall the existing version first, then install the new one.
+* First, update with an official APK from the same source and release channel as the installed app. Switching between debug, release, or differently signed builds causes a signature mismatch.
 * Download the correct APK for your device's CPU architecture, or use the universal APK if unsure.
+
+Uninstall only if you intend to change signing certificates. Uninstalling removes Tsumiru's device-local settings, on-device downloads, and reading progress that has not synced to the server. Before doing it, reconnect and let progress sync, note any settings you need, and make sure the server or source can replace your on-device downloads. Do not uninstall if it cannot.
+
+### A library update finished with errors
+
+Open **More → Library update errors** to see the series that failed. Open one to check whether its source works, or tap **Migrate** if the source is gone. The screen records failures; it does not retry them. After fixing the source, server connection, or extension, run **Global Update** or **Category Update** again.
 
 ## HTTP errors from the server
 

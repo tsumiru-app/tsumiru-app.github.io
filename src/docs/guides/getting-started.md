@@ -6,7 +6,7 @@ description: Connect Tsumiru to your Suwayomi server and start reading.
 
 # Getting started
 
-Tsumiru is a **client** for [Suwayomi](https://suwayomi.org/) (also known as Tachidesk). Your sources, extensions, downloads, and library all live on your **Suwayomi server**. Tsumiru is the reader you point at it. Once your server is running, the same library is available from every Tsumiru app: Android, desktop, and the web.
+Tsumiru is a **client** for [Suwayomi](https://suwayomi.org/) (also known as Tachidesk). Your sources, extensions, server downloads, and library live on your **Suwayomi server**. Tsumiru connects Android, desktop, iOS, and web clients to it.
 
 ## 1. Set up a Suwayomi server
 
@@ -30,12 +30,12 @@ Visit the [download page](/download/) and grab the build for your platform:
 The first time you open Tsumiru, a short setup wizard walks you through it:
 
 1. Pick a theme. You can change it later, and pick from more themes, under [Settings → Appearance](/docs/faq/settings#how-do-i-change-the-theme).
-2. On **Connect your server**, point Tsumiru at your server. Two helpers do the work:
+2. On **Connect your server**, enter your server address or use one of the connection helpers:
    * **Search my network** scans your local network and fills in a Suwayomi server automatically. On the same Wi-Fi this is the easiest path.
-   * **Test connection** checks an address you type. You can enter just the host (`192.168.1.10` or `suwayomi.mydomain.com`) and Tsumiru works out the scheme and port for you, trying Suwayomi's default **4567** first. For a custom port, include it: `192.168.1.10:4568`. It then tells you exactly what it found: connected, needs a login, unreachable, or reached something that isn't Suwayomi.
-3. If your server sits behind an authentication gateway, Zero Trust guard, or reverse proxy that expects extra headers, add them under **Custom HTTP headers** on this same step, using **Add header** with a **Header name** and **Header value**. Do it before you test: without them the test can't reach your server at all, so it reports a failure that has nothing to do with the address you typed.
+   * **Test connection** checks an address you type. You can enter just the host (`192.168.1.10` or `suwayomi.mydomain.com`); Tsumiru tries the likely scheme and Suwayomi's default port, **4567**. Include a custom port when needed, such as `192.168.1.10:4568`. The result says whether Tsumiru connected, needs a login, could not reach the address, or reached something other than Suwayomi.
+3. If a gateway or reverse proxy requires extra headers, add them under **Custom HTTP headers** before testing the connection. Use **Add header**, then enter the **Header name** and **Header value**.
 See [Reaching your server from anywhere](/docs/guides/remote-access) if you want to read away from home.
-4. If your server needs a sign-in, **Test connection** detects it and reveals a login form. Enter your username and password. Tsumiru works out which of Suwayomi's auth modes (Basic / Simple / UI login) to use, or pick the mode yourself, then tap **Sign in**.
+4. If your server needs a sign-in, **Test connection** reveals the login form. Enter your username and password. Tsumiru can select Basic, Simple, or UI login automatically, or you can choose the configured mode, then tap **Sign in**.
 5. Finish, and your library loads.
 
 If you're in a hurry, **Skip** (top-right) lets you set things up later. You can change the address, sign-in, and headers any time under **More → Connection**.
@@ -48,7 +48,7 @@ Because sources live on the server, anything you've enabled in Suwayomi shows up
 
 1. Open the **Browse** tab to see the sources available on your server.
 2. Pick a source and use its **Popular** / **Latest** listings, or search for a title.
-3. Open a series and tap **Add to Library**. It's now in your library on every device.
+3. Open a series and tap **Add to Library**. It appears on devices connected to your server.
 
 **Pin** the sources you use most to keep them at the top of the Browse list. When you search across sources, you can filter that global search down to the sources you care about.
 

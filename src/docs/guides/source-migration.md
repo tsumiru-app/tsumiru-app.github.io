@@ -45,7 +45,7 @@ The gear on the migration list opens **Data to migrate**, which decides what mov
 * **Migrate Tracking** (off): re-point your tracker links (AniList, MyAnimeList, …) at the new entry.
 * **Reader settings** (on): the series' per-series reader overrides.
 * **Keep-offline rule** (on): the series' offline download rule.
-* **Migrate Downloads** (off): the downloaded chapter files themselves. Left off by default, since those came from the old source — queue fresh downloads on the new entry instead.
+* **Migrate Downloads** (off): match downloaded chapters to the new source and carry their on-device files over. If a file cannot be reused, Tsumiru pins the matching target chapter and downloads it again. Unmatched chapters are not transferred, and removing the original can remove those device copies. Leave this off if you prefer fresh downloads from the new source.
 
 A few things to know about matching:
 

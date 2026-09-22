@@ -6,7 +6,7 @@ description: Install manga source extensions on your Suwayomi server from Tsumir
 
 # Browse: sources & extensions
 
-The **Browse** tab is where you find manga. It has three tabs: **Sources** lists every source you can browse, **Extensions** is where you install the extensions that provide those sources, and **Migrate** moves your library off a source that's dying or broken (see [Migrate manga between sources](/docs/guides/source-migration)).
+The **Browse** tab has three sections. **Sources** lists what you can browse, **Extensions** installs the extensions that provide those sources, and **Migrate** moves library entries away from a broken source. See [Migrate manga between sources](/docs/guides/source-migration).
 
 **Extensions don't install into Tsumiru — they install onto your Suwayomi server.** Install an extension from your phone and its sources appear on the desktop and web apps too, because every client shares the server's set.
 
@@ -82,8 +82,8 @@ Three chips control the scope:
 * **All** searches every enabled source.
 * **Has results** hides sources that found nothing.
 
-Results already in your library are shown darkened, so you can tell what you have at a glance. Only sources in your enabled languages are searched — trim the language list to keep global search fast.
+Results already in your library appear darkened. Only sources in your enabled languages are searched; trim the language list to make global search faster.
 
 ## The Migrate tab
 
-The **Migrate** tab moves your library off a source in bulk — handy when a source shuts down or an extension goes obsolete. Pick a source, and Tsumiru finds every series you have on it and helps you move them to another source, carrying your read progress, categories, and more. The full walkthrough is in [Migrate manga between sources](/docs/guides/source-migration).
+The **Migrate** tab moves library entries away from a source in bulk. Pick a source and Tsumiru finds every series you have on it, then helps move them with their read progress, categories, and selected settings. See [Migrate manga between sources](/docs/guides/source-migration).
