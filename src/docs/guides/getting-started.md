@@ -29,13 +29,20 @@ Visit the [download page](/download/) and grab the build for your platform:
 
 The first time you open Tsumiru, a short setup wizard walks you through it:
 
-1. Pick a theme. You can change it later, and pick from more themes, under [Settings → Appearance](/docs/faq/settings#how-do-i-change-the-theme).
+1. Pick an appearance.
+Choose **System**, **Light**, or **Dark**, then pick a theme.
+New installs start in **Dark**.
+You can change both later under [Settings → Appearance](/docs/faq/settings#how-do-i-change-the-theme).
 2. On **Connect your server**, enter your server address or use one of the connection helpers:
-   * **Search my network** scans your local network and fills in a Suwayomi server automatically. On the same Wi-Fi this is the easiest path.
+   * **Search my network** scans your local network on ports 4567 to 4570 and fills in a Suwayomi server automatically.
+On the same Wi-Fi this is the easiest path.
+If it finds several servers, you pick which one to use.
    * **Test connection** checks an address you type. You can enter just the host (`192.168.1.10` or `suwayomi.mydomain.com`); Tsumiru tries the likely scheme and Suwayomi's default port, **4567**. Include a custom port when needed, such as `192.168.1.10:4568`. The result says whether Tsumiru connected, needs a login, could not reach the address, or reached something other than Suwayomi.
 3. If a gateway or reverse proxy requires extra headers, add them under **Custom HTTP headers** before testing the connection. Use **Add header**, then enter the **Header name** and **Header value**.
 See [Reaching your server from anywhere](/docs/guides/remote-access) if you want to read away from home.
-4. If your server needs a sign-in, **Test connection** reveals the login form. Enter your username and password. Tsumiru can select Basic, Simple, or UI login automatically, or you can choose the configured mode, then tap **Sign in**.
+4. If your server needs a sign-in, **Test connection** reveals the login form and suggests the matching sign-in method.
+Enter your username and password.
+A method you pick yourself is never changed for you, so choose the configured mode if the suggestion looks wrong, then tap **Sign in**.
 5. Finish, and your library loads.
 
 If you're in a hurry, **Skip** (top-right) lets you set things up later. You can change the address, sign-in, and headers any time under **More → Connection**.

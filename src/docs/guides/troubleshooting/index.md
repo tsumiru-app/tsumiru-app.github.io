@@ -36,7 +36,10 @@ If your Suwayomi server has authentication enabled:
 
 ### Obtaining crash/error logs
 
-The quickest way to grab a log for a bug report is the **Copy crash log** action at the bottom of Settings, which copies the app's latest log to your clipboard. If Tsumiru ever fails to start, the error screen shows the same copy-crash-log button, so you can still get the log when the app won't open.
+The quickest way to grab a log for a bug report is the **Copy debug log** action at the bottom of Settings, which copies the app's latest log to your clipboard.
+The copy starts with a header naming your Tsumiru version and build, your server version, and your platform.
+The log itself includes connection and sign-in errors alongside everything else it records.
+If Tsumiru ever fails to start, the error screen shows the same copy button, so you can still get the log when the app won't open.
 
 ### Obtaining more logs
 

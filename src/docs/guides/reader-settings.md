@@ -25,6 +25,13 @@ Pick a mode from the **Reading mode** chips in the sheet:
 * **Default**: follow your global default (when set for a series).
 
 The factory default is **Paged (right to left)**. Manhwa, manhua, and webtoons still open as a long strip when **Auto reading mode** is on (see below). In the long strips, reaching the end of a chapter scrolls straight on into the next one.
+On the final chapter the end card reads **There's no next chapter**.
+
+## Gaps between chapters
+
+When chapters are missing from the source catalogue, the chapter list shows a row naming how many are missing.
+Moving across such a gap while reading warns you first, including chapters hidden by your filters.
+The warning counts only the chapters skipped in your direction of travel.
 
 **Settings → Reader** offers those same modes under the same names, plus two that don't appear as chips in the sheet: **Continuous horizontal (LTR, legacy)** and **Continuous horizontal (RTL, legacy)**. Both scroll the pages sideways in one continuous strip instead of turning them one at a time, left to right or right to left. A series set to either shows a single **Continuous horizontal (legacy)** chip in the sheet until you pick another mode.
 
@@ -55,6 +62,7 @@ The **Paged** group controls the paged modes:
 * **Crop borders**: trim the empty margins around pages.
 * **Smaller tap zones**: shrink the page-turn tap areas.
 * **Animate page transitions**: animate page turns instead of snapping.
+On Android, the system **Remove animations** setting makes page turns and double-tap zoom instant whatever you choose here.
 * **Auto advance interval**: the pace for hands-free page turning (see [auto-scroll](#auto-scroll-and-auto-advance)).
 * **Pan wide images**: pan across a page that's wider than the screen instead of shrinking it.
 
@@ -77,6 +85,7 @@ The **Long strip** group covers every continuous mode: **Long strip**, **Long st
 * **Smooth Auto Scroll** and **Auto scroll interval**: the glide and pace for hands-free scrolling (see [auto-scroll](#auto-scroll-and-auto-advance)).
 * **Keyboard scroll distance**: how far each key press scrolls on a keyboard: **Tiny**, **Small**, **Medium**, or **Large**.
 * **Animate page transitions**: animate page jumps instead of snapping.
+On Android, the system **Remove animations** setting makes page jumps and taps instant whatever you choose here.
 
 The tap-zone and zoom settings apply per reader here too, so the strips can behave differently from the paged modes.
 
@@ -124,6 +133,7 @@ A few settings live only on the global screen:
 * **Volume Keys**: page with the volume keys, with an **Invert Volume Keys** option *(Android)*.
 * **Reader initial overlay**: show the title and controls when you open a chapter.
 * **Scroll animation**: animate page jumps instead of snapping instantly.
+On Android, the system **Remove animations** setting makes screen changes, dialogs, page turns, and double-tap zoom instant across the app.
 * **Reading feedback toasts**: turn off to hide messages like "loading next chapter" and "no more chapters".
 * **Ignore Safe Area**: let content extend into the notch and home-indicator areas *(Android & iOS)*.
 

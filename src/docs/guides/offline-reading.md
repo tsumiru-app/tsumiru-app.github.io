@@ -22,7 +22,8 @@ There are two ways to save chapters offline.
 
 On a series page, tap **Offline** (next to **In library**) to choose a rule. Once chapters are saved it reads **On device**. Tsumiru keeps the matching chapters on your device and checks for new matches after each library update:
 
-* **Keep next 5 / 10 / 25 unread**: download the next unread chapters after your furthest-read position. Unread chapters already on the device remain there even if they fall outside that next-chapter window.
+* **Keep next 5 / 10 / 25 unread**: download the next unread chapters after your furthest-read position, following that series' own chapter sort order.
+Unread chapters already on the device remain there even if they fall outside that next-chapter window.
 * **Keep all unread**: every unread chapter.
 * **Keep all chapters**: every chapter in the series.
 
@@ -58,6 +59,7 @@ When Tsumiru can't reach your server, it falls back to what's stored on the devi
 * Your **category tabs** work offline too, and you can still hide or show them. A change made offline stays on this device only: it isn't sent to the server, and the server's own setting comes back at the next sync.
 
 The switch happens on its own. If the library is still trying to connect, a **View offline** button appears on the loading screen whenever there are downloads to show. Tap it to go straight to your downloaded library instead of waiting.
+While you stay in the offline view, a banner keeps a **Go online** action in reach.
 
 Chapters you haven't saved offline aren't available until the server is reachable again.
 

@@ -41,6 +41,12 @@ You don't need to change the address each time you leave home.
 
 Once both addresses are set, the **Active connection** row shows **Using LAN** or **Using remote**.
 
+## A note on unencrypted HTTP
+
+When you sign in to a remote address over plain `http://`, the **Connection** screen warns you that your sign-in and session travel in clear.
+Prefer `https://`, for example through a reverse proxy.
+Local-network addresses do not trigger this warning.
+
 If you use a VPN back to your home LAN, keep your LAN address in **Server URL**.
 You can leave **Internal / LAN URL** empty.
 
