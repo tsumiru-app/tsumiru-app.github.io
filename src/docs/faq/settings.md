@@ -16,6 +16,9 @@ Tsumiru's settings are split into these sections:
 * **Reader**: reading mode and all reader behaviour (see [Reader settings](/docs/guides/reader-settings)).
 * **Browse**: source/server browse options.
 * **Backup & Restore**: create and restore server backups (see [Backups](/docs/guides/backups)).
+* **SyncYomi**: sync your library and reading progress through a SyncYomi server.
+* **KOReader Sync**: sync reading progress with KOReader.
+* See [Sync your library and progress](/docs/guides/sync) for both.
 * **Tracking**: connect tracker accounts like AniList (see [Tracking](/docs/guides/tracking)).
 * **Server**: the Suwayomi server's own admin config (bindings, proxy, Cloudflare, and so on). This configures the server itself, not how this app connects to it.
 
@@ -43,6 +46,7 @@ Under **More → Connection → Authentication**, pick an **Authentication Type*
 Enter your **Credentials** for the chosen type. Use **Log out** to clear stored credentials. Credentials are kept in your device's secure storage.
 
 If your sign-in expires while you're using Tsumiru, an inline banner asks you to sign in again. It doesn't log you out — sign in from the banner and you carry on where you were.
+After a device restore or a reinstall, sign in again the same way: credentials are kept in secure storage on the device and do not survive the move.
 
 ## My server sits behind a gateway that needs extra headers: how do I add them?
 

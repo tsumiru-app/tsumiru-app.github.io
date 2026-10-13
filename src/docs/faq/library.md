@@ -78,6 +78,14 @@ The **Updates** tab lists newly fetched chapters grouped by date, newest first. 
 
 The filter icon opens **Chapter grouping** at the top, which stacks consecutive chapters from the same series into one foldable entry: **Disabled** lists every chapter on its own, **Collapsed** folds each stack shut, and **Expanded** folds them open. Below that, the sheet narrows the list by **Download Status** (**Downloaded** / **Not Downloaded**), **Read Status** (**Unread** / **Read**), **Progress** (**Started** / **Not Started**), and **Bookmarks** (**Bookmarked** / **Not Bookmarked**).
 
+## Can each series sort its chapters its own way?
+
+Yes.
+On a series page, open the chapter organizer and switch to the **Sort** tab.
+Pick **By Source**, **By Chapter Number**, **By Upload Date**, **By Fetched Date**, or **Alphabetically**, and flip the direction.
+The choice is saved on the server, so it follows the series to your other devices and to the Suwayomi web interface.
+**Alphabetically** is the only order the web interface does not share.
+
 ## How do I select every chapter below one chapter?
 
 On a series page, long-press a chapter and choose **Select below**. Tsumiru extends the selection through every chapter below it in the current sort order. You can then apply a bulk action, such as marking the selection read.

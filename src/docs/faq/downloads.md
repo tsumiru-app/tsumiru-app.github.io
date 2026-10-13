@@ -16,8 +16,13 @@ This page covers **server** downloads. To keep chapters **on your device** and r
 
 * **A single chapter**: tap the download icon on the chapter row. Tap it again while it's queued to cancel, or once it's downloaded to delete it.
 * **A batch from a series**: on the series page, tap the **download** button in the toolbar and choose a preset: **Next chapter**, **Next 5 / 10 / 25 chapters**, **Unread**, or **All**.
+**Next chapter** and **Unread** follow your preferred scanlation groups for the series.
 * **Hand-picked chapters**: long-press a chapter to enter selection mode, then pick the ones you want (use **Select next 10**, **Select Unread**, or **Select in between** to help), and tap the download icon in the bottom bar.
-* **Whole series from the library**: long-press a cover in the library to start selecting, tap any others you want, then tap **Download to server** in the selection toolbar. Only the chapters your server doesn't already have are queued. Selecting more than one series asks you to confirm first.
+* **Whole series from the library**: long-press a cover in the library to start selecting, tap any others you want, then tap **Download to server** in the selection toolbar.
+It offers the same choices as a single series: **Next chapter**, **Next 5 chapters**, **Next 10 chapters**, **Next 25 chapters**, **Unread**, or **All**.
+Each choice applies to every selected series on its own.
+Only the chapters your server doesn't already have are queued.
+Selecting more than one series asks you to confirm first.
 
 Queueing a large batch asks you to confirm first, so you don't kick off a huge download by accident.
 

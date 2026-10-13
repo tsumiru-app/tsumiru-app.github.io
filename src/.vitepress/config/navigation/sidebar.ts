@@ -72,6 +72,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
         { text: 'Migrate manga between sources', link: '/docs/guides/source-migration' },
         { text: 'Backups', link: '/docs/guides/backups' },
         {
+          text: 'Sync your library and progress',
+          link: '/docs/guides/sync',
+        },
+        {
           text: 'Troubleshooting',
           link: '/docs/guides/troubleshooting/',
           collapsed: true,
