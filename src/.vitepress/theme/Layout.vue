@@ -90,6 +90,21 @@ provide('toggle-appearance', () => {
   height: auto;
   border-radius: 23px;
 }
+
+@media (min-width: 960px) {
+  .ts-shots {
+    transform: translate(32px, 32px);
+  }
+
+  .ts-hero-phone {
+    width: min(45%, 10rem);
+    margin-left: 24px;
+  }
+
+  .ts-frame {
+    transform-origin: top left;
+  }
+}
 </style>
 
 <!-- Non-scoped: tame VitePress's mobile hero negative margins. By default the
