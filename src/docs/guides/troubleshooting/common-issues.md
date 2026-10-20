@@ -30,7 +30,7 @@ In the setup wizard, **Test connection** probes the address you typed and only r
 
 ### My server needs a login
 
-Tsumiru supports all of Suwayomi's authentication modes (**Basic auth**, **Simple login**, and **UI login**) as well as no auth. When a server is protected, the setup wizard detects it and prompts for your username and password, then works out the right mode for you. If it can't tell, choose the mode you configured on the server. For how each mode works, see [Suwayomi-Server](https://github.com/Suwayomi/Suwayomi-Server) and its configuration docs.
+The Android, iOS, and desktop apps support all of Suwayomi's authentication modes (**Basic auth**, **Simple login**, and **UI login**) as well as no auth. The browser version works only with **UI login** or no auth. See [Using Tsumiru in a browser](/docs/guides/web-browser#signing-in). When a server is protected, the setup wizard detects it and prompts for your username and password, then works out the right mode for you. If it can't tell, choose the mode you configured on the server. For how each mode works, see [Suwayomi-Server](https://github.com/Suwayomi/Suwayomi-Server) and its configuration docs.
 
 ### Connected but library is empty
 
