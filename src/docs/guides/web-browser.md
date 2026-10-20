@@ -37,8 +37,8 @@ A server with no authentication connects without a sign-in.
 
 To switch your server to UI login, either:
 
-* Edit `server.conf` and set `server.authMode = "ui_login"`.
-  The other values are `none`, `basic_auth`, and `simple_login`.
+* Edit `server.conf` and set `server.authMode = UI_LOGIN`.
+  The other values are `NONE`, `BASIC_AUTH` and `SIMPLE_LOGIN`.
 * In Suwayomi's own WebUI, open **Settings → Server**, find **Authentication**, and set **Authentication Mode** to **UI Login**.
 
 Then open **More → Connection** in Tsumiru, choose **UI Login (recommended)** under **Authentication Type**, and sign in with the server's username and password.
