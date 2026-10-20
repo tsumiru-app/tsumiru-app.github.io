@@ -1,3 +1,4 @@
+import process from 'node:process'
 import { Octokit } from '@octokit/rest'
 
 export default {
