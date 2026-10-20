@@ -23,7 +23,7 @@ provide('toggle-appearance', () => {
     <template #home-hero-image>
       <div class="ts-hero-phone">
         <div class="ts-frame">
-          <img src="/img/hero-library.webp" alt="The Tsumiru library on Android" width="688" height="1366" fetchpriority="high" />
+          <img src="/img/hero-library.webp" alt="The Tsumiru library on Android" width="688" height="1368" fetchpriority="high" />
         </div>
       </div>
     </template>
