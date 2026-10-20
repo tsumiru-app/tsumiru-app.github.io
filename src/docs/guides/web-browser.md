@@ -21,7 +21,7 @@ The browser version has no **Search my network** button.
 
 ### Install it from your server
 
-Open **Settings → Server** and find **Web interface**.
+Open **More → Settings → Server** and find **Web interface**.
 If your server supports these settings, set **Interface** to **Tsumiru**, then use **Check for update** to install it.
 Your server then serves Tsumiru at its own address.
 **Update channel** picks between **Stable** and **Preview**, and **Automatic updates** keeps the installed copy current.
