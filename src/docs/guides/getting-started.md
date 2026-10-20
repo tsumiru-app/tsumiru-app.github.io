@@ -23,7 +23,7 @@ Visit the [download page](/download/) and grab the build for your platform:
 
 * **Android**: install the `.apk` (use the universal APK if unsure).
 * **Windows / macOS / Linux**: download and extract the desktop build.
-* **Web**: host the web build, or open it from wherever you've deployed it.
+* **Web**: host the web build, or open it from wherever you've deployed it. See [Using Tsumiru in a browser](/docs/guides/web-browser) for the web build and sign-in.
 
 ## 3. Connect to your server
 

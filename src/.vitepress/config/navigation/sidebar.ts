@@ -56,6 +56,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           link: '/docs/guides/keyboard-shortcuts',
         },
         {
+          text: 'Using Tsumiru in a browser',
+          link: '/docs/guides/web-browser',
+        },
+        {
           text: 'Reaching your server from anywhere',
           link: '/docs/guides/remote-access',
         },
