@@ -18,12 +18,17 @@ provide('toggle-appearance', () => {
 
 <template>
   <DefaultTheme.Layout>
-    <!-- Replace the default hero icon with the app screenshot in a tilted device frame.
+    <!-- Replace the default hero icon with the desktop window and the tilted phone over its lower left.
          The hero's indigo→cyan glow (.image-bg) is a sibling slot and stays put. -->
     <template #home-hero-image>
-      <div class="ts-hero-phone">
-        <div class="ts-frame">
-          <img src="/img/hero-library.webp" alt="The Tsumiru library on Android" width="688" height="1368" fetchpriority="high" />
+      <div class="ts-shots">
+        <div class="ts-window">
+          <img src="/img/hero-desktop.webp" alt="The Tsumiru library on desktop" width="1120" height="720" fetchpriority="high">
+        </div>
+        <div class="ts-hero-phone">
+          <div class="ts-frame">
+            <img src="/img/hero-library.webp" alt="The Tsumiru library on Android" width="688" height="1368" fetchpriority="high">
+          </div>
         </div>
       </div>
     </template>
@@ -31,10 +36,39 @@ provide('toggle-appearance', () => {
 </template>
 
 <style scoped>
+/* Percentages are of the image column, so the composition scales with VitePress's .image-container */
+
+.ts-shots {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 100%;
+}
+
+.ts-shots > * {
+  grid-area: 1 / 1;
+}
+
+.ts-window {
+  justify-self: end;
+  width: 90%;
+}
+
+.ts-window img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 30px 70px rgba(0, 0, 0, 0.55);
+}
+
 .ts-hero-phone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-self: start;
+  align-self: start;
+  width: 30%;
+  margin-top: 15%;
 }
 
 /* Dark device bezel — gradient rim + soft shadow, tilted like the mockup */
@@ -52,21 +86,9 @@ provide('toggle-appearance', () => {
 
 .ts-frame img {
   display: block;
-  width: auto;
-  height: 300px;
+  width: 100%;
+  height: auto;
   border-radius: 23px;
-}
-
-@media (min-width: 640px) {
-  .ts-frame img {
-    height: 360px;
-  }
-}
-
-@media (min-width: 960px) {
-  .ts-frame img {
-    height: 460px;
-  }
 }
 </style>
 
