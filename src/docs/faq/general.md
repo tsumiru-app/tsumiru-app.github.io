@@ -19,6 +19,9 @@ Extensions live on your **Suwayomi server**, but you manage them from Tsumiru. *
 ## Can I track my reading with AniList or MyAnimeList?
 Connect the trackers your Suwayomi server supports, bind one to a series, and Tsumiru keeps its progress updated as you read, including chapters you read offline. See [Tracking](/docs/guides/tracking).
 
+## Can I help translate Tsumiru?
+Yes. Translations are done on [Hosted Weblate](https://hosted.weblate.org/projects/suwayomi/suwayomi-tsumiru/): pick your language and suggest or fix strings, no coding needed. New translations reach the app in the next release.
+
 ## Can I read light novels?
 **Tsumiru** is an image-based reader, not a text parser, so light novels are not supported.
 
