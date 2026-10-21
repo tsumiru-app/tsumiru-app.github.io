@@ -1,62 +1,99 @@
 ---
 title: Privacy policy
-description: "How Tsumiru handles your data: it doesn't collect any."
+description: How Tsumiru handles server connections, device storage and optional services.
 editLink: false
 ---
 
 # Privacy policy
 
-Tsumiru is a free, open-source app. It is provided at no cost and is intended for use as is.
+Updated October 21, 2026.
 
-**Tsumiru has no analytics, no crash reporting, no telemetry, and no account with us.** We run no servers that collect your usage, and we receive nothing about what you read.
+This policy covers the Tsumiru app and tsumiru.app.
+Tsumiru is an open-source client for a [Suwayomi server](/docs/guides/getting-started) you configure.
+The Tsumiru project does not operate a reading account or manga catalog service.
+The app has no advertising, analytics, crash-reporting service or usage telemetry.
+No reading data is automatically sent to project maintainers.
 
-There are two exceptions, both covered below: the **Suggestions** feature asks a few public manga databases for similar titles, which sends them a series' title (and sometimes a link to it) — on unless you turn it off. And **update checks** ask GitHub whether a newer Tsumiru release exists, either when you tap to check yourself or, if you turn it on, in the background.
+## Your server and account
 
-## How Tsumiru works
+Tsumiru sends requests to your chosen server address to browse sources, manage your library, record reading progress, download chapters and change server settings.
+These requests can include credentials such as passwords, session cookies or access tokens.
+Your server operator controls the server's storage, retention, sources and connections to other services.
 
-Tsumiru is a **client** for a [Suwayomi server](/docs/guides/getting-started) that you run and control. Apart from the two exceptions above, the only server Tsumiru talks to is the one **you** configure. Your library, reading history, downloads, and the sources you browse all live on your own server, not on any service we operate.
+You do not create an account with the Tsumiru project.
+You can sign in to an existing account on your configured Suwayomi server or create a server account through its invitation or administrator features.
+Invitation registration sends a registration code, new username and password to that server.
+Contact its operator about server account deletion or other server data requests.
+Tsumiru has no in-app action to delete your server account.
 
-* Tsumiru sends requests to the server address you enter, plus any credentials you provide to reach it.
-* App settings (such as your server address and reader preferences) are stored locally on your device.
-* We receive nothing.
+## Data on your device
 
-## Suggestions
+Tsumiru stores app settings, server connection details and background-task configuration on your device.
+It uses the platform's secure credential store for saved passwords, access tokens and session cookies.
+Offline storage can contain downloaded chapter images, cached covers, series metadata and reading progress.
+On-device downloads are separate copies from downloads stored on your Suwayomi server.
 
-The **Suggestions** row on a series' details page shows similar titles. To build it, Tsumiru asks these public manga databases for recommendations, sending them the series' title (and sometimes its source link):
+App settings can also be included in server backups when **App settings** is selected, which is the default when creating a backup.
+Debug logs, exported files, backups and information you choose to share for support may contain details about your configuration or reading activity.
+Tsumiru does not automatically upload these files to project maintainers.
 
-* AniList
-* MyAnimeList
-* MangaDex
-* MangaUpdates
-* Comick
+## Suggestions and optional services
 
-These requests go straight from your device to those services, not through your Suwayomi server. Each has its own privacy policy.
+The **Suggestions** feature requests similar titles directly from your device using AniList, MyAnimeList, MangaUpdates, Comick and SimilarManga with MangaDex.
+The applicable services receive a series title, identifier or source link, depending on the provider.
+Cover images can load from their image hosting services.
+These services see normal network request information, such as your IP address, and apply their own privacy and retention policies.
 
-**Suggestions is on by default.** To turn it off, open **Settings → Appearance** and switch off **Show recommendations**. With it off, Tsumiru makes no requests to those services.
+Suggestions is on by default.
+Turn off **Show recommendations** in **Settings → Appearance** to stop requests made by this feature.
 
-## Update checks
+Reading trackers, SyncYomi and KOReader Sync are separate integrations configured through your Suwayomi server.
+Tsumiru sends the configuration and operations needed for those integrations to your server, which connects to the services you enable.
+Those providers' policies and your server configuration govern the data they receive.
+Server and extension update operations also go through your server.
 
-Tsumiru can ask GitHub (github.com) whether a newer release is available, in two ways:
+Opening external links, such as a source website, project page or release notes, connects you to the destination website.
+Its own privacy policy applies.
 
-* Tapping **Check for updates** on the **About** screen. This only runs when you ask.
-* A background check, controlled by **App update notifications** under **Settings → Notifications**. This is off by default.
+## App updates
 
-Either way, the request only fetches the latest release listing. It carries no account, library, or reading data.
+Update behavior depends on where you obtain Tsumiru.
+If you install Tsumiru from Google Play, Google Play handles app updates.
+That edition does not directly check GitHub for new app versions.
+Google Play's handling of update requests is covered by Google's privacy policy.
 
-## Third-party content
+In editions distributed outside Google Play, **Check for updates** on **About** can request the latest release information from GitHub.
+On Android, **App update notifications** in **Settings → Notifications** can also check in the background if you enable it.
+This setting is off by default.
+These requests fetch release metadata and do not include your library or reading progress as request data.
+GitHub receives normal network request information.
+Project and release-note links can still open GitHub in any edition.
 
-Your Suwayomi server connects to third-party sources and, optionally, tracking services (such as MyAnimeList or AniList) that **you** configure on the server. Those services have their own privacy policies, and any data shared with them is governed by your server's configuration, not by Tsumiru.
+## Connection security
 
-If you open an external link from within the app, you'll be taken to a site we don't operate; review that site's own privacy policy.
+Connections to your Suwayomi server use HTTPS when you configure an HTTPS server address.
+You can also configure an HTTP address, which does not encrypt data in transit.
+Your choice of server address and the security of that server affect the protection of the credentials and reading data sent to it.
 
-## This website
+## Retention and deletion
 
-tsumiru.app itself sets no cookies and runs no analytics or trackers.
+Local downloads and the offline catalog remain until you remove them or configured retention rules remove applicable data.
+Use **Remove from device** for individual chapters or **Remove all downloads** in the on-device download settings to remove downloads after confirmation.
+In the same settings, use **Delete** under **Inactive account downloads** to remove an inactive account's local downloads and catalog.
 
-## Changes to this policy
+Signing out clears active sign-in credentials but keeps local downloads.
+It does not delete your server account or library.
+Removing the app or local app data does not delete data on your server.
+Saved or shared exports and backups are managed separately and may remain after you remove the app.
+Your server operator and third-party providers control retention and deletion on their services.
 
-We may update this policy from time to time. Any changes will be published on this page.
+## Website and contact
 
-## Contact
+The tsumiru.app website does not enable analytics or set tracking cookies.
+Some pages load third-party content, such as GitHub profile images, which sends normal request information to those hosts.
 
-Questions or suggestions? Open an issue on [GitHub](https://github.com/Suwayomi/Suwayomi-Tsumiru/issues).
+For privacy inquiries, email [support@tsumiru.app](mailto:support@tsumiru.app).
+You can also open a [GitHub issue](https://github.com/Suwayomi/Suwayomi-Tsumiru/issues), but issues are public, so do not post credentials or other sensitive information there.
+We use information you voluntarily provide to respond to your inquiry.
+Content you post on GitHub is also subject to GitHub's policies.
+Updates to this policy will be published on this page.
