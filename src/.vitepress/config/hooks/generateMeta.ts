@@ -85,6 +85,28 @@ function generateMeta(context: TransformContext, hostname: string) {
     addLinkTag('alternate', `${hostname}/news.json`, 'application/json', 'JSON of the news archive')
   }
 
+  if (pageData.relativePath === 'index.md') {
+    const graph = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        { '@type': 'WebSite', 'name': 'Tsumiru', 'url': `${hostname}/` },
+        {
+          '@type': 'SoftwareApplication',
+          'name': 'Tsumiru',
+          'url': `${hostname}/`,
+          'description': pageData.frontmatter.description,
+          'applicationCategory': 'BookApplication',
+          'operatingSystem': 'Android, iOS, Windows, macOS, Linux, Web',
+          'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'USD' },
+          'downloadUrl': `${hostname}/download/`,
+          'image': `${hostname}/android-chrome-512x512.png`,
+          'sameAs': ['https://github.com/Suwayomi/Suwayomi-Tsumiru'],
+        },
+      ],
+    }
+    head.push(['script', { type: 'application/ld+json' }, JSON.stringify(graph)])
+  }
+
   return head
 }
 

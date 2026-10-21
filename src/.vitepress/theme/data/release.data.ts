@@ -1,4 +1,5 @@
 import type { GetResponseDataTypeFromEndpointMethod } from '@octokit/types'
+import process from 'node:process'
 import { Octokit } from '@octokit/rest'
 import { defineLoader } from 'vitepress'
 
