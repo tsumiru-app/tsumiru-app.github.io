@@ -30,7 +30,7 @@ const themeConfig: DefaultTheme.Config = {
   ],
 
   footer: {
-    message: '<a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Open-source MPL-2.0 Licensed</a> <span class="divider">|</span> <a href="/privacy/">Privacy policy</a>',
+    message: '<a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Open-source MPL-2.0 Licensed</a> <span class="divider">|</span> <a href="https://hosted.weblate.org/projects/suwayomi/suwayomi-tsumiru/" target="_blank">Help translate</a> <span class="divider">|</span> <a href="/privacy/">Privacy policy</a>',
     copyright: `Copyright © ${new Date().getFullYear()} Tsumiru`,
   },
 
