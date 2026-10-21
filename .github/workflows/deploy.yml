@@ -45,6 +45,7 @@ jobs:
         with:
           # vitepress outDir is ../dist (repo root) relative to src.
           path: dist
+          include-hidden-files: true
 
   deploy:
     needs: build
