@@ -6,44 +6,52 @@ description: A tour of Tsumiru's settings.
 
 # Settings
 
-Tsumiru's settings are split into these sections:
+Tsumiru's settings are grouped into **App**, **Library**, **Suwayomi**, and **Advanced**.
 
-* **General**: app language, quick search, and request-timeout behaviour.
-* **Appearance**: theme and look of the app.
-* **Library**: global update interval, skip rules, and category management.
-* **Downloads**: server and on-device download options, split into **Server** and **On device** tabs (see [Offline reading](/docs/guides/offline-reading)).
-* **Notifications**: new-chapter, download, update, and error alerts (see [Notifications](/docs/guides/notifications)).
-* **Reader**: reading mode and all reader behaviour (see [Reader settings](/docs/guides/reader-settings)).
-* **Browse**: source/server browse options.
-* **Backup & Restore**: create and restore server backups (see [Backups](/docs/guides/backups)).
-* **SyncYomi**: sync your library and reading progress through a SyncYomi server.
-* **KOReader Sync**: sync reading progress with KOReader.
-* See [Sync your library and progress](/docs/guides/sync) for both.
-* **Tracking**: connect tracker accounts like AniList (see [Tracking](/docs/guides/tracking)).
-* **Server**: the Suwayomi server's own admin config (bindings, proxy, Cloudflare, and so on). This configures the server itself, not how this app connects to it.
+**App** covers the app itself:
 
-How Tsumiru **connects** to the server (its address, your sign-in, and any headers it needs) lives separately under **More → Connection**.
+* **General**: **App language**, **Lock to portrait**, **Persistent search bar**, and **Quick search**.
+* **Appearance**: theme mode and themes, **Pure black (AMOLED)**, **Manga grid size**, and **Show recommendations**.
+* **Reader**: global reader defaults for every series (see [Reader settings](/docs/guides/reader-settings)).
+* **Keyboard shortcuts**: the shortcut reference, shown on desktop and in the browser (see [Keyboard shortcuts](/docs/guides/keyboard-shortcuts)).
+* **Notifications**: new-chapter checks and alerts, on Android only (see [Notifications](/docs/guides/notifications)).
+
+**Library** covers your collection:
+
+* **Library**: **Categories**, **Global update** with automatic updates and skip rules, and **Behavior** such as chapter swipe actions and **Refresh chapters from source**.
+* **Downloads**: server downloads and auto-download on the **Server** tab, and offline storage on the **On device** tab (see [Offline reading](/docs/guides/offline-reading)).
+* **Tracking**: tracker accounts like AniList (see [Tracking](/docs/guides/tracking)).
+* **Browse**: sources, extensions, extension stores, and the NSFW toggle.
+* **Backup and restore**: manual and scheduled server backups (see [Backups](/docs/guides/backups)).
+
+**Suwayomi** covers the server connection:
+
+* **Connection**: server address, sign-in and authentication type, custom headers, and timeouts. It is also reachable from **More**.
+* **Sync**: **SyncYomi** and **KOReader Sync** in one place (see [Sync your library and progress](/docs/guides/sync)).
+* **Server**: the server's own admin config across hub pages (**Users**, **Network**, **Web interface**, **OPDS**, **Images**, **Database**, **Logs**). This configures the server itself, not how this app connects to it.
+
+**Advanced** holds **Clear cache**, **Copy debug log**, and **Clear debug log**.
 
 ## How do I connect to my server?
 
-Open **More → Connection**. Under **Server address**, set the **Server URL** to the full address of your server, port included: `http://192.168.1.10:4567`. There's no separate port field. The port is part of the URL.
+Open **More → Connection**. Under **Server**, set the **Server URL** to the full address of your server, port included: `http://192.168.1.10:4567`. There's no separate port field. The port is part of the URL.
 
 ## Can I have one address at home and another away?
 
-Yes, and Tsumiru switches between them for you. Under **Server address**, tap **Add a local network address** and fill in the **Internal / LAN URL** (for example `http://192.168.1.100:4567`); the **Server URL** above it stays as the address that works from anywhere else. On non-web platforms the LAN row has an auto-discovery button to find a server on your network.
+Yes, and Tsumiru switches between them for you. Under **Server**, tap **Add a local network address** and fill in the **Internal / LAN URL** (for example `http://192.168.1.100:4567`); the **Server URL** above it stays as the address that works from anywhere else. On non-web platforms the LAN row has an auto-discovery button to find a server on your network.
 
 Once both are set, an **Active connection** row appears showing which one Tsumiru is on: **Using LAN** or **Using remote**.
 
 ## My server needs a login: how do I authenticate?
 
-Under **More → Connection → Authentication**, pick an **Authentication Type**:
+Under **More → Connection → Authentication**, pick an **Authentication type**:
 
 * **None**: no authentication.
 * **Basic Auth**: HTTP basic auth (username + password), e.g. when your server sits behind a reverse proxy.
 * **Simple Login**: the server's older username-and-password sign-in.
 * **UI Login (recommended)**: the sign-in the server's own web UI uses. Tsumiru signs in once and stays signed in.
 
-Enter your **Credentials** for the chosen type. Use **Log out** to clear stored credentials. Credentials are kept in your device's secure storage.
+Enter your **Username** and **Password** for the chosen type. Use **Sign out** to clear stored credentials. Credentials are kept in your device's secure storage.
 
 If your sign-in expires while you're using Tsumiru, an inline banner asks you to sign in again. It doesn't log you out — sign in from the banner and you carry on where you were.
 After a device restore or a reinstall, sign in again the same way: credentials are kept in secure storage on the device and do not survive the move.
@@ -55,26 +63,32 @@ For the wider picture, see [Reaching your server from anywhere](/docs/guides/rem
 
 ## What about proxy or advanced connection settings?
 
-Proxy, Cloudflare, and binding options are **server-side**, configured under **Settings → Server**. Tsumiru surfaces whatever settings your server exposes; the server does the work. **Custom HTTP headers** is the exception: it's a setting on this device, on the Connection screen, because it decides how Tsumiru reaches the server in the first place.
+Proxy, Cloudflare, and binding options are **server-side**, configured under **Settings → Server → Network**. Tsumiru surfaces whatever settings your server exposes; the server does the work. **Custom HTTP headers** is the exception: it's a setting on this device, on the Connection screen, because it decides how Tsumiru reaches the server in the first place.
 
 ## Why are some requests timing out?
 
-Under **Settings → General → Timeout Settings** you can raise the **Server Request Timeout** and enable **Auto-refresh on Timeout** (with a retry delay). This helps on slow connections or a busy server.
+At the bottom of **Settings → Connection**, the **Timeouts** section holds **Server request timeout**, **Auto-refresh on timeout**, and **Auto-refresh retry delay**. Raise the timeout and turn on auto-refresh to ride out slow connections or a busy server.
 
 ## How do I change the theme?
 
 **Settings → Appearance** controls how the app looks:
 
-* **App Theme Mode**: **System**, **Light**, or **Dark**.
+* **Theme mode**: **System**, **Light**, or **Dark**.
 * **Pure black (AMOLED)**: swap dark backgrounds for true black to save power on OLED screens (shown in the dark and system modes).
 * **Theme**: pick from the built-in themes — **Indigo Night** (the default), **Carbon**, **Plum**, **Regression**, **Ember**, **Synthwave**, **Terminal**, **Catppuccin Mocha**, **Nord**, **Gruvbox**, **Dracula**, **Monochrome**, **Royal**, or **Custom**.
 * **Custom color**: with **Custom** picked, choose your own accent color from the wheel.
-* **Manga Grid Size**: how large the covers are in the library grid.
+* **Manga grid size**: how large the covers are in the library grid.
 * **Show recommendations**: show a row of similar titles on a series' details page (on by default; see [reading suggestions](/docs/faq/library#can-tsumiru-suggest-similar-titles)). **Recommendations in overflow** tucks that row into the overflow menu instead.
 
-## What is Quick Search?
+## What is Quick search?
 
-Quick Search is an overlay you open with `Ctrl` + `F` or `Ctrl` + `P` (see [Keyboard shortcuts](/docs/guides/keyboard-shortcuts)). It searches your **library**, offers **Go to** jumps to screens, settings, and categories, and can hand your text to a full **source search** across your extensions. It understands the same `key:value` [search operators](/docs/faq/library#how-do-i-search-my-library) as the library search box. Turn it on or off with **Quick Search** in **Settings → General**. Since a keyboard shortcut is the only way to open it, it's hidden on phones and tablets.
+**Quick search** is an overlay you open with `Ctrl` + `F` or `Ctrl` + `P` (see [Keyboard shortcuts](/docs/guides/keyboard-shortcuts)). It searches your **library**, offers **Go to** jumps to screens, settings, and categories, and can hand your text to a full source search across your extensions. It understands the same `key:value` [search operators](/docs/faq/library#how-do-i-search-my-library) as the library search box. Turn it on or off with **Quick search** in **Settings → General**. Since a keyboard shortcut is the only way to open it, it's hidden on phones and tablets.
+
+## Can I search settings?
+
+Yes. Tap the search button at the top of **Settings** and type to filter every page down to what matches.
+On desktop and in the browser, Settings opens as a window over the app, with its own search field and page list.
+Press `Esc` to close it.
 
 ## Does Tsumiru have an incognito mode?
 
@@ -84,7 +98,7 @@ Incognito works well with **hideable categories** (see [Categories](/docs/guides
 
 ## How do I hide adult content?
 
-Turn off adult content in **Settings → Browse**. This hides adult sources entirely, not just adult extensions, so their entries stay out of browse and search.
+Turn off **Show NSFW extensions and sources** in **Settings → Browse**. This hides adult sources entirely, not just adult extensions, so their entries stay out of browse and search.
 
 ## Is there an app lock / biometric lock?
 

@@ -20,11 +20,11 @@ Turn this off with **New chapter notifications** if you'd rather check for updat
 
 The other alerts each have their own switch:
 
-* **Download notifications**: a **Downloads complete** notification when an offline batch finishes.
-* **Error notifications**: **Failed downloads and library updates**, so a source going down or a chapter that won't download doesn't go unnoticed.
-* **Backup notifications**: when a backup or restore finishes or fails.
+* **Download notifications**: a **Downloads complete** notification when an offline batch finishes, and **Download failed** if some chapters couldn't be downloaded.
 * **App update notifications**: when a newer Tsumiru release is available.
 * **Extension update notifications**: when your installed extensions have updates waiting.
+
+If a library update finishes with failures, a **Library update failed** notification tells you how many series failed. It has no switch of its own.
 
 ## Tuning the checks
 

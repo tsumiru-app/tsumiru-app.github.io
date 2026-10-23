@@ -32,7 +32,7 @@ The library search box takes field filters, not just plain text. Type `key:value
 
 Wrap multi-word values in quotes (`tag:"slice of life"`), exclude a term with a leading minus (`-tag:dropped`), and match either of two things with a group (`{genre:action|genre:romance}`). Plain words with no `key:` still search titles, authors, genres, and tags as usual. The **?** beside the search box opens the same tips in the app.
 
-To keep the search box always in reach, turn on **Persistent search bar** in **Settings → Library**. It sits below the app bar and sticks to the top as you scroll, instead of hiding behind the search icon.
+To keep the search box always in reach, turn on **Persistent search bar** in **Settings → General**. It sits below the app bar and sticks to the top as you scroll, instead of hiding behind the search icon.
 
 ## Where do I see what I've read?
 
@@ -52,15 +52,15 @@ Opening a series also checks the source for new chapters by default, which can b
 
 ## How do I update my library?
 
-From the Library (or Updates) overflow menu choose **Global Update** to refresh everything, or **Category Update** to refresh just the category you're viewing. Updating runs as a job on your **Suwayomi server**. Tsumiru kicks it off and shows progress.
+From the Library (or Updates) overflow menu choose **Global update** to refresh everything, or **Category update** to refresh just the category you're viewing. Updating runs as a job on your **Suwayomi server**. Tsumiru kicks it off and shows progress.
 
-You can also enable **Automatic Update** in **Settings → Library** to refresh on an interval, and **Automatically refresh metadata** to pull new covers and details during updates.
+You can also enable **Automatic updates** in **Settings → Library** to refresh on an interval, and **Automatically refresh metadata** to pull new covers and details during updates.
 
 ## Why is the update skipping some entries?
 
 In **Settings → Library → Skip updating entries** you can skip entries:
 
-* **With Completed status**
+* **With completed status**
 * **That haven't been started**
 * **With unread chapter(s)**
 
@@ -68,9 +68,9 @@ This reduces unnecessary requests.
 
 ## Where can I find failed library updates?
 
-Open **More → Library update errors**. The count stays visible even when it is zero. The screen lists each series that failed during the latest library update; open a series to inspect it, or tap **Migrate** if its source has stopped working. Pull down to refresh the list after the server state changes.
+From the Library (or Updates) overflow menu, open **Library update errors**. The count stays visible even when it is zero. The screen lists each series that failed during the latest library update; open a series to inspect it, or tap **Migrate** if its source has stopped working. Pull down to refresh the list after the server state changes.
 
-This screen does not retry an update. Run **Global Update** or **Category Update** again after fixing the source or connection.
+This screen does not retry an update. Run **Global update** or **Category update** again after fixing the source or connection.
 
 ## Where do I see recently updated chapters?
 

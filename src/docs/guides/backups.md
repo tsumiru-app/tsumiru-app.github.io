@@ -6,21 +6,21 @@ description: Back up and restore your library, right from Tsumiru.
 
 # Backups
 
-Your library (series, categories, and read history) lives on your **Suwayomi server**, and Tsumiru can create and restore the server's backups directly. Open **Settings → Backup & Restore**.
+Your library (series, categories, and read history) lives on your **Suwayomi server**, and Tsumiru can create and restore the server's backups directly. Open **Settings → Backup and restore**.
 
 A backup is a standard Suwayomi (Tachidesk) backup file, so it can be restored to any Suwayomi server.
 
 ## Create a backup
 
-1. Go to **Settings → Backup & Restore → Create Backup**.
+1. Go to **Settings → Backup and restore → Create backup**.
 2. Choose what to include: **Categories**, **Chapters**, **History**, and **Tracking** (all on by default).
 3. The server generates the backup file and hands it to you to download. Save it somewhere safe.
 
 ## Restore a backup
 
-1. Go to **Settings → Backup & Restore → Restore Backup**.
+1. Go to **Settings → Backup and restore → Restore backup**.
 2. Pick your backup file (`.gz` or `.tachibk`).
-3. Tsumiru validates it first and warns you if any **sources are missing** (you'd want those installed on the server for everything to resolve). It then uploads the file and the server restores it, showing progress as it goes.
+3. Tsumiru validates it first and warns you about any **Missing extensions** (you'd want those installed on the server for everything to resolve). It then uploads the file and the server restores it, showing progress as it goes.
 
 ::: warning
 Restoring merges/overwrites library data on the server. Create a fresh backup first if you're unsure.
@@ -28,12 +28,12 @@ Restoring merges/overwrites library data on the server. Create a fresh backup fi
 
 ## Automatic backups
 
-Under **Settings → Backup & Restore → Automatic Backup** you can have the server back up on a schedule:
+Under **Settings → Backup and restore → Automated backup** you can have the server back up on a schedule:
 
-* **Backup Location**: a path on the server where automatic backups are saved.
-* **Backup Time**: the time of day to run.
-* **Backup Interval**: how often, in days.
-* **Backup Cleanup**: how long to keep old backups before they're pruned.
+* **Backup location**: a path on the server where automatic backups are saved.
+* **Backup time**: the time of day to run.
+* **Backup interval**: how often, in days.
+* **Backup cleanup**: how long to keep old backups before they're pruned.
 
 ## What isn't in a backup
 
