@@ -23,7 +23,9 @@ Tsumiru is a client for a [Suwayomi server](/docs/guides/getting-started), so yo
 <DownloadButtons />
 
 ::: tip Stay up to date on Android
-Tsumiru signs every release with the same key, so updates install cleanly over the top. For automatic update checks, point an app like [Obtainium](https://github.com/ImranR98/Obtainium) at the [GitHub releases](https://github.com/Suwayomi/Suwayomi-Tsumiru/releases).
+Tsumiru signs every release with the same key, so updates install cleanly over the top.
+For automatic updates, add Tsumiru to [Obtainium](https://github.com/ImranR98/Obtainium) and it installs new releases straight from GitHub.
+<a href="obtainium://app/%7B%22id%22%3A%22io.github.aaronbamblett.tsumiru%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FSuwayomi%2FSuwayomi-Tsumiru%22%2C%22author%22%3A%22Suwayomi%22%2C%22name%22%3A%22Tsumiru%22%7D"><img src="/img/badge_obtainium.png" alt="Get it on Obtainium" width="161" height="48"></a>
 :::
 
 ## On Linux
