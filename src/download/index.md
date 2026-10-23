@@ -9,6 +9,7 @@ next: false
 
 <script setup>
 import DownloadButtons from "@theme/components/DownloadButtons.vue";
+import IosSources from "@theme/components/IosSources.vue";
 import ReleaseDate from "@theme/components/ReleaseDate.vue";
 import Changelog from "@theme/components/Changelog.vue";
 </script>
@@ -42,8 +43,10 @@ For a portable single file, grab the **Linux (AppImage)** above: `chmod +x` it a
 
 ## On iOS
 
-The iOS build is **unsigned** and requires **iOS 14 or later**. Apple requires apps to be signed to your own account before they'll run, so it can't be installed by just opening the file. The [installing on iOS](/docs/guides/install-ios) guide walks through the sideloading tools (SideStore, AltStore, TrollStore) and the upkeep each one needs.
+The iOS build is **unsigned** and requires **iOS 14 or later**. Apple requires apps to be signed to your own account before they'll run, so it can't be installed by just opening the file. The [installing on iOS](/docs/guides/install-ios) guide walks through the sideloading tools (SideStore, AltStore, Feather, TrollStore) and the upkeep each one needs.
 
-SideStore and AltStore can also install and update Tsumiru from a source. Add `https://tsumiru.app/apps.json` under **Sources**, and new releases appear in the app.
+<IosSources />
+
+The source URL, for any tool that reads AltStore sources, is `https://tsumiru.app/apps.json`.
 
 <Changelog type="stable" />

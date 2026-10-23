@@ -4,6 +4,10 @@ titleTemplate: Guides
 description: Install Tsumiru on iPhone or iPad by sideloading the unsigned .ipa with SideStore, AltStore, or TrollStore, and how updates and re-signing work.
 ---
 
+<script setup>
+import IosSources from "@theme/components/IosSources.vue";
+</script>
+
 # Install on iOS (sideloading)
 
 There is **no App Store build** of Tsumiru. Every release ships an **unsigned `.ipa`**, and Apple won't let an iPhone run an app that isn't signed, so you can't download it and tap Install. Instead, a sideloading tool signs the app **to your own Apple account** on your own device.
@@ -36,6 +40,13 @@ AltStore works the same way but does its re-signing through **AltServer**, a com
 
 TrollStore exploits a signing bug to install apps **permanently**, with no signing expiry and no refreshing. The catch: that bug only exists on certain iOS versions (roughly iOS 14.0–16.6.1, plus 16.7 RC and 17.0; anything newer will never be supported). If your device is on a supported version, this is the most hassle-free option. Check the install guide to see if yours qualifies.
 
+### Feather (needs a developer certificate)
+
+[Feather on GitHub](https://github.com/khcrysalis/Feather)
+
+Feather signs and installs apps on the device itself, and it is meant for developer certificates, so it suits people with an Apple Developer Program certificate rather than a free Apple ID.
+It supports AltStore sources, so the Tsumiru source works in it.
+
 ## Expiry and account limits
 
 * With a **free** Apple account, sideloaded apps expire after **7 days** and you can have at most **3 sideloaded apps** installed at once. SideStore and AltStore both automate the re-signing; an expired app won't open until it's refreshed, but your reading data is untouched.
@@ -44,13 +55,15 @@ TrollStore exploits a signing bug to install apps **permanently**, with no signi
 
 ## Add the Tsumiru source
 
-Tsumiru publishes a source that SideStore and AltStore can read, so new releases show up in the app instead of you checking the releases page.
+Tsumiru publishes a source that SideStore, AltStore and Feather can read, so new releases show up in the app instead of you checking the releases page.
 
 ```text
 https://tsumiru.app/apps.json
 ```
 
-In SideStore or AltStore, open **Browse**, tap **Sources**, tap **+**, and paste that URL. Tsumiru then appears in the source with an **Install** button, and later releases show an **Update** button.
+<IosSources />
+
+Or add it by hand: in SideStore or AltStore open **Browse**, tap **Sources**, tap **+**, and paste the URL. Tsumiru then appears in the source with an **Install** button, and later releases show an **Update** button.
 
 TrollStore has no source support. Keep installing the `.ipa` by hand.
 
