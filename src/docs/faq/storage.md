@@ -16,7 +16,7 @@ On the **server**, at the path set in **Settings → Downloads → Download loca
 
 ## Where are backups kept?
 
-Backups are created and stored by the **server** too. Automatic backups go to the path in **Settings → Backup & Restore → Backup Location** ("the path to the directory on the server where automated backups should get saved in"). When you create a backup manually, the server generates the file and hands it to you to download. See [Backups](/docs/guides/backups).
+Backups are created and stored by the **server** too. Automatic backups go to the path in **Settings → Backup and restore → Backup location** ("the path to the directory on the server where automated backups should get saved in"). When you create a backup manually, the server generates the file and hands it to you to download. See [Backups](/docs/guides/backups).
 
 ## Does Tsumiru use much space on my device?
 

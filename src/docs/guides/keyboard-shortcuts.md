@@ -17,7 +17,7 @@ On desktop and the web, Tsumiru has shortcuts for getting around and for reading
 | `Ctrl` + `L` | Open the library *(desktop only)* |
 | `Ctrl` + `J` | Open downloads *(desktop only)* |
 
-`Ctrl` + `F` and `Ctrl` + `P` open [Quick Search](/docs/faq/settings#what-is-quick-search), which searches your library, jumps around the app, and hands off to source search.
+`Ctrl` + `F` and `Ctrl` + `P` open [Quick search](/docs/faq/settings#what-is-quick-search), which searches your library, jumps around the app, and hands off to source search.
 
 ## In the reader
 

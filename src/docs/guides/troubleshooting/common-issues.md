@@ -81,7 +81,7 @@ Uninstall only if you intend to change signing certificates. Uninstalling remove
 
 ### A library update finished with errors
 
-Open **More → Library update errors** to see the series that failed. Open one to check whether its source works, or tap **Migrate** if the source is gone. The screen records failures; it does not retry them. After fixing the source, server connection, or extension, run **Global Update** or **Category Update** again.
+From the Library (or Updates) overflow menu, open **Library update errors** to see the series that failed. Open one to check whether its source works, or tap **Migrate** if the source is gone. The screen records failures; it does not retry them. After fixing the source, server connection, or extension, run **Global update** or **Category update** again.
 
 ## HTTP errors from the server
 

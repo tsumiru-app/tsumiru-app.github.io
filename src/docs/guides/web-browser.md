@@ -74,7 +74,7 @@ To switch your server to UI login, either:
   The other values are `NONE`, `BASIC_AUTH` and `SIMPLE_LOGIN`.
 * In Suwayomi's own WebUI, open **Settings → Server**, find **Authentication**, and set **Authentication Mode** to **UI Login**.
 
-Then open **More → Connection** in Tsumiru, choose **UI Login (recommended)** under **Authentication Type**, and sign in with the server's username and password.
+Then open **More → Connection** in Tsumiru, choose **UI Login (recommended)** under **Authentication type**, and sign in with the server's username and password.
 
 ### What the messages mean
 

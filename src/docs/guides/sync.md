@@ -13,7 +13,7 @@ Both are configured on the server, and Tsumiru drives them from its settings.
 
 ## SyncYomi
 
-Open **Settings → SyncYomi**.
+Open **Settings → Sync**.
 
 * **Sync with SyncYomi** turns syncing on.
 * **Host** is your SyncYomi server address.
@@ -35,7 +35,7 @@ Update Suwayomi to use it.
 
 ## KOReader Sync
 
-Open **Settings → KOReader Sync**, right below SyncYomi.
+On the same **Settings → Sync** page, the **KOReader Sync** section sits below SyncYomi.
 
 * **Sync status** shows who is connected and to which server.
 Tap it to connect or disconnect.

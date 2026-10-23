@@ -32,9 +32,9 @@ In Mihon, go to **More → Data and storage → Create backup**, leave everythin
 
 The restore happens on the server, and Tsumiru can drive it:
 
-1. In Tsumiru, go to **Settings → Backup & Restore → Restore Backup**.
+1. In Tsumiru, go to **Settings → Backup and restore → Restore backup**.
 2. Pick your `.tachibk` file.
-3. Tsumiru validates it first and lists any **missing sources**. If some are missing, install those extensions (next step) and run the restore again so everything resolves.
+3. Tsumiru validates it first and lists any **Missing extensions**. If some are missing, install those extensions (next step) and run the restore again so everything resolves.
 
 You can also restore through the server's own WebUI. The result is the same.
 
