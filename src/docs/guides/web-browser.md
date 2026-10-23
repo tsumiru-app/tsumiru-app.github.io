@@ -19,6 +19,29 @@ Serve the folder with any static web server, then open its address in a browser.
 If you serve the build from an address other than your Suwayomi server, open **More → Connection** and enter the server's address, including its port.
 The browser version has no **Search my network** button.
 
+### Serve it from your server with the Custom interface
+
+Suwayomi's **Custom** interface option serves whatever is in the server's `webUI` folder and never overwrites it, so the web build can live there and open at the server's own address with nothing else to host.
+Because app and server then share an origin, this works on servers that cannot install Tsumiru directly.
+
+1. Open **More → Settings → Server**, find **Web interface** and set **Interface** to **Custom**.
+(In Suwayomi's WebUI the same setting is **Settings → WebUI → Flavor**.)
+2. Stop the server.
+3. Unzip the `…-web.zip` from the latest release and replace the contents of the server's `webUI` folder with it.
+`index.html` must end up directly inside `webUI`, not in a subfolder.
+4. Start the server and open its address in a browser.
+The setup wizard pre-fills the server address, including any sub-path the server uses.
+
+The `webUI` folder sits inside the server's data folder:
+
+* Windows: `C:\Users\<Account>\AppData\Local\Tachidesk`
+* macOS: `/Users/<Account>/Library/Application Support/Tachidesk`
+* Linux: `/home/<account>/.local/share/Tachidesk`
+* Docker (official image): the volume mounted at `/home/suwayomi/.local/share/Tachidesk` inside the container.
+
+With **Custom** selected the server never updates the interface on its own, so repeat steps 2 to 4 for each new release.
+To go back, set **Interface** to **WebUI** and restart the server, and it downloads WebUI again on its own.
+
 ### Install it from your server
 
 Open **More → Settings → Server** and find **Web interface**.
@@ -28,6 +51,7 @@ Your server then serves Tsumiru at its own address.
 
 Tsumiru appears in the **Interface** list on servers that support it.
 If it isn't there, your server can't install it yet.
+Use the Custom interface above instead.
 
 ## Signing in
 
@@ -56,4 +80,5 @@ The third can also mean a mistyped address, so check the host, port, and any sub
 
 * **No offline reading.** The browser version always reads from the server and can't keep chapters on the device. See [Offline reading](/docs/guides/offline-reading).
 * **No notifications.** Notifications are Android only, so the browser version has none. See [Notifications](/docs/guides/notifications).
-* **Updates come from where you run it.** If your server installed Tsumiru as its web interface, the server updates it. A copy on your own static server changes only when you replace its files with a newer release.
+* **Updates come from where you run it.** If your server installed Tsumiru as its web interface, the server updates it.
+  A copy you placed with the Custom interface, or on your own static server, changes only when you replace its files with a newer release.
