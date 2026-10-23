@@ -55,10 +55,19 @@ Use the Custom interface above instead.
 
 ## Signing in
 
-The browser version signs in with **UI login** only.
-It can't use Basic auth or Simple login: those modes need the browser to send credentials with cross-origin requests, and newer Suwayomi servers refuse that.
-A server with no authentication connects without a sign-in.
+How you sign in depends on where the web build is served from.
 
+If your Suwayomi server serves the web build (the Custom interface above, or a server that installed Tsumiru), the server signs the browser in before Tsumiru loads.
+With Basic auth the browser shows its own username and password prompt.
+With Simple login the server shows its login page first.
+With UI login, Tsumiru asks you to sign in.
+A server with no authentication connects without a sign-in.
+In the first two cases Tsumiru itself shows no sign-in and needs none.
+
+If the web build is served from any other address, Tsumiru signs in with **UI login** only.
+It can't use Basic auth or Simple login, because those need the browser to send credentials with cross-origin requests, and newer Suwayomi servers refuse that.
+
+The steps below apply when the web build is served from another address.
 To switch your server to UI login, either:
 
 * Edit `server.conf` and set `server.authMode = UI_LOGIN`.
@@ -75,6 +84,7 @@ Then open **More → Connection** in Tsumiru, choose **UI Login (recommended)** 
 
 The first two mean the server's authentication mode needs to change.
 The third can also mean a mistyped address, so check the host, port, and any subpath before changing the server.
+These messages only apply when the web build is served from an address other than the server.
 
 ## What's different from the apps
 
