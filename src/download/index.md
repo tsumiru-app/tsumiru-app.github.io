@@ -41,7 +41,7 @@ flatpak install tsumiru io.github.aaronbamblett.tsumiru
 
 Then launch it from your app menu, or with `flatpak run io.github.aaronbamblett.tsumiru`. Updates arrive with `flatpak update` (or automatically via your software centre).
 
-For a portable single file, grab the **Linux (AppImage)** above: `chmod +x` it and run. It needs no repo and no install step, but it won't update itself.
+For a portable single file, grab the **Linux (AppImage)** above: `chmod +x` it and run. It needs no repo and no install step. To update it, use [AppImageUpdate](https://github.com/AppImageCommunity/AppImageUpdate), which downloads only the parts that changed.
 
 ## On iOS
 
