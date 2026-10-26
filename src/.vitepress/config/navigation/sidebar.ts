@@ -75,6 +75,7 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
         { text: 'Tracking', link: '/docs/guides/tracking' },
         { text: 'Migrate manga between sources', link: '/docs/guides/source-migration' },
         { text: 'Backups', link: '/docs/guides/backups' },
+        { text: 'Server administration', link: '/docs/guides/server-administration' },
         {
           text: 'Sync your library and progress',
           link: '/docs/guides/sync',

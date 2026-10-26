@@ -13,6 +13,8 @@ Long strip, Long strip with gaps, Paged (left to right), Paged (right to left), 
 ## Why didn't a page load?
 Aside from a network hiccup, the image may have failed to come through from the server. Exit and re-enter the reader, which usually resolves it. If pages consistently fail, check that your Suwayomi server is reachable.
 
+The reader menu offers **Retry errored pages**, **Open in WebView** for the chapter on its source, and **Share chapter link** when a link is available.
+
 ## Can I pinch to zoom in the webtoon reader?
 Pinch-to-zoom works in the long-strip reader as well as the paged modes. **Double tap to zoom** is on by default too: double-tap to zoom in at the point you tapped, and double-tap again to zoom back out. The zoom settings are separate for the Paged and Long strip readers, so you can turn zoom off in one without touching the other.
 
