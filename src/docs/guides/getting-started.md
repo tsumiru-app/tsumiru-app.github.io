@@ -6,8 +6,6 @@ description: Connect Tsumiru to your Suwayomi server and start reading.
 
 # Getting started
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Tsumiru is a **client** for [Suwayomi](https://suwayomi.org/) (also known as Tachidesk). Your sources, extensions, server downloads, and library live on your **Suwayomi server**. Tsumiru connects Android, desktop, iOS, and web clients to it.
 
 ## 1. Set up a Suwayomi server
@@ -47,7 +45,9 @@ Enter your username and password.
 A method you pick yourself is never changed for you, so choose the configured mode if the suggestion looks wrong, then tap **Sign in**.
 5. Finish, and your library loads.
 
-If you're in a hurry, **Skip** (top-right) lets you set things up later. You can change the address, sign-in, and headers any time under **Settings → Connection**.
+If you're in a hurry, **Skip** (top-right) lets you set things up later.
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+You can change the address, sign-in, and headers any time under **Settings → Connection**.
 
 > **Tip:** A local-network address (`192.168.x.x`, default port 4567) is the simplest place to start. To read away from home too, put your server behind a reverse proxy with HTTPS and enter that domain as the **Server URL**, then add your LAN address as the **Internal / LAN URL**. Tsumiru uses whichever one can reach the server, so the same app works at home and away.
 

@@ -6,8 +6,6 @@ description: Download chapters to your device and keep reading with no server an
 
 # Offline reading
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Tsumiru can keep chapters **on your device** so you can read them with no connection to your Suwayomi server. The sources still come from Suwayomi; offline reading stores the pages on your device, so the app doesn't need to reach the server while you read.
 
 This is separate from [server-side downloads](/docs/faq/downloads). A *server download* tells your Suwayomi server to fetch a chapter and keep it **on the server**. An *offline download* copies that chapter onto **this device**. The two work together: a chapter has to be downloaded on the server before it can be saved to your device, and if it isn't yet, Tsumiru queues the server download for you automatically.

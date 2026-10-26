@@ -6,9 +6,8 @@ description: A tour of Tsumiru's settings.
 
 # Settings
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Tsumiru's settings are grouped into **App**, **Library**, **Suwayomi**, and **Advanced**.
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
 
 **App** covers the app itself:
 

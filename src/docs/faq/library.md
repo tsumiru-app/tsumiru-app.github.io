@@ -6,7 +6,6 @@ description: Frequently Asked Questions about the Library in Tsumiru.
 
 # Library
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
 Frequently Asked Questions about the Library.
 
 ## How do I sort, filter, and change the layout?

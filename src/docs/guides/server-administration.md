@@ -6,7 +6,7 @@ description: Manage server sign-in, users, feeds, images, and logs from Tsumiru.
 
 # Server administration
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones, then choose **Server**.
+Open **Settings → Server** to manage your server.
 The available pages and controls depend on your server's capabilities and your account permissions.
 **Manage server settings** is required for server administration settings, while **Manage users** controls account administration.
 Some OPDS and served-image preferences can be personal settings on servers with accounts.

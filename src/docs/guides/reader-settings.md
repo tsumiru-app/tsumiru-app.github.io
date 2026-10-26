@@ -6,8 +6,6 @@ description: Reading modes, page layout, zoom, color filters, and per-series ove
 
 # Reader settings
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Reader settings live in two places:
 
 * **Settings → Reader** holds the global defaults that apply to every series.

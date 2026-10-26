@@ -6,8 +6,6 @@ description: Facing connection or app issues with Tsumiru? Here's how to trouble
 
 # Troubleshooting
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Most Tsumiru problems are connection problems: the app can't reach your Suwayomi server, or reaches the wrong thing. Start here, then check the [FAQ](/docs/faq/general).
 
 ## Server connection

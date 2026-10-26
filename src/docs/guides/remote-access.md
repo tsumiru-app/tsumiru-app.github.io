@@ -6,8 +6,6 @@ description: Connect to your Suwayomi server at home and away.
 
 # Reaching your server from anywhere
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Your Suwayomi server's local address works on your home network. To reach it over mobile data or another Wi-Fi network, use a remote address or connect back home through a VPN.
 
 If you haven't connected Tsumiru yet, start with [Getting started](/docs/guides/getting-started).

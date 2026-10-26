@@ -6,8 +6,6 @@ description: "Switch from Mihon or Komikku to Tsumiru: restore your .tachibk bac
 
 # Coming from Mihon or Komikku
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Suwayomi restores Mihon's backup format directly, so moving from Mihon or Komikku is one backup file: create it there, restore it here.
 
 ## What actually changes
