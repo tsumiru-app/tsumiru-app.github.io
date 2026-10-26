@@ -20,7 +20,7 @@ Tsumiru's settings are grouped into **App**, **Library**, **Suwayomi**, and **Ad
 
 **Library** covers your collection:
 
-* **Library**: **Categories**, **Global update** with automatic updates and skip rules, and **Behavior** such as chapter swipe actions and **Refresh chapters from source**.
+* **Library**: **Fuzzy search**, **Ignore filters when searching**, **Categories**, **Global update** with automatic updates and skip rules, and **Behavior** such as chapter swipe actions and **Refresh chapters from source**.
 * **Downloads**: server downloads and auto-download on the **Server** tab, and offline storage on the **On device** tab (see [Offline reading](/docs/guides/offline-reading)).
 * **Tracking**: tracker accounts like AniList (see [Tracking](/docs/guides/tracking)).
 * **Browse**: sources, extensions, extension stores, and the NSFW toggle.

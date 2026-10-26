@@ -22,6 +22,8 @@ Extensions are listed in groups: **Updates pending** at the top, then **Installe
 * **Reinstall**: an installed row with no update waiting has a restart icon beside it with a **Reinstall** tooltip; on a row with an update, **Reinstall** is in the overflow menu instead. It uninstalls the extension and installs it again, which repairs one that installed without any working sources, or one that keeps offering an update that never applies.
 * **Obsolete** (in red) means the extension was removed from its store. It may keep working for a while, but the only action left is to uninstall it.
 
+**Update all** installs every pending extension update. Open an extension's menu and choose **Extension info** to inspect its details.
+
 Extensions with adult content are marked **18+** in red.
 
 ### Install from a file
@@ -54,6 +56,8 @@ Two controls decide what Browse shows you:
 
 Every source from your installed extensions, with **Pinned** and **Last Used** groups at the top, then sources grouped by language. Tap a source to browse it; the **Latest** button on a row jumps straight to its newest releases. The toolbar has a **Global search** icon (below) and a **Filter sources** icon.
 
+A source's menu also offers **Open in WebView** to open its website and **Extension info** to inspect the extension that provides it.
+
 ### Pin your favorites
 
 Tap the pin icon on a source's row to pin it. Pinned sources sit in their own group at the top of the list, and global search can be scoped to just them. Tap the pin again to unpin.
@@ -71,6 +75,8 @@ Inside a source:
 * On the Filter listing, the **Filter** button opens the source's filters (genre, status, and whatever else that source offers) in a sheet.
 * The display icon switches between grid and list.
 * Some sources have their own settings — if one does, a gear icon appears in its toolbar.
+
+**Saved searches** lets you reuse a source query and its filters. Choose **Save current search** to name the current combination. **Hide entries already in library** keeps series you already have out of source results.
 
 **Add several at once**: long-press a cover to start selecting, tap more covers to add them, and add the whole selection to your library in one go. If any of them look like something you already have, Tsumiru pauses to ask (see [duplicate detection](/docs/faq/library#does-tsumiru-catch-duplicate-series)).
 

@@ -19,6 +19,8 @@ Tap the organizer icon in the Library toolbar for five tabs:
 * **Badges**: choose the **Unread badge** style (**Show count**, **Show plain badge** for a badge with no number, or **Hide**), toggle the **Downloaded**, **On device**, **Read progress bar**, **Continue reading button**, **Source icon**, and **Language** badges, and set the **Badge layout**: drag to reorder the badges, and tap the arrow to move one to the other corner of the cover.
 * **Group**: keep the **Default** category tabs, group **By tag**, **By source**, **By status**, **By track status**, or **By language**, or pick **Ungrouped** for one flat tab. **Group display** shows groups as **Tabs** or as **Section headers** in one continuous scroll, and the tab options (category tabs, item counts, showing hidden categories) live here too.
 
+**Open random entry** picks a series from the current category or group, using your current search and filters.
+
 ## How do I search my library?
 
 The library search box takes field filters, not just plain text. Type `key:value` to filter by a field, and combine as many as you like:
@@ -33,6 +35,8 @@ The library search box takes field filters, not just plain text. Type `key:value
 * `unread:true` / `downloaded:true`
 
 Wrap multi-word values in quotes (`tag:"slice of life"`), exclude a term with a leading minus (`-tag:dropped`), and match either of two things with a group (`{genre:action|genre:romance}`). Plain words with no `key:` still search titles, authors, genres, and tags as usual. The **?** beside the search box opens the same tips in the app.
+
+Under **Settings → Library**, **Fuzzy search** allows approximate text matches. **Ignore filters when searching** lets a search find entries that your active library filters would otherwise hide.
 
 To keep the search box always in reach, turn on **Persistent search bar** in **Settings → General**. It sits below the app bar and sticks to the top as you scroll, instead of hiding behind the search icon.
 
@@ -80,6 +84,12 @@ The **Updates** tab lists newly fetched chapters grouped by date, newest first. 
 
 On phones, the organizer sheet has **Filter** and **Display** tabs. Desktop has separate Filter and Display controls. **Chapter grouping** is under **Display**: **Disabled** lists every chapter on its own, **Collapsed** folds each series group shut, and **Expanded** folds them open. The default is **Collapsed**. Filters are **Downloaded**, **Started**, and **Bookmarked** with **Any / Yes / No**, and **Read status** with **Any / Unread / Read**.
 
+## What is Upcoming?
+
+Open **Upcoming** from **Updates** to see predicted next-release dates for your library. Predictions use each series' recent update cadence, so they are estimates rather than guarantees. Completed series are excluded.
+
+On desktop, switch between **Week** and **Month** views and use **Show past releases** to include earlier releases. If no predictions appear yet, your library may need more chapter history.
+
 ## Can each series sort its chapters its own way?
 
 Yes.
@@ -123,6 +133,14 @@ A series' details page shows a **Suggestions** row of similar titles, and **See 
 The browser version uses **AniList only**. Native apps can query the other listed providers.
 
 It's on by default. **Settings → Appearance → Show recommendations** turns it off, and **Recommendations in overflow** moves the row into the overflow menu instead.
+
+## Can I change a series cover?
+
+Open the cover on a series page and choose **Edit cover**. Search your sources or choose a cover from **AniList**, **MyAnimeList**, **Kitsu**, or **MangaUpdates** where available. You can also paste an image link into **Thumbnail url**, select the image, and **Save**. Browser builds offer AniList and Kitsu alongside source results.
+
+The cover viewer offers **Share** and **Save** on Android and iOS. **Delete** removes a custom cover and returns that series to its server cover. To reset every series, use **Settings → Advanced → Remove custom covers**.
+
+Custom covers show in Tsumiru on all your devices. They do not change covers in other Suwayomi clients.
 
 ## Why were some chapters marked unread again?
 

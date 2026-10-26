@@ -6,6 +6,8 @@ description: Keep your library and reading progress in sync with SyncYomi or KOR
 
 # Sync your library and progress
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 Tsumiru can sync through two extra services.
 **SyncYomi** syncs your library and reading progress through a SyncYomi server.
 **KOReader Sync** syncs reading progress with KOReader.
@@ -47,3 +49,5 @@ Smaller progress differences than this do not trigger a sync.
 
 Like SyncYomi, these settings are saved per account on servers with accounts and globally on older servers.
 If your server does not support KOReader Sync, the screen says so instead of failing.
+
+With KOReader Sync connected, reader and chapter actions offer **Push progress to KOReader** and **Pull progress from KOReader**. Both ask for confirmation: pushing replaces KOReader progress, while pulling replaces the chapter's local and server progress.

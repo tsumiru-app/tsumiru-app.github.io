@@ -39,7 +39,7 @@ The **Downloads** screen has two tabs: **Server** for the server queue, and **On
 On phones, the **Server** tab is a single list under a **Queue** header that shows how many chapters are waiting, with the reminder *"Chapters the server is fetching. Long-press a row to reorder."* The chapter being fetched shows its page count (*24/25 pages*) above a thin progress bar. On this tab you can:
 
 * Reorder an item by long-pressing its row and dragging it, or by dragging the handle on the right. Its menu also offers **Move to top** and **Move to bottom**.
-* **Cancel** an item from its menu. A row that errored gets a **Retry** entry in the same menu.
+* **Cancel** an item from its menu, or use **Cancel all for this series** to remove that series from the queue. A row that errored gets a **Retry** entry in the same menu.
 * **Pause** / **Resume** the whole queue with the floating button on phones or the toolbar controls on desktop.
 * **Clear download queue** removes the entire queue after confirmation. This action appears when there are queued chapters and requires download permission.
 
@@ -54,6 +54,10 @@ In **Settings → Downloads → Server → Auto-download**, turn on **Download n
 You can also choose **which categories** download on their own, so only the ones you pick fetch new chapters automatically.
 
 Tsumiru also tops up series you keep on your device: after every library update, new chapters for kept series are fetched and older chapters the keep rule no longer covers are removed. See [Offline reading](/docs/guides/offline-reading).
+
+## Can it download ahead while I read?
+
+Under **Settings → Downloads → Server → Download ahead**, enable **Auto download while reading** and set **Number of unread chapters to download**. This fetches chapters to the server, separately from the device keep rules used for [offline reading](/docs/guides/offline-reading).
 
 ## Why did a download stop or fail?
 
