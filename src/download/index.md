@@ -33,13 +33,13 @@ For automatic updates, add Tsumiru to [Obtainium](https://github.com/ImranR98/Ob
 The recommended way to run Tsumiru on Linux is the **Flatpak**. It installs from our own signed repo (not Flathub), integrates with your desktop, and **auto-updates**:
 
 ```sh
-flatpak remote-add --if-not-exists tsumiru https://suwayomi.github.io/Suwayomi-Tsumiru/index.flatpakrepo
-flatpak install tsumiru io.github.aaronbamblett.tsumiru
+flatpak remote-add --if-not-exists tsumiru https://flatpak.tsumiru.app/index.flatpakrepo
+flatpak install tsumiru app.tsumiru.Tsumiru
 ```
 
-> Added the `tsumiru` remote before? It may still point at the old `tsumiru-app.github.io` URL. Run `flatpak remote-delete tsumiru` first, then the commands above.
+> Added the `tsumiru` remote before? Update its URL with `flatpak remote-modify --url=https://flatpak.tsumiru.app tsumiru`. Existing `io.github.aaronbamblett.tsumiru` installations keep receiving updates. No reinstall is needed.
 
-Then launch it from your app menu, or with `flatpak run io.github.aaronbamblett.tsumiru`. Updates arrive with `flatpak update` (or automatically via your software centre).
+Then launch it from your app menu, or with `flatpak run app.tsumiru.Tsumiru`. Updates arrive with `flatpak update` (or automatically via your software centre).
 
 For a portable single file, grab the **Linux (AppImage)** above: `chmod +x` it and run. It needs no repo and no install step. To update it, use [AppImageUpdate](https://github.com/AppImageCommunity/AppImageUpdate), which downloads only the parts that changed.
 
