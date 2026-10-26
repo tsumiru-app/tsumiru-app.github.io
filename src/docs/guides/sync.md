@@ -6,8 +6,6 @@ description: Keep your library and reading progress in sync with SyncYomi or KOR
 
 # Sync your library and progress
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Tsumiru can sync through two extra services.
 **SyncYomi** syncs your library and reading progress through a SyncYomi server.
 **KOReader Sync** syncs reading progress with KOReader.

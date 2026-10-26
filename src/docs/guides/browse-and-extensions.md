@@ -6,8 +6,6 @@ description: Install manga source extensions on your Suwayomi server from Tsumir
 
 # Browse: sources & extensions
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 The **Browse** tab has three sections. **Sources** lists what you can browse, **Extensions** installs the extensions that provide those sources, and **Migrate** moves library entries away from a broken source. See [Migrate manga between sources](/docs/guides/source-migration).
 
 **Extensions don't install into Tsumiru — they install onto your Suwayomi server.** Install an extension from your phone and its sources appear on the desktop and web apps too, because every client shares the server's set.

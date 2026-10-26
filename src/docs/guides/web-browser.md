@@ -6,8 +6,6 @@ description: Run Tsumiru in a browser, sign in with UI login, and know what work
 
 # Using Tsumiru in a browser
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Tsumiru has a browser version that runs in any modern browser and connects to your Suwayomi server.
 It reads from the server while you use it, so it has no offline reading.
 

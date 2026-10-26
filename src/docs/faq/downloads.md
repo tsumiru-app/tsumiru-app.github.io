@@ -6,8 +6,6 @@ description: How downloading works in Tsumiru.
 
 # Downloads
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Downloads are performed by your **Suwayomi server**, not by Tsumiru. When you download chapters, Tsumiru tells the server to fetch them. The files are stored **on the server** and streamed to whichever device you read on. A download you start on your phone is therefore available in the desktop and web apps too.
 
 ::: tip Reading without a connection?

@@ -6,8 +6,6 @@ description: Fix common connection, content, download, and update problems in Ts
 
 # Common issues
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 ## Connection issues
 
 ### Tsumiru can't connect to my server

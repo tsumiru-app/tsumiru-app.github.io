@@ -6,8 +6,6 @@ description: Organize your library into categories.
 
 # Categories
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Categories let you split your library into tabs (by genre, reading status, or however you like). A series can belong to more than one category.
 
 ## Manage your categories

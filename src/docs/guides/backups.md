@@ -6,8 +6,6 @@ description: Back up and restore your library, right from Tsumiru.
 
 # Backups
 
-Open **Settings** from the desktop sidebar or **More → Settings** on phones.
-
 Your library (series, categories, and read history) lives on your **Suwayomi server**, and Tsumiru can create and restore the server's backups directly. Open **Settings → Backup and restore**.
 
 A backup is a standard Suwayomi (Tachidesk) backup file, so it can be restored to any Suwayomi server.
