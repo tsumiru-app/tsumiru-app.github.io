@@ -6,6 +6,8 @@ description: Facing connection or app issues with Tsumiru? Here's how to trouble
 
 # Troubleshooting
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 Most Tsumiru problems are connection problems: the app can't reach your Suwayomi server, or reaches the wrong thing. Start here, then check the [FAQ](/docs/faq/general).
 
 ## Server connection
@@ -14,7 +16,7 @@ Tsumiru connects to your Suwayomi server over the network. Most issues trace bac
 
 ### Verifying your server URL
 
-1. Open **Tsumiru** and navigate to **More → Connection**.
+1. Open **Tsumiru** and navigate to **Settings → Connection**.
 1. Confirm the server URL matches the address and port your Suwayomi server is running on (e.g. `http://192.168.1.100:4567`).
 1. Make sure you are using `http://` or `https://` as appropriate; mixing them up is a common source of connection errors.
 
@@ -28,7 +30,7 @@ Tsumiru connects to your Suwayomi server over the network. Most issues trace bac
 
 If your Suwayomi server has authentication enabled:
 
-1. Navigate to **More → Connection** in Tsumiru.
+1. Navigate to **Settings → Connection** in Tsumiru.
 1. Enter the correct username and password.
 1. Save and try reconnecting.
 
@@ -36,7 +38,7 @@ If your Suwayomi server has authentication enabled:
 
 ### Obtaining crash/error logs
 
-The quickest way to grab a log for a bug report is the **Copy debug log** action at the bottom of Settings, which copies the app's latest log to your clipboard.
+The quickest way to grab a log for a bug report is **Settings → Advanced → Copy debug log**, which copies the app's latest log to your clipboard.
 The copy starts with a header naming your Tsumiru version and build, your server version, and your platform.
 The log itself includes connection and sign-in errors alongside everything else it records.
 If Tsumiru ever fails to start, the error screen shows the same copy button, so you can still get the log when the app won't open.

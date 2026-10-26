@@ -6,6 +6,8 @@ description: Download chapters to your device and keep reading with no server an
 
 # Offline reading
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 Tsumiru can keep chapters **on your device** so you can read them with no connection to your Suwayomi server. The sources still come from Suwayomi; offline reading stores the pages on your device, so the app doesn't need to reach the server while you read.
 
 This is separate from [server-side downloads](/docs/faq/downloads). A *server download* tells your Suwayomi server to fetch a chapter and keep it **on the server**. An *offline download* copies that chapter onto **this device**. The two work together: a chapter has to be downloaded on the server before it can be saved to your device, and if it isn't yet, Tsumiru queues the server download for you automatically.
@@ -30,7 +32,7 @@ Unread chapters already on the device remain there even if they fall outside tha
 The series page shows its current keep mode, so it's clear why chapters are being kept.
 You can also keep several series offline at once: select them in the library, choose **Keep offline**, and pick how much of each to keep.
 
-To stop keeping a series offline, open the same sheet and choose **Remove all (this series)**, which clears the rule and deletes that series' chapters from the device. To drop the rule but keep the files, use **Downloads → On device**, where each series offers **Stop keeping (keep files)** or **Stop keeping & delete files**. Your server library is untouched either way.
+To stop keeping a series offline, open the same sheet and choose **Remove downloads**, which clears the rule and deletes that series' chapters from the device. To drop the rule but keep the files, use **Downloads → On device**, where each series offers **Stop keeping** or **Stop keeping & delete files**. Your server library is untouched either way.
 
 ### Save individual chapters
 
@@ -69,7 +71,7 @@ To see only what you can read offline, open the library **filter** and turn on *
 
 The **Downloads** screen has two tabs: **Server** (what your Suwayomi server is downloading) and **On device** (what's stored locally). Open **Downloads → On device** to see everything on this device: total **storage used**, and a row per series with its chapter count and size. From a series page you can **Delete on-device downloads** for that series, and individual chapters can be removed with their pin button.
 
-Tap a series row to open its **Downloaded chapters** screen, which splits that series into **Downloading / Queued**, **Downloaded**, and **Failed**. Each chapter has a **Remove from device** button, and a failed one has **Retry**, so one chapter that didn't come through can be fixed without touching the rest.
+On phones, tap a series row to open its **Downloaded chapters** screen. On desktop, select a series to show its chapters alongside the series list. Chapters are split into **Downloading / queued**, **Downloaded**, and **Failed**. The **Server** and **On device** views remain separate. Each chapter has a **Remove from device** button, and a failed one has **Retry**, so one chapter that didn't come through can be fixed without touching the rest.
 
 You can **pause** and **resume** the on-device download queue from the same screen, so a large batch doesn't have to run all at once.
 

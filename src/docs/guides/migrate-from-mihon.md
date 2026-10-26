@@ -6,6 +6,8 @@ description: "Switch from Mihon or Komikku to Tsumiru: restore your .tachibk bac
 
 # Coming from Mihon or Komikku
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 Suwayomi restores Mihon's backup format directly, so moving from Mihon or Komikku is one backup file: create it there, restore it here.
 
 ## What actually changes
@@ -35,6 +37,7 @@ The restore happens on the server, and Tsumiru can drive it:
 1. In Tsumiru, go to **Settings → Backup and restore → Restore backup**.
 2. Pick your `.tachibk` file.
 3. Tsumiru validates it first and lists any **Missing extensions**. If some are missing, install those extensions (next step) and run the restore again so everything resolves.
+4. Choose which backup contents to restore and confirm to start restoration.
 
 You can also restore through the server's own WebUI. The result is the same.
 

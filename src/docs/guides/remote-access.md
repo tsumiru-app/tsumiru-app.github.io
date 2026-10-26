@@ -6,6 +6,8 @@ description: Connect to your Suwayomi server at home and away.
 
 # Reaching your server from anywhere
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 Your Suwayomi server's local address works on your home network. To reach it over mobile data or another Wi-Fi network, use a remote address or connect back home through a VPN.
 
 If you haven't connected Tsumiru yet, start with [Getting started](/docs/guides/getting-started).
@@ -28,7 +30,7 @@ If you expose your server through a proxy or tunnel, use HTTPS and require authe
 
 ## Using one setup at home and away
 
-If you have both a remote address and a local address, open **More** → **Connection**:
+If you have both a remote address and a local address, open **Settings → Connection**:
 
 1. Set **Server URL** to your remote address, such as `https://manga.example.com`.
 2. Tap **Add a local network address** to reveal the optional **Internal / LAN URL**.

@@ -6,10 +6,12 @@ description: Reading modes, page layout, zoom, color filters, and per-series ove
 
 # Reader settings
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 Reader settings live in two places:
 
 * **Settings → Reader** holds the global defaults that apply to every series.
-* Inside the reader, the **gear** in the bottom bar opens a settings sheet with three tabs: **Reading Mode**, **General**, and **Custom filter**. Changes apply as you make them, and the **For this series** block at the top of the first tab overrides settings for just the series you're reading.
+* Inside the reader, the **gear** in the bottom bar opens a settings sheet with three tabs: **Reading mode**, **General**, and **Custom filter**. Changes apply as you make them, and the **For this series** block at the top of the first tab overrides settings for just the series you're reading.
 
 Per-series overrides are stored on the server, so they follow the series to your other devices.
 
@@ -41,9 +43,9 @@ Everything in the sheet's **For this series** block overrides the global default
 
 * **Reading mode**: the chips above.
 * **Rotation**: lock or free the screen orientation for this series: **Default**, **Free**, **Portrait**, **Landscape**, **Locked portrait**, **Locked landscape**, or **Reverse portrait**.
-* **Tap zones**: the tap layout for paging: **Default**, **L Shaped**, **Kindle-ish**, **Edge**, **Right And Left**, or **Disabled**. Tap zones are on out of the box: **Default** picks **Right And Left** for the horizontal paged modes and **L Shaped** everywhere else.
+* **Tap zones**: the tap layout for paging: **Default**, **L shaped**, **Kindle-ish**, **Edge**, **Right and left**, or **Disabled**. Tap zones are on out of the box: **Default** picks **Right and left** for the horizontal paged modes and **L shaped** everywhere else.
 * **Invert tap zones**: flip the tap directions: **None**, **Horizontal**, **Vertical**, or **Both** (shown while tap zones are enabled).
-* **Reader Padding**: side margins so pages aren't edge-to-edge.
+* **Reader padding**: side margins so pages aren't edge-to-edge.
 * **Magnifier Size**: how large the long-press magnifier is (long-press and drag to magnify part of a page).
 
 Below that block, the tab shows the settings for whichever reader the current mode uses, under a **Paged** or **Long strip** heading. Those groups are global and mirror the same groups in **Settings → Reader**.
@@ -71,7 +73,7 @@ On Android, the system **Remove animations** setting makes page turns and double
 Each reader has its own zoom settings, so changing one doesn't touch the other:
 
 * **Double tap to zoom**: on by default. Double-tap to zoom in at the point you tapped, and double-tap again to zoom back out.
-* **Pinch to Zoom**: pinch to zoom.
+* **Pinch to zoom**: pinch to zoom.
 * **Disable zoom in** / **Disable zoom out**: turn off zooming in that direction (the long strips only offer **Disable zoom out**).
 
 ## Long strips
@@ -109,7 +111,7 @@ The sheet's **General** tab collects the global display and behavior settings (a
 * Seekbar: vertical modes run the seekbar down the side. **Left-handed vertical seekbar** moves it to the left, **Show vertical seekbar in landscape** keeps it vertical in landscape, and **Force horizontal seekbar** makes it horizontal everywhere.
 * **Fullscreen**: hide the system bars while reading. **Show content in cutout area** lets pages extend into the camera cutout.
 * **Keep screen on**: hold the screen awake while you're reading.
-* **Show actions on long tap**: on by default. Long-press a page for **Copy**, **Open In Web**, **Share image**, and **Save to gallery**.
+* **Show actions on long tap**: on by default. Long-press a page for **Copy**, **Open in browser**, **Share image**, and **Save to gallery**.
 * **Always show chapter transition**: always show the between-chapters transition page.
 * **Flash on page change**: flash the screen on each page turn (helps ghosting on e-ink screens). Tune it with **Flash duration**, **Flash every** (1 to 10 pages), and **Flash with** (**Black**, **White**, or **White and Black**).
 * **Auto reading mode**: open manhwa, manhua, and webtoons in the long-strip reader automatically.
@@ -130,11 +132,11 @@ A few settings live only on the global screen:
 * **Tap zones** and **Invert tap zones**: the global tap-zone defaults, set separately in the **Paged** and **Long strip** groups (the per-series versions are in the sheet).
 * **Show tap zones overlay**: briefly flash the tap layout when you open a chapter (off by default).
 * **Swipe toggle**: swipe to change chapter. **Last page swipe** restricts that to the last/first page only.
-* **Volume Keys**: page with the volume keys, with an **Invert Volume Keys** option *(Android)*.
+* **Volume keys**: page with the volume keys, with an **Invert volume keys** option *(Android)*.
 * **Reader initial overlay**: show the title and controls when you open a chapter.
 * **Scroll animation**: animate page jumps instead of snapping instantly.
 On Android, the system **Remove animations** setting makes screen changes, dialogs, page turns, and double-tap zoom instant across the app.
 * **Reading feedback toasts**: turn off to hide messages like "loading next chapter" and "no more chapters".
-* **Ignore Safe Area**: let content extend into the notch and home-indicator areas *(Android & iOS)*.
+* **Ignore safe area**: let content extend into the notch and home-indicator areas *(Android and iOS)*.
 
 The page number, chapter-skip buttons, bookmark toggle, and the settings gear all live in the reader's bottom bar. Tap the page to bring up the overlay.
