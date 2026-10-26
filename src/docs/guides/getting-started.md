@@ -6,6 +6,8 @@ description: Connect Tsumiru to your Suwayomi server and start reading.
 
 # Getting started
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 Tsumiru is a **client** for [Suwayomi](https://suwayomi.org/) (also known as Tachidesk). Your sources, extensions, server downloads, and library live on your **Suwayomi server**. Tsumiru connects Android, desktop, iOS, and web clients to it.
 
 ## 1. Set up a Suwayomi server
@@ -45,7 +47,7 @@ Enter your username and password.
 A method you pick yourself is never changed for you, so choose the configured mode if the suggestion looks wrong, then tap **Sign in**.
 5. Finish, and your library loads.
 
-If you're in a hurry, **Skip** (top-right) lets you set things up later. You can change the address, sign-in, and headers any time under **More → Connection**.
+If you're in a hurry, **Skip** (top-right) lets you set things up later. You can change the address, sign-in, and headers any time under **Settings → Connection**.
 
 > **Tip:** A local-network address (`192.168.x.x`, default port 4567) is the simplest place to start. To read away from home too, put your server behind a reverse proxy with HTTPS and enter that domain as the **Server URL**, then add your LAN address as the **Internal / LAN URL**. Tsumiru uses whichever one can reach the server, so the same app works at home and away.
 
@@ -55,7 +57,7 @@ Because sources live on the server, anything you've enabled in Suwayomi shows up
 
 1. Open the **Browse** tab to see the sources available on your server.
 2. Pick a source and use its **Popular** / **Latest** listings, or search for a title.
-3. Open a series and tap **Add to Library**. It appears on devices connected to your server.
+3. Open a series and tap **Add to library**. It appears on devices connected to your server.
 
 **Pin** the sources you use most to keep them at the top of the Browse list. When you search across sources, you can filter that global search down to the sources you care about.
 

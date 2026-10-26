@@ -6,12 +6,14 @@ description: A tour of Tsumiru's settings.
 
 # Settings
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 Tsumiru's settings are grouped into **App**, **Library**, **Suwayomi**, and **Advanced**.
 
 **App** covers the app itself:
 
-* **General**: **App language**, **Lock to portrait**, **Persistent search bar**, and **Quick search**.
-* **Appearance**: theme mode and themes, **Pure black (AMOLED)**, **Manga grid size**, and **Show recommendations**.
+* **General**: **Lock to portrait**, **Persistent search bar**, and **Quick search**.
+* **Appearance**: **App language**, theme mode and themes, **Pure black (AMOLED)**, **Manga grid size**, and **Show recommendations**.
 * **Reader**: global reader defaults for every series (see [Reader settings](/docs/guides/reader-settings)).
 * **Keyboard shortcuts**: the shortcut reference, shown on desktop and in the browser (see [Keyboard shortcuts](/docs/guides/keyboard-shortcuts)).
 * **Notifications**: new-chapter checks and alerts, on Android only (see [Notifications](/docs/guides/notifications)).
@@ -28,13 +30,14 @@ Tsumiru's settings are grouped into **App**, **Library**, **Suwayomi**, and **Ad
 
 * **Connection**: server address, sign-in and authentication type, custom headers, and timeouts. It is also reachable from **More**.
 * **Sync**: **SyncYomi** and **KOReader Sync** in one place (see [Sync your library and progress](/docs/guides/sync)).
-* **Server**: the server's own admin config across hub pages (**Users**, **Network**, **Web interface**, **OPDS**, **Images**, **Database**, **Logs**). This configures the server itself, not how this app connects to it.
+* **Server**: the server's own admin config across hub pages (**Users**, **Sign-in**, **Network**, **Web interface**, **OPDS**, **Images**, **Database**, **Logs**). Available controls depend on server capabilities and your permissions. See [Server administration](/docs/guides/server-administration).
 
-**Advanced** holds **Clear cache**, **Copy debug log**, and **Clear debug log**.
+**Advanced** holds **Clear cache**, **Remove custom covers**, **Copy debug log**, and **Clear debug log**.
+**Remove custom covers** restores server covers on all your Tsumiru clients.
 
 ## How do I connect to my server?
 
-Open **More → Connection**. Under **Server**, set the **Server URL** to the full address of your server, port included: `http://192.168.1.10:4567`. There's no separate port field. The port is part of the URL.
+Open **Settings → Connection**. Under **Server**, set the **Server URL** to the full address of your server, port included: `http://192.168.1.10:4567`. There's no separate port field. The port is part of the URL.
 
 ## Can I have one address at home and another away?
 
@@ -44,7 +47,7 @@ Once both are set, an **Active connection** row appears showing which one Tsumir
 
 ## My server needs a login: how do I authenticate?
 
-Under **More → Connection → Authentication**, pick an **Authentication type**:
+Under **Settings → Connection → Authentication**, pick an **Authentication type**:
 
 * **None**: no authentication.
 * **Basic Auth**: HTTP basic auth (username + password), e.g. when your server sits behind a reverse proxy.
@@ -58,7 +61,7 @@ After a device restore or a reinstall, sign in again the same way: credentials a
 
 ## My server sits behind a gateway that needs extra headers: how do I add them?
 
-Add them under **More → Connection → Custom HTTP headers**. Tap **Add header**, fill in the **Header name** and **Header value**, and save. They're sent with every request Tsumiru makes to your server, and you only need them when the server sits behind an authentication gateway, Zero Trust guard, or reverse proxy that expects extra headers.
+Add them under **Settings → Connection → Custom HTTP headers**. Tap **Add header**, fill in the **Header name** and **Header value**, and save. They're sent with every request Tsumiru makes to your server, and you only need them when the server sits behind an authentication gateway, Zero Trust guard, or reverse proxy that expects extra headers.
 For the wider picture, see [Reaching your server from anywhere](/docs/guides/remote-access).
 
 ## What about proxy or advanced connection settings?
@@ -92,7 +95,7 @@ Press `Esc` to close it.
 
 ## Does Tsumiru have an incognito mode?
 
-Turn on **Incognito mode** from the **More** menu and Tsumiru stops recording reading history and "last read" progress while it's active. You can read or catch up on something without it showing up in your history or reordering your library. While it's on, an app-wide banner keeps the state visible. Tap the banner to switch it back off. It's **session-only**, so it also resets whenever you restart the app.
+On phones, enable **More → Incognito mode**. On desktop, use **Incognito** in the sidebar. Tsumiru stops recording reading history and "last read" progress while it's active. You can read or catch up on something without it showing up in your history or reordering your library. While it's on, an app-wide banner keeps the state visible. Tap the banner to switch it back off. It's **session-only**, so it also resets whenever you restart the app.
 
 Incognito works well with **hideable categories** (see [Categories](/docs/guides/categories)), which keep chosen library tabs off the main view entirely.
 

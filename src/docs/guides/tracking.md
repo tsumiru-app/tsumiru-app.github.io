@@ -6,6 +6,8 @@ description: Connect AniList, MyAnimeList, and other trackers your Suwayomi serv
 
 # Tracking
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 Tsumiru can update your reading trackers as you read.
 Connect the services your Suwayomi server supports, bind a tracker to a series, and Tsumiru keeps its progress in step with what you read in the app.
 
@@ -42,4 +44,4 @@ Chapters you read with no connection update your trackers the next time you reco
 
 ## Migrating a series
 
-If you migrate a series to another source, its tracker links carry over to the new entry, so you don't have to bind them again.
+Tracker links carry over when **Migrate tracking** is enabled. It is enabled by default.

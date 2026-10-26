@@ -6,6 +6,8 @@ description: Run Tsumiru in a browser, sign in with UI login, and know what work
 
 # Using Tsumiru in a browser
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 Tsumiru has a browser version that runs in any modern browser and connects to your Suwayomi server.
 It reads from the server while you use it, so it has no offline reading.
 
@@ -16,7 +18,7 @@ It reads from the server while you use it, so it has no offline reading.
 Download `…-web.zip` from the [latest release](https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/latest) and unzip it.
 Serve the folder with any static web server, then open its address in a browser.
 
-If you serve the build from an address other than your Suwayomi server, open **More → Connection** and enter the server's address, including its port.
+If you serve the build from an address other than your Suwayomi server, open **Settings → Connection** and enter the server's address, including its port.
 The browser version has no **Search my network** button.
 
 ### Serve it from your server with the Custom interface
@@ -24,7 +26,7 @@ The browser version has no **Search my network** button.
 Suwayomi's **Custom** interface option serves whatever is in the server's `webUI` folder and never overwrites it, so the web build can live there and open at the server's own address with nothing else to host.
 Because app and server then share an origin, this works on servers that cannot install Tsumiru directly.
 
-1. Open **More → Settings → Server**, find **Web interface** and set **Interface** to **Custom**.
+1. Open **Settings → Server → Web interface** and set **Interface** to **Custom**.
 (In Suwayomi's WebUI the same setting is **Settings → WebUI → Flavor**.)
 2. Stop the server.
 3. Unzip the `…-web.zip` from the latest release and replace the contents of the server's `webUI` folder with it.
@@ -44,7 +46,7 @@ To go back, set **Interface** to **WebUI** and restart the server, and it downlo
 
 ### Install it from your server
 
-Open **More → Settings → Server** and find **Web interface**.
+Open **Settings → Server → Web interface**.
 If your server supports these settings, set **Interface** to **Tsumiru**, then use **Check for update** to install it.
 Your server then serves Tsumiru at its own address.
 **Update channel** picks between **Stable** and **Preview**, and **Automatic updates** keeps the installed copy current.
@@ -74,7 +76,7 @@ To switch your server to UI login, either:
   The other values are `NONE`, `BASIC_AUTH` and `SIMPLE_LOGIN`.
 * In Suwayomi's own WebUI, open **Settings → Server**, find **Authentication**, and set **Authentication Mode** to **UI Login**.
 
-Then open **More → Connection** in Tsumiru, choose **UI Login (recommended)** under **Authentication type**, and sign in with the server's username and password.
+Then open **Settings → Connection** in Tsumiru, choose **UI Login (recommended)** under **Authentication type**, and sign in with the server's username and password.
 
 ### What the messages mean
 

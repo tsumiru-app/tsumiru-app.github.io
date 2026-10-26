@@ -6,6 +6,8 @@ description: Install manga source extensions on your Suwayomi server from Tsumir
 
 # Browse: sources & extensions
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 The **Browse** tab has three sections. **Sources** lists what you can browse, **Extensions** installs the extensions that provide those sources, and **Migrate** moves library entries away from a broken source. See [Migrate manga between sources](/docs/guides/source-migration).
 
 **Extensions don't install into Tsumiru — they install onto your Suwayomi server.** Install an extension from your phone and its sources appear on the desktop and web apps too, because every client shares the server's set.
@@ -30,7 +32,7 @@ If you have an extension as an `.apk` file that isn't in any store: on the Exten
 
 The Extensions tab lists whatever the stores configured on your server provide. If it's empty, no store is set yet.
 
-Add one under **More → Settings → Browse → Extension stores**, or from the extension stores icon in the Extensions tab toolbar. Stores are a server setting, so one you add applies to every client connected to your server. See the [Extension stores guide](/docs/guides/adding-sources) for how trust and content ratings work.
+Add one under **Settings → Browse → Extension stores**, or from the extension stores icon in the Extensions tab toolbar. Stores are a server setting, so one you add applies to every client connected to your server. See the [Extension stores guide](/docs/guides/adding-sources) for how trust and content ratings work.
 
 ::: tip Older servers
 Managing extensions needs [a server new enough for Extension stores](/docs/guides/adding-sources). On an older server the Extensions tab shows **Update your Suwayomi server to manage extensions** instead, and the settings row is disabled until you update.
@@ -40,17 +42,17 @@ Managing extensions needs [a server new enough for Extension stores](/docs/guide
 
 Two controls decide what Browse shows you:
 
-* **NSFW**: **More → Settings → Browse → Show NSFW extensions and sources** hides 18+ extensions and their sources when off.
+* **NSFW**: **Settings → Browse → Show NSFW extensions and sources** hides 18+ extensions and their sources when off.
 
   ::: warning Best effort
   This filter relies on extensions being flagged correctly. It doesn't stop an unofficial or mislabeled extension from surfacing 18+ content.
   :::
 
-* **Languages**: the translate icon in the Browse toolbar opens a language list; only checked languages appear. The Sources and Extensions tabs each have their own list, so you can browse sources in two languages while still seeing every extension.
+* **Languages**: the translate icon in the Browse toolbar opens a language list. Only checked languages appear. The Sources and Extensions tabs each have their own list, so you can browse sources in two languages while still seeing every extension.
 
 ## The Sources tab
 
-Every source from your installed extensions, with **Pinned** and **Last Used** groups at the top, then sources grouped by language. Tap a source to browse it; the **Latest** button on a row jumps straight to its newest releases. The toolbar has a **Global Search** icon (below) and a **Filter sources** icon.
+Every source from your installed extensions, with **Pinned** and **Last Used** groups at the top, then sources grouped by language. Tap a source to browse it; the **Latest** button on a row jumps straight to its newest releases. The toolbar has a **Global search** icon (below) and a **Filter sources** icon.
 
 ### Pin your favorites
 
@@ -74,7 +76,7 @@ Inside a source:
 
 ## Global search
 
-To search every source at once, tap the **Global Search** icon on the **Sources** tab, type a title, and submit. It queries each source and shows a row of results per source.
+To search every source at once, tap the **Global search** icon on the **Sources** tab, type a title, and submit. It queries each source and shows a row of results per source.
 
 Three chips control the scope:
 

@@ -6,17 +6,19 @@ description: Where Tsumiru keeps downloads and backups, on your server.
 
 # Storage
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 By default, Tsumiru stores almost nothing on your device. Your library, downloads, and backups all live on your **Suwayomi server**. The app keeps only small UI preferences (server address, sort/filter/display choices, global reader defaults) locally. Per-series reader settings live on the server with the series.
 
 The exception is [offline reading](/docs/guides/offline-reading): when you keep a series or save a chapter offline, Tsumiru copies those chapters onto the device so you can read them without the server. You decide how much space that's allowed to use in **Settings → Downloads**, on the **On device** tab.
 
 ## Where are my downloads kept?
 
-On the **server**, at the path set in **Settings → Downloads → Download location**, described in-app as "the path to the directory on the server where downloaded files should get saved in." You can also choose **Save as CBZ archive** to control the download format. Server downloads are never written to your device. The separate [offline reading](/docs/guides/offline-reading) feature is the only thing that stores chapters locally.
+On the **server**, at the path set in **Settings → Downloads → Server → Download location**, described in-app as "Folder on the server where downloads are saved." You can also choose **Save as CBZ archive** to control the download format. Server downloads are never written to your device. The separate [offline reading](/docs/guides/offline-reading) feature is the only thing that stores chapters locally.
 
 ## Where are backups kept?
 
-Backups are created and stored by the **server** too. Automatic backups go to the path in **Settings → Backup and restore → Backup location** ("the path to the directory on the server where automated backups should get saved in"). When you create a backup manually, the server generates the file and hands it to you to download. See [Backups](/docs/guides/backups).
+Backups are created and stored by the **server** too. Automatic backups go to the path in **Settings → Backup and restore → Backup location** ("Folder on the server where automatic backups are saved."). When you create a backup manually, the server generates the file and hands it to you to download. See [Backups](/docs/guides/backups).
 
 ## Does Tsumiru use much space on my device?
 

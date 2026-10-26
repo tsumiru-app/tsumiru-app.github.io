@@ -6,17 +6,19 @@ description: Fix common connection, content, download, and update problems in Ts
 
 # Common issues
 
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
+
 ## Connection issues
 
 ### Tsumiru can't connect to my server
 
 Tsumiru needs a reachable Suwayomi server for online features. If you see a connection error:
 
-* **Check the server URL.** Go to **More → Connection** and verify the whole address, including the port and scheme (`http` vs `https`). The port is part of the **Server URL**, not a field of its own. A common mistake is using `https://` when the server is only listening on plain `http://`.
+* **Check the server URL.** Go to **Settings → Connection** and verify the whole address, including the port and scheme (`http` vs `https`). The port is part of the **Server URL**, not a field of its own. A common mistake is using `https://` when the server is only listening on plain `http://`.
 * **Check which address is in use.** If you've set an **Internal / LAN URL** as well, the **Active connection** row says whether Tsumiru is **Using LAN** or **Using remote**. A LAN address won't answer when you're away from home, and a remote one may not resolve on your own network.
 * **Check that the server is running.** Open the server's web UI in a browser from the same device. If the browser can't load it either, the server is not running or not reachable.
 * **Check your network.** If the server is on your local network, make sure your device is on the same network (not on mobile data). If accessing remotely, confirm your reverse proxy or port forwarding is set up correctly.
-* **Check authentication.** If your Suwayomi server requires a login, make sure the credentials in **More → Connection** are correct.
+* **Check authentication.** If your Suwayomi server requires a login, make sure the credentials in **Settings → Connection** are correct.
 * **Read offline in the meantime.** If you keep chapters on your device, a **View offline** button appears on the library's loading screen while it can't reach the server. Tap it to open your downloaded library without waiting. See [Offline reading](/docs/guides/offline-reading).
 
 ### "Test connection" couldn't confirm it's Suwayomi
@@ -30,7 +32,7 @@ In the setup wizard, **Test connection** probes the address you typed and only r
 
 ### My server needs a login
 
-The Android, iOS, and desktop apps support all of Suwayomi's authentication modes (**Basic auth**, **Simple login**, and **UI login**) as well as no auth. The browser version works only with **UI login** or no auth. See [Using Tsumiru in a browser](/docs/guides/web-browser#signing-in). When a server is protected, the setup wizard detects it and prompts for your username and password, then works out the right mode for you. If it can't tell, choose the mode you configured on the server. For how each mode works, see [Suwayomi-Server](https://github.com/Suwayomi/Suwayomi-Server) and its configuration docs.
+The Android, iOS, and desktop apps support all of Suwayomi's authentication modes (**Basic auth**, **Simple login**, and **UI login**) as well as no auth. Separately hosted browser builds work with **UI login** or no auth. When Suwayomi serves Tsumiru at the same origin, browser or server **Basic auth** and **Simple login** can authenticate before Tsumiru loads. See [Using Tsumiru in a browser](/docs/guides/web-browser#signing-in). When a server is protected, the setup wizard detects it and prompts for your username and password, then works out the right mode for you. If it can't tell, choose the mode you configured on the server. For how each mode works, see [Suwayomi-Server](https://github.com/Suwayomi/Suwayomi-Server) and its configuration docs.
 
 ### Connected but library is empty
 
@@ -43,13 +45,13 @@ Sources and extensions are managed on the **Suwayomi server**, not inside Tsumir
 
 ### Images won't load
 
-* Confirm Tsumiru is connected to the server (check **More → Connection**).
+* Confirm Tsumiru is connected to the server (check **Settings → Connection**).
 * The server fetches images from the source on demand. If a source is slow or rate-limiting, images may fail to load. Try again after a moment.
 * Check that the Suwayomi server has network access to the source.
 
 ### Reading is laggy
 
-* High-resolution chapter images can cause lag, especially on lower-end hardware. The Suwayomi server serves images as-is from the source; this is a function of source image sizes.
+* High-resolution source images can cause lag. Check **Settings → Server → Images** for the processing options supported by your server.
 * Close other apps to free RAM (on Android and other memory-constrained platforms).
 
 ### Slow loading
@@ -88,12 +90,12 @@ From the Library (or Updates) overflow menu, open **Library update errors** to s
 These errors appear when Tsumiru receives an unexpected HTTP response from your Suwayomi server or from a source via the server.
 
 ### `HTTP Error: 401` - Unauthorized
-Your server credentials are incorrect or have expired. Go to **More → Connection** and re-enter your username and password.
+Your server credentials are incorrect or have expired. Go to **Settings → Connection** and re-enter your username and password.
 
 ### `HTTP Error: 403` - Forbidden
 The server or the source is refusing the request. Check that your server credentials are correct.
 
-If your server sits behind an authentication gateway, a Zero Trust guard, or a reverse proxy, the 403 is likely coming from that rather than from Suwayomi. Add the headers it expects under **More → Connection → Custom HTTP headers** with **Add header**, a **Header name**, and a **Header value**.
+If your server sits behind an authentication gateway, a Zero Trust guard, or a reverse proxy, the 403 is likely coming from that rather than from Suwayomi. Add the headers it expects under **Settings → Connection → Custom HTTP headers** with **Add header**, a **Header name**, and a **Header value**.
 See [Reaching your server from anywhere](/docs/guides/remote-access) for the full setup.
 
 If the source itself is returning 403, the source may be enforcing IP-based blocking or rate limits. This is a server-side issue to investigate in the Suwayomi server logs.

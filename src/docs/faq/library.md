@@ -5,15 +5,17 @@ description: Frequently Asked Questions about the Library in Tsumiru.
 ---
 
 # Library
+
+Open **Settings** from the desktop sidebar or **More → Settings** on phones.
 Frequently Asked Questions about the Library.
 
 ## How do I sort, filter, and change the layout?
 
 Tap the organizer icon in the Library toolbar for five tabs:
 
-* **Filter**: each filter is a chip row with **Any** plus the two states, so you pick a side or leave it off: **Download Status** (**Downloaded** / **Not Downloaded**), **Storage** (**On Device** / **Remote**), **Read Status** (**Unread** / **Read**), **Progress** (**Started** / **Not Started**), **Bookmarks** (**Bookmarked** / **Not Bookmarked**), **Publication Status** (**Completed** / **Not Completed**), and **Content Rating** (**Lewd** / **Not Lewd**). Below the rows sits a **Minimum rating** star row, and you can include or exclude specific **Categories**, **Tags**, and (once a tracker is connected) **Tracked** services.
-* **Sort**: **Alphabetical**, **Rating**, **Total Chapters**, **Last Read** (the default), **Last Update**, **Unread**, **Latest Chapter**, **Chapter Fetch Date**, **Date Added**, **Tracker score**, or **Random** (ascending or descending).
-* **Display**: pick a layout (**List**, **Descriptive List**, **Compact grid**, **Comfortable grid**, or **Cover-only grid**). The grid layouts get column-count sliders for portrait and landscape plus a **Grid style** row: **Uniform** crops every cover to the same cell, **Non-uniform** lets covers keep their shape with rows still aligned, and **Staggered** packs each column independently. The list layouts get a **List size** slider instead. The tab also has **Limit titles to 2 lines** and **Outline on covers** toggles.
+* **Filter**: **Downloaded**, **Started**, **Bookmarked**, **Completed**, **Lewd**, and **Duplicate chapters** use **Any / Yes / No**. **Storage** uses **Any / On device / Remote**, and **Read status** uses **Any / Unread / Read**. Below these rows, set a **Minimum rating** or include and exclude **Categories**, **Tags**, **Status**, and **Source**. **Tracked** filters by connected tracking services.
+* **Sort**: **Alphabetical**, **Rating**, **Total chapters**, **Last read** (the default), **Last update**, **Unread**, **Latest chapter**, **Chapter fetch date**, **Date added**, **Tracker score**, or **Random** (ascending or descending).
+* **Display**: pick a layout (**List**, **Descriptive list**, **Compact grid**, **Comfortable grid**, or **Cover-only grid**). The grid layouts get column-count sliders for portrait and landscape plus a **Grid style** row: **Uniform** crops every cover to the same cell, **Non-uniform** lets covers keep their shape with rows still aligned, and **Staggered** packs each column independently. The list layouts get a **List size** slider instead. The tab also has **Limit titles to 2 lines** and **Outline on covers** toggles.
 * **Badges**: choose the **Unread badge** style (**Show count**, **Show plain badge** for a badge with no number, or **Hide**), toggle the **Downloaded**, **On device**, **Read progress bar**, **Continue reading button**, **Source icon**, and **Language** badges, and set the **Badge layout**: drag to reorder the badges, and tap the arrow to move one to the other corner of the cover.
 * **Group**: keep the **Default** category tabs, group **By tag**, **By source**, **By status**, **By track status**, or **By language**, or pick **Ungrouped** for one flat tab. **Group display** shows groups as **Tabs** or as **Section headers** in one continuous scroll, and the tab options (category tabs, item counts, showing hidden categories) live here too.
 
@@ -36,9 +38,9 @@ To keep the search box always in reach, turn on **Persistent search bar** in **S
 
 ## Where do I see what I've read?
 
-The **History** tab lists your recently-read chapters grouped by day, newest first, with a search box to find something you read a while ago. A history entry's menu offers **View Manga** to jump back to the series. On tablets and desktop, History sits in the main navigation between **Updates** and **Browse**; on phones it's under the **More** menu. (While [Incognito mode](/docs/faq/settings#does-tsumiru-have-an-incognito-mode) is on, nothing is added to History.)
+The **History** tab lists your recently-read chapters grouped by day, newest first, with a search box to find something you read a while ago. A history entry's menu offers **View manga** to jump back to the series. On tablets and desktop, History sits in the main navigation between **Updates** and **Browse**. On phones it's under the **More** menu. (While [Incognito mode](/docs/faq/settings#does-tsumiru-have-an-incognito-mode) is on, nothing is added to History.)
 
-History covers everything you've read on the server, including series you've since removed from your library. The filter icon narrows the list with the same chip rows as the library: **Series** (**Unfinished** / **Finished**), **Read Status** (**Unread** / **Read**), and **Library** (**In library** / **Not in library**).
+History covers everything you've read on the server, including series you've since removed from your library. The filter icon narrows the list with the same chip rows as the library: **Series** (**Unfinished** / **Finished**), **Read status** (**Unread** / **Read**), and **Library** (**In library** / **Not in library**).
 
 ## Can library entries jump to my next chapter?
 
@@ -74,15 +76,15 @@ This screen does not retry an update. Run **Global update** or **Category update
 
 ## Where do I see recently updated chapters?
 
-The **Updates** tab lists newly fetched chapters grouped by date, newest first. You can multi-select chapters there for bulk actions.
+The **Updates** tab lists newly fetched chapters grouped by date, newest first. You can multi-select chapters there for bulk actions. On desktop, choose a cover grid or a list grouped by day, with chapters grouped by series.
 
-The filter icon opens **Chapter grouping** at the top, which stacks consecutive chapters from the same series into one foldable entry: **Disabled** lists every chapter on its own, **Collapsed** folds each stack shut, and **Expanded** folds them open. Below that, the sheet narrows the list by **Download Status** (**Downloaded** / **Not Downloaded**), **Read Status** (**Unread** / **Read**), **Progress** (**Started** / **Not Started**), and **Bookmarks** (**Bookmarked** / **Not Bookmarked**).
+On phones, the organizer sheet has **Filter** and **Display** tabs. Desktop has separate Filter and Display controls. **Chapter grouping** is under **Display**: **Disabled** lists every chapter on its own, **Collapsed** folds each series group shut, and **Expanded** folds them open. The default is **Collapsed**. Filters are **Downloaded**, **Started**, and **Bookmarked** with **Any / Yes / No**, and **Read status** with **Any / Unread / Read**.
 
 ## Can each series sort its chapters its own way?
 
 Yes.
 On a series page, open the chapter organizer and switch to the **Sort** tab.
-Pick **By Source**, **By Chapter Number**, **By Upload Date**, **By Fetched Date**, or **Alphabetically**, and flip the direction.
+Pick **By source**, **By chapter number**, **By upload date**, **By fetched date**, or **Alphabetically**, and flip the direction.
 The choice is saved on the server, so it follows the series to your other devices and to the Suwayomi web interface.
 **Alphabetically** is the only order the web interface does not share.
 
@@ -92,9 +94,7 @@ On a series page, long-press a chapter and choose **Select below**. Tsumiru exte
 
 ## Can I sync between devices?
 
-There's nothing to enable on current servers: your library, read progress, bookmarks, categories, per-series reader settings, and server download state live on the **Suwayomi server**. Devices connected to that server see its shared state automatically. UI preferences such as sort, filter, and display stay on each device.
-
-Suwayomi accounts are not available in stable or preview server builds yet. Tsumiru already includes client support; when a compatible server build exists, only devices signed into the same account will share its library state.
+Your library, read progress, bookmarks, categories, per-series reader settings, and server download state live on the **Suwayomi server**. On servers with accounts, library state is shared between devices signed into the same account. Servers without accounts use shared server state. UI preferences such as sort, filter, and display stay on each device.
 
 ## How do I handle duplicate chapters from the same series?
 
@@ -118,7 +118,9 @@ Removing an entry here removes it from your library and deletes its downloaded c
 
 ## Can Tsumiru suggest similar titles?
 
-A series' details page shows a **Suggestions** row of similar titles, and **See Recommendations** opens a full screen of them. The suggestions come from public manga databases (AniList, MyAnimeList, MangaDex, MangaUpdates, and Comick), which Tsumiru queries directly with the series' title — see the [privacy policy](/privacy/) for what's shared.
+A series' details page shows a **Suggestions** row of similar titles, and **See Recommendations** opens a full screen of them. The suggestions come from public manga databases (AniList, MyAnimeList, MangaDex, MangaUpdates, and Comick), which Tsumiru queries directly with the series' title. See the [privacy policy](/privacy/) for what's shared.
+
+The browser version uses **AniList only**. Native apps can query the other listed providers.
 
 It's on by default. **Settings → Appearance → Show recommendations** turns it off, and **Recommendations in overflow** moves the row into the overflow menu instead.
 

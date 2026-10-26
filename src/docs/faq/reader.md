@@ -23,7 +23,7 @@ In the paged modes, set **Page layout** to **Double pages**, or to **Automatic**
 Pull down the handle at the top of the reader to open the auto-scroll bar. In the long-strip modes it's **Auto scroll**, gliding the page down on its own; in the paged modes it's **Auto advance**, turning one page at a time. The **−** and **+** buttons set the pace in seconds. On a keyboard, **Space** starts and stops auto-scroll in the long-strip modes. See [Reader settings](/docs/guides/reader-settings#auto-scroll-and-auto-advance).
 
 ## How do I save or share a page?
-Long-press the page while reading. With **Show actions on long tap** enabled (it is by default), a sheet offers **Copy**, **Open In Web**, **Share image**, and **Save to gallery**.
+Long-press the page while reading. With **Show actions on long tap** enabled (it is by default), a sheet offers **Copy**, **Open in browser**, **Share image**, and **Save to gallery**.
 
 ## Can I dim the page or read in grayscale?
 Open the reader's settings sheet (the gear in the bottom bar) and switch to the **Custom filter** tab. **Custom brightness** dims the reader independently of the system, **Custom color filter** tints the page, and **Grayscale** and **Inverted** change how pages are rendered. The sheet's backdrop turns transparent on this tab, so you see every change on the actual page.
